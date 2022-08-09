@@ -2936,46 +2936,52 @@ class TableComponent {
         console.log(this.expandedElement);
     }
     ngOnInit() {
-        this.open = this.translate.translate(this.lang, 'OPEN');
-        this.search = this.translate.translate(this.lang, 'SEARCH');
-        this.cancelSearch = this.translate.translate(this.lang, 'CANCEL_SEARCH');
-        this.noResult = this.translate.translate(this.lang, 'NO_RESULT');
-        this.details = this.translate.translate(this.lang, 'DETAILS');
-        if (this.rowMargin) {
-            this.style = {
-                borderSpacing: this.rowMargin
-            };
-        }
-        this.onReady.emit(false);
-        //this.service.emptyRow = this.EmptyRow;
-        if (this.data && this.columnDefinitions) {
-            this.PrivateColumnDefinitions = this.columnDefinitions;
-            this.buildHeaders().then(() => {
+        return __awaiter(this, void 0, void 0, function* () {
+            this.onReady.emit(false);
+            this.open = this.translate.translate(this.lang, 'OPEN');
+            this.search = this.translate.translate(this.lang, 'SEARCH');
+            this.cancelSearch = this.translate.translate(this.lang, 'CANCEL_SEARCH');
+            this.noResult = this.translate.translate(this.lang, 'NO_RESULT');
+            this.details = this.translate.translate(this.lang, 'DETAILS');
+            if (this.rowMargin) {
+                this.style = {
+                    borderSpacing: this.rowMargin
+                };
+            }
+            this.data.pageNumber.subscribe((newpage) => {
+                if (newpage > 0) {
+                    this.router.navigate([], {
+                        relativeTo: this.route,
+                        queryParams: { page: newpage + 1 },
+                        queryParamsHandling: 'merge', // remove to replace all query params by provided
+                    });
+                }
+                else if (newpage === 0) {
+                    this.router.navigate([], {
+                        relativeTo: this.route,
+                        queryParams: { page: null },
+                        queryParamsHandling: 'merge', // remove to replace all query params by provided
+                    });
+                    this.changeDetectorRef.markForCheck();
+                }
+                if (this.data && this.data.paginator && this.data.paginator.pageIndex !== newpage) {
+                    this.data.paginator.pageIndex = newpage;
+                    this.changeDetectorRef.markForCheck();
+                }
+            });
+            if (this.data && this.columnDefinitions) {
+                this.PrivateColumnDefinitions = this.columnDefinitions;
+                this.displayedColumns = this.sort();
                 console.log('My data TABLE', this.data, 'column definition', this.columnDefinitions);
                 this.expandedElement = false;
                 this.data.paginator = this.paginatorCurrent;
                 this.data.sort = this.sortCurrent;
-                this.data.pageNumber.subscribe((newpage) => {
-                    if (newpage > 0) {
-                        this.router.navigate([], {
-                            relativeTo: this.route,
-                            queryParams: { page: newpage + 1 },
-                            queryParamsHandling: 'merge', // remove to replace all query params by provided
-                        });
-                    }
-                    else if (newpage === 0) {
-                        this.router.navigate([], {
-                            relativeTo: this.route,
-                            queryParams: { page: null },
-                            queryParamsHandling: 'merge', // remove to replace all query params by provided
-                        });
-                        this.changeDetectorRef.markForCheck();
-                    }
-                    if (this.data && this.data.paginator && this.data.paginator.pageIndex !== newpage) {
-                        this.data.paginator.pageIndex = newpage;
-                        this.changeDetectorRef.markForCheck();
-                    }
-                });
+                const page = this.route.snapshot.queryParams["page"] || "0";
+                const currentPage = Number(page) - 1;
+                this.data.startWith = currentPage;
+                this.data.fetch(currentPage);
+                this.data.number = currentPage;
+                setTimeout(() => this.onReady.emit(true), 200);
                 this.service.updateHeader.subscribe((status) => {
                     if (status === true) {
                         this.displayedColumns = null;
@@ -2985,23 +2991,8 @@ class TableComponent {
                         this.detector.detectChanges();
                     }
                 });
-                const page = this.route.snapshot.queryParams["page"];
-                if (page) {
-                    const currentPage = Number(page) - 1;
-                    this.data.startWith = currentPage;
-                    this.data.fetch(currentPage);
-                    this.data.number = currentPage;
-                }
-                else {
-                    const currentPage = 0;
-                    this.data.startWith = currentPage;
-                    this.data.fetch(currentPage);
-                    this.data.number = currentPage;
-                }
-                console.log('READYYYYYYYY', this.columnDefinitions, this.data);
-                setTimeout(() => this.onReady.emit(true), 200);
-            }).catch((err) => console.log('Error build table', err));
-        }
+            }
+        });
     }
     ngOnDestroy() {
     }
@@ -3031,14 +3022,12 @@ class TableComponent {
         return MyClass;
     }
     sort() {
-        return __awaiter(this, void 0, void 0, function* () {
-            const compare = (a, b) => {
-                return (a.order < b.order ? -1 : (a.order > b.order ? 1 : 0));
-            };
-            if (this.PrivateColumnDefinitions) {
-                return [...this.PrivateColumnDefinitions.sort(compare)];
-            }
-        });
+        const compare = (a, b) => {
+            return (a.order < b.order ? -1 : (a.order > b.order ? 1 : 0));
+        };
+        if (this.PrivateColumnDefinitions) {
+            return [...this.PrivateColumnDefinitions.sort(compare)];
+        }
     }
     buildLink(override, element) {
         if (override.length >= 2) {

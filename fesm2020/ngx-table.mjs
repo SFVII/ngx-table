@@ -2687,7 +2687,8 @@ class TableComponent {
         }
         console.log(this.expandedElement);
     }
-    ngOnInit() {
+    async ngOnInit() {
+        this.onReady.emit(false);
         this.open = this.translate.translate(this.lang, 'OPEN');
         this.search = this.translate.translate(this.lang, 'SEARCH');
         this.cancelSearch = this.translate.translate(this.lang, 'CANCEL_SEARCH');
@@ -2698,61 +2699,49 @@ class TableComponent {
                 borderSpacing: this.rowMargin
             };
         }
-        this.onReady.emit(false);
-        //this.service.emptyRow = this.EmptyRow;
+        this.data.pageNumber.subscribe((newpage) => {
+            if (newpage > 0) {
+                this.router.navigate([], {
+                    relativeTo: this.route,
+                    queryParams: { page: newpage + 1 },
+                    queryParamsHandling: 'merge', // remove to replace all query params by provided
+                });
+            }
+            else if (newpage === 0) {
+                this.router.navigate([], {
+                    relativeTo: this.route,
+                    queryParams: { page: null },
+                    queryParamsHandling: 'merge', // remove to replace all query params by provided
+                });
+                this.changeDetectorRef.markForCheck();
+            }
+            if (this.data && this.data.paginator && this.data.paginator.pageIndex !== newpage) {
+                this.data.paginator.pageIndex = newpage;
+                this.changeDetectorRef.markForCheck();
+            }
+        });
         if (this.data && this.columnDefinitions) {
             this.PrivateColumnDefinitions = this.columnDefinitions;
-            this.buildHeaders().then(() => {
-                console.log('My data TABLE', this.data, 'column definition', this.columnDefinitions);
-                this.expandedElement = false;
-                this.data.paginator = this.paginatorCurrent;
-                this.data.sort = this.sortCurrent;
-                this.data.pageNumber.subscribe((newpage) => {
-                    if (newpage > 0) {
-                        this.router.navigate([], {
-                            relativeTo: this.route,
-                            queryParams: { page: newpage + 1 },
-                            queryParamsHandling: 'merge', // remove to replace all query params by provided
-                        });
-                    }
-                    else if (newpage === 0) {
-                        this.router.navigate([], {
-                            relativeTo: this.route,
-                            queryParams: { page: null },
-                            queryParamsHandling: 'merge', // remove to replace all query params by provided
-                        });
-                        this.changeDetectorRef.markForCheck();
-                    }
-                    if (this.data && this.data.paginator && this.data.paginator.pageIndex !== newpage) {
-                        this.data.paginator.pageIndex = newpage;
-                        this.changeDetectorRef.markForCheck();
-                    }
-                });
-                this.service.updateHeader.subscribe((status) => {
-                    if (status === true) {
-                        this.displayedColumns = null;
-                        this.columnsToDisplay = null;
-                        this.PrivateColumnDefinitions = this.service.displayColumn;
-                        this.buildHeaders().catch((err) => console.log('Error build table', err));
-                        this.detector.detectChanges();
-                    }
-                });
-                const page = this.route.snapshot.queryParams["page"];
-                if (page) {
-                    const currentPage = Number(page) - 1;
-                    this.data.startWith = currentPage;
-                    this.data.fetch(currentPage);
-                    this.data.number = currentPage;
+            this.displayedColumns = this.sort();
+            console.log('My data TABLE', this.data, 'column definition', this.columnDefinitions);
+            this.expandedElement = false;
+            this.data.paginator = this.paginatorCurrent;
+            this.data.sort = this.sortCurrent;
+            const page = this.route.snapshot.queryParams["page"] || "0";
+            const currentPage = Number(page) - 1;
+            this.data.startWith = currentPage;
+            this.data.fetch(currentPage);
+            this.data.number = currentPage;
+            setTimeout(() => this.onReady.emit(true), 200);
+            this.service.updateHeader.subscribe((status) => {
+                if (status === true) {
+                    this.displayedColumns = null;
+                    this.columnsToDisplay = null;
+                    this.PrivateColumnDefinitions = this.service.displayColumn;
+                    this.buildHeaders().catch((err) => console.log('Error build table', err));
+                    this.detector.detectChanges();
                 }
-                else {
-                    const currentPage = 0;
-                    this.data.startWith = currentPage;
-                    this.data.fetch(currentPage);
-                    this.data.number = currentPage;
-                }
-                console.log('READYYYYYYYY', this.columnDefinitions, this.data);
-                setTimeout(() => this.onReady.emit(true), 200);
-            }).catch((err) => console.log('Error build table', err));
+            });
         }
     }
     ngOnDestroy() {
@@ -2780,7 +2769,7 @@ class TableComponent {
         }
         return MyClass;
     }
-    async sort() {
+    sort() {
         const compare = (a, b) => {
             return (a.order < b.order ? -1 : (a.order > b.order ? 1 : 0));
         };

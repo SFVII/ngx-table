@@ -72,12 +72,12 @@ declare class TableComponent implements OnInit, OnChanges, OnDestroy {
     private PrivateColumnDefinitions;
     constructor(router: Router, route: ActivatedRoute, service: TableService, detector: ChangeDetectorRef, translate: TranslateService, changeDetectorRef: ChangeDetectorRef);
     expand(element: any): void;
-    ngOnInit(): void;
+    ngOnInit(): Promise<void>;
     ngOnDestroy(): void;
     ngAfterViewChecked(): void;
     buildHeaders(): Promise<void>;
     generateClass(Class: string[]): string[];
-    sort(): Promise<displayedColumnsInterface[]>;
+    sort(): displayedColumnsInterface[];
     buildLink(override: string[], element: any): string;
     Join(elem: any, override: string[], joinKey?: string): string;
     reset(): boolean;
