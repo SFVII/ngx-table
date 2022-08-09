@@ -3008,7 +3008,7 @@ class TableComponent {
                 this.data.startWith = currentPage;
                 this.data.fetch(currentPage);
                 this.data.number = currentPage;
-                this.data.page$.pipe(debounceTime(200))
+                this.data.page$.pipe(debounceTime(500))
                     .subscribe((n) => {
                     this.onReady.emit(true);
                 });
