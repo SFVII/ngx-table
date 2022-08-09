@@ -3008,7 +3008,10 @@ class TableComponent {
                 this.data.startWith = currentPage;
                 this.data.fetch(currentPage);
                 this.data.number = currentPage;
-                setTimeout(() => this.onReady.emit(true), 200);
+                this.data.page$.pipe(debounceTime(200))
+                    .subscribe((n) => {
+                    this.onReady.emit(true);
+                });
                 this.service.updateHeader.subscribe((status) => {
                     if (status === true) {
                         this.displayedColumns = null;
