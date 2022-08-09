@@ -45,6 +45,7 @@ declare class TableComponent implements OnInit, OnChanges, OnDestroy {
     displayDetail: boolean;
     displayComponent: string;
     data: CoreMatTableInterface;
+    rowMargin: string;
     lang: string;
     btnOverride: boolean;
     callFunction: EventEmitter<any>;
@@ -67,6 +68,7 @@ declare class TableComponent implements OnInit, OnChanges, OnDestroy {
     noResult: string;
     details: string;
     showTable: boolean;
+    style: any;
     private PrivateColumnDefinitions;
     constructor(router: Router, route: ActivatedRoute, service: TableService, detector: ChangeDetectorRef, translate: TranslateService, changeDetectorRef: ChangeDetectorRef);
     expand(element: any): void;
@@ -82,7 +84,7 @@ declare class TableComponent implements OnInit, OnChanges, OnDestroy {
     expandShow(template: string): void;
     ngOnChanges(changes: SimpleChanges): void;
     static ɵfac: i0.ɵɵFactoryDeclaration<TableComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDeclaration<TableComponent, "ngx-design-table", never, { "columnDefinitions": "columnDefinitions"; "displayDetail": "displayDetail"; "displayComponent": "displayComponent"; "data": "data"; "lang": "lang"; "btnOverride": "btnOverride"; "inputSearch": "inputSearch"; "EmptyRow": "EmptyRow"; "blockDetails": "blockDetails"; }, { "callFunction": "callFunction"; "onReady": "onReady"; "clicked": "clicked"; }, never, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<TableComponent, "ngx-design-table", never, { "columnDefinitions": "columnDefinitions"; "displayDetail": "displayDetail"; "displayComponent": "displayComponent"; "data": "data"; "rowMargin": "rowMargin"; "lang": "lang"; "btnOverride": "btnOverride"; "inputSearch": "inputSearch"; "EmptyRow": "EmptyRow"; "blockDetails": "blockDetails"; }, { "callFunction": "callFunction"; "onReady": "onReady"; "clicked": "clicked"; }, never, never>;
 }
 export { CoreMatTable, FilterDateInterface, CoreMatTableInterface, Page, PageRequest, Sort, displayedColumnsInterface, CellsComponentList, TableComponent };
 //# sourceMappingURL=table.component.d.ts.map
