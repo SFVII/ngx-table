@@ -371,10 +371,7 @@ class GenderComponent {
     ngOnInit() {
         this.css.maxWidth = String((this.size || 40)) + 'px';
         this.css.maxHeight = String((this.size || 40)) + 'px';
-        const params = this.service.settingConfig.gender; /*{
-            "m": "/assets/icons/nowteam/salutations/man.png",
-            "mme": "/assets/icons/nowteam/salutations/woman.png",
-        }*/
+        const params = this.service.settingConfig.gender;
         const clean = (this.type || "").toLocaleLowerCase().replace(/[^A-Z0-9]+/ig, "");
         if (params[clean]) {
             this.icon = params[clean];
@@ -3084,7 +3081,7 @@ class TableComponent {
             }
         }
         //  this.ngOnDestroy();
-        this.ngOnInit();
+        //  this.ngOnInit();
     }
 }
 TableComponent.ɵfac = function TableComponent_Factory(t) { return new (t || TableComponent)(i0.ɵɵdirectiveInject(i1$2.Router), i0.ɵɵdirectiveInject(i1$2.ActivatedRoute), i0.ɵɵdirectiveInject(TableService), i0.ɵɵdirectiveInject(i0.ChangeDetectorRef), i0.ɵɵdirectiveInject(TranslateService), i0.ɵɵdirectiveInject(i0.ChangeDetectorRef)); };
