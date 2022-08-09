@@ -2705,6 +2705,7 @@ class TableComponent {
         this.noResult = this.translate.translate(this.lang, 'NO_RESULT');
         this.details = this.translate.translate(this.lang, 'DETAILS');
         if (this.data) {
+            console.log('My data TABLE', this.data);
             this.expandedElement = false;
             this.data.paginator = this.paginatorCurrent;
             this.data.sort = this.sortCurrent;
@@ -2751,8 +2752,10 @@ class TableComponent {
                 this.data.fetch(currentPage);
                 this.data.number = currentPage;
             }
+            console.log('My data TABLE', this.data);
             this.PrivateColumnDefinitions = this.columnDefinitions;
             this.buildHeaders().then(() => {
+                console.log('READYYYYYYYY', this.data);
                 setTimeout(() => this.onReady.emit(true), 200);
             }).catch((err) => console.log('Error build table', err));
         }
