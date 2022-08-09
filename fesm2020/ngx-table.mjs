@@ -2740,21 +2740,20 @@ class TableComponent {
                 }
             });
             const page = this.route.snapshot.queryParams["page"];
-            if (page) {
-                const currentPage = Number(page) - 1;
-                this.data.startWith = currentPage;
-                this.data.fetch(currentPage);
-                this.data.number = currentPage;
-            }
-            else {
-                const currentPage = 0;
-                this.data.startWith = currentPage;
-                this.data.fetch(currentPage);
-                this.data.number = currentPage;
-            }
-            console.log('My data TABLE', this.data);
             this.PrivateColumnDefinitions = this.columnDefinitions;
             this.buildHeaders().then(() => {
+                if (page) {
+                    const currentPage = Number(page) - 1;
+                    this.data.startWith = currentPage;
+                    this.data.fetch(currentPage);
+                    this.data.number = currentPage;
+                }
+                else {
+                    const currentPage = 0;
+                    this.data.startWith = currentPage;
+                    this.data.fetch(currentPage);
+                    this.data.number = currentPage;
+                }
                 console.log('READYYYYYYYY', this.data);
                 setTimeout(() => this.onReady.emit(true), 200);
             }).catch((err) => console.log('Error build table', err));
