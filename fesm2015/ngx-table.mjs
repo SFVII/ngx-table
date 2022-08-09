@@ -3091,7 +3091,7 @@ class TableComponent {
                 this.changeDetectorRef.markForCheck();
             }
         }
-        this.ngOnDestroy();
+        //  this.ngOnDestroy();
         this.ngOnInit();
     }
 }
