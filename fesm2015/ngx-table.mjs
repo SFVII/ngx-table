@@ -2949,7 +2949,7 @@ class TableComponent {
     }
     ngOnInit() {
         this.onReady.emit(false);
-        this.service.emptyRow = this.EmptyRow;
+        //this.service.emptyRow = this.EmptyRow;
         this.open = this.translate.translate(this.lang, 'OPEN');
         this.search = this.translate.translate(this.lang, 'SEARCH');
         this.cancelSearch = this.translate.translate(this.lang, 'CANCEL_SEARCH');
@@ -2992,6 +2992,12 @@ class TableComponent {
             const page = this.route.snapshot.queryParams["page"];
             if (page) {
                 const currentPage = Number(page) - 1;
+                this.data.startWith = currentPage;
+                this.data.fetch(currentPage);
+                this.data.number = currentPage;
+            }
+            else {
+                const currentPage = 0;
                 this.data.startWith = currentPage;
                 this.data.fetch(currentPage);
                 this.data.number = currentPage;
