@@ -2972,7 +2972,7 @@ class TableComponent {
             if (this.data && this.columnDefinitions) {
                 this.PrivateColumnDefinitions = this.columnDefinitions;
                 this.displayedColumns = this.sort();
-                console.log('My data TABLE', this.data, 'column definition', this.columnDefinitions);
+                console.log('My data TABLE', this.data, 'column definition', this.columnDefinitions, 'displayed column', this.displayedColumns);
                 this.expandedElement = false;
                 this.data.paginator = this.paginatorCurrent;
                 this.data.sort = this.sortCurrent;
