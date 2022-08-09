@@ -2956,7 +2956,7 @@ class TableComponent {
         this.noResult = this.translate.translate(this.lang, 'NO_RESULT');
         this.details = this.translate.translate(this.lang, 'DETAILS');
         if (this.data) {
-            console.log('My data TABLE', this.data, this.columnDefinitions);
+            console.log('My data TABLE', this.data, 'column definition', this.columnDefinitions);
             this.expandedElement = false;
             this.data.paginator = this.paginatorCurrent;
             this.data.sort = this.sortCurrent;
