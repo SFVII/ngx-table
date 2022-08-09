@@ -2123,38 +2123,38 @@ const _c0 = ["MatPaginatorCurrent"];
 const _c1 = ["table"];
 const _c2 = function (a0, a1) { return [a0, a1]; };
 function TableComponent_table_1_ng_container_2_ng_container_1_th_1_Template(rf, ctx) { if (rf & 1) {
-    i0.ɵɵelementStart(0, "th", 10);
-    i0.ɵɵelement(1, "app-is-mat-icon", 11);
+    i0.ɵɵelementStart(0, "th", 11);
+    i0.ɵɵelement(1, "app-is-mat-icon", 12);
     i0.ɵɵelementEnd();
 } if (rf & 2) {
     const column_r5 = i0.ɵɵnextContext(2).$implicit;
-    const ctx_r9 = i0.ɵɵnextContext(2);
-    i0.ɵɵclassMap(ctx_r9.generateClass(i0.ɵɵpureFunction2(3, _c2, column_r5.class, column_r5.align ? "text-align-" + column_r5.align : "text-align-left")));
+    const ctx_r10 = i0.ɵɵnextContext(2);
+    i0.ɵɵclassMap(ctx_r10.generateClass(i0.ɵɵpureFunction2(3, _c2, column_r5.class, column_r5.align ? "text-align-" + column_r5.align : "text-align-left")));
     i0.ɵɵadvance(1);
     i0.ɵɵproperty("input", column_r5.value);
 } }
 function TableComponent_table_1_ng_container_2_ng_container_1_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementContainerStart(0);
-    i0.ɵɵtemplate(1, TableComponent_table_1_ng_container_2_ng_container_1_th_1_Template, 2, 6, "th", 9);
+    i0.ɵɵtemplate(1, TableComponent_table_1_ng_container_2_ng_container_1_th_1_Template, 2, 6, "th", 10);
     i0.ɵɵelementContainerEnd();
 } }
 function TableComponent_table_1_ng_container_2_ng_container_2_ng_container_1_th_1_app_is_mat_icon_2_Template(rf, ctx) { if (rf & 1) {
-    i0.ɵɵelement(0, "app-is-mat-icon", 11);
+    i0.ɵɵelement(0, "app-is-mat-icon", 12);
 } if (rf & 2) {
     const column_r5 = i0.ɵɵnextContext(4).$implicit;
     i0.ɵɵproperty("input", column_r5.valueStatement[column_r5.statement ? 1 : 0]);
 } }
 function TableComponent_table_1_ng_container_2_ng_container_2_ng_container_1_th_1_Template(rf, ctx) { if (rf & 1) {
-    const _r19 = i0.ɵɵgetCurrentView();
-    i0.ɵɵelementStart(0, "th", 14);
-    i0.ɵɵlistener("click", function TableComponent_table_1_ng_container_2_ng_container_2_ng_container_1_th_1_Template_th_click_0_listener() { i0.ɵɵrestoreView(_r19); const column_r5 = i0.ɵɵnextContext(3).$implicit; const ctx_r17 = i0.ɵɵnextContext(2); return ctx_r17.clicked.emit({ key: column_r5.key, statement: column_r5.statement = !column_r5.statement }); });
-    i0.ɵɵelement(1, "app-is-mat-icon", 11);
-    i0.ɵɵtemplate(2, TableComponent_table_1_ng_container_2_ng_container_2_ng_container_1_th_1_app_is_mat_icon_2_Template, 1, 1, "app-is-mat-icon", 15);
+    const _r20 = i0.ɵɵgetCurrentView();
+    i0.ɵɵelementStart(0, "th", 15);
+    i0.ɵɵlistener("click", function TableComponent_table_1_ng_container_2_ng_container_2_ng_container_1_th_1_Template_th_click_0_listener() { i0.ɵɵrestoreView(_r20); const column_r5 = i0.ɵɵnextContext(3).$implicit; const ctx_r18 = i0.ɵɵnextContext(2); return ctx_r18.clicked.emit({ key: column_r5.key, statement: column_r5.statement = !column_r5.statement }); });
+    i0.ɵɵelement(1, "app-is-mat-icon", 12);
+    i0.ɵɵtemplate(2, TableComponent_table_1_ng_container_2_ng_container_2_ng_container_1_th_1_app_is_mat_icon_2_Template, 1, 1, "app-is-mat-icon", 16);
     i0.ɵɵelementEnd();
 } if (rf & 2) {
     const column_r5 = i0.ɵɵnextContext(3).$implicit;
-    const ctx_r14 = i0.ɵɵnextContext(2);
-    i0.ɵɵclassMap(ctx_r14.generateClass(i0.ɵɵpureFunction2(4, _c2, column_r5.class, column_r5.align ? "text-align-" + column_r5.align : "text-align-left")));
+    const ctx_r15 = i0.ɵɵnextContext(2);
+    i0.ɵɵclassMap(ctx_r15.generateClass(i0.ɵɵpureFunction2(4, _c2, column_r5.class, column_r5.align ? "text-align-" + column_r5.align : "text-align-left")));
     i0.ɵɵadvance(1);
     i0.ɵɵproperty("input", column_r5.value);
     i0.ɵɵadvance(1);
@@ -2162,33 +2162,33 @@ function TableComponent_table_1_ng_container_2_ng_container_2_ng_container_1_th_
 } }
 function TableComponent_table_1_ng_container_2_ng_container_2_ng_container_1_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementContainerStart(0);
-    i0.ɵɵtemplate(1, TableComponent_table_1_ng_container_2_ng_container_2_ng_container_1_th_1_Template, 3, 7, "th", 13);
+    i0.ɵɵtemplate(1, TableComponent_table_1_ng_container_2_ng_container_2_ng_container_1_th_1_Template, 3, 7, "th", 14);
     i0.ɵɵelementContainerEnd();
 } }
 function TableComponent_table_1_ng_container_2_ng_container_2_ng_container_2_th_1_Template(rf, ctx) { if (rf & 1) {
-    i0.ɵɵelementStart(0, "th", 16);
-    i0.ɵɵelement(1, "app-is-mat-icon", 11);
+    i0.ɵɵelementStart(0, "th", 17);
+    i0.ɵɵelement(1, "app-is-mat-icon", 12);
     i0.ɵɵelementEnd();
 } if (rf & 2) {
     const column_r5 = i0.ɵɵnextContext(3).$implicit;
-    const ctx_r21 = i0.ɵɵnextContext(2);
-    i0.ɵɵclassMap(ctx_r21.generateClass(i0.ɵɵpureFunction2(3, _c2, column_r5.class, column_r5.align ? "text-align-" + column_r5.align : "text-align-left")));
+    const ctx_r22 = i0.ɵɵnextContext(2);
+    i0.ɵɵclassMap(ctx_r22.generateClass(i0.ɵɵpureFunction2(3, _c2, column_r5.class, column_r5.align ? "text-align-" + column_r5.align : "text-align-left")));
     i0.ɵɵadvance(1);
     i0.ɵɵproperty("input", column_r5.value);
 } }
 function TableComponent_table_1_ng_container_2_ng_container_2_ng_container_2_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementContainerStart(0);
-    i0.ɵɵtemplate(1, TableComponent_table_1_ng_container_2_ng_container_2_ng_container_2_th_1_Template, 2, 6, "th", 12);
+    i0.ɵɵtemplate(1, TableComponent_table_1_ng_container_2_ng_container_2_ng_container_2_th_1_Template, 2, 6, "th", 13);
     i0.ɵɵelementContainerEnd();
 } }
 function TableComponent_table_1_ng_container_2_ng_container_2_th_3_Template(rf, ctx) { if (rf & 1) {
-    i0.ɵɵelementStart(0, "th", 16);
-    i0.ɵɵelement(1, "app-is-mat-icon", 11);
+    i0.ɵɵelementStart(0, "th", 17);
+    i0.ɵɵelement(1, "app-is-mat-icon", 12);
     i0.ɵɵelementEnd();
 } if (rf & 2) {
     const column_r5 = i0.ɵɵnextContext(2).$implicit;
-    const ctx_r13 = i0.ɵɵnextContext(2);
-    i0.ɵɵclassMap(ctx_r13.generateClass(i0.ɵɵpureFunction2(3, _c2, column_r5.class, column_r5.align ? "text-align-" + column_r5.align : "text-align-left")));
+    const ctx_r14 = i0.ɵɵnextContext(2);
+    i0.ɵɵclassMap(ctx_r14.generateClass(i0.ɵɵpureFunction2(3, _c2, column_r5.class, column_r5.align ? "text-align-" + column_r5.align : "text-align-left")));
     i0.ɵɵadvance(1);
     i0.ɵɵproperty("input", column_r5.value);
 } }
@@ -2196,7 +2196,7 @@ function TableComponent_table_1_ng_container_2_ng_container_2_Template(rf, ctx) 
     i0.ɵɵelementContainerStart(0);
     i0.ɵɵtemplate(1, TableComponent_table_1_ng_container_2_ng_container_2_ng_container_1_Template, 2, 0, "ng-container", 2);
     i0.ɵɵtemplate(2, TableComponent_table_1_ng_container_2_ng_container_2_ng_container_2_Template, 2, 0, "ng-container", 2);
-    i0.ɵɵtemplate(3, TableComponent_table_1_ng_container_2_ng_container_2_th_3_Template, 2, 6, "th", 12);
+    i0.ɵɵtemplate(3, TableComponent_table_1_ng_container_2_ng_container_2_th_3_Template, 2, 6, "th", 13);
     i0.ɵɵelementContainerEnd();
 } if (rf & 2) {
     const column_r5 = i0.ɵɵnextContext().$implicit;
@@ -2206,20 +2206,20 @@ function TableComponent_table_1_ng_container_2_ng_container_2_Template(rf, ctx) 
     i0.ɵɵproperty("ngIf", !column_r5.clickable);
 } }
 function TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-    const _r50 = i0.ɵɵgetCurrentView();
+    const _r51 = i0.ɵɵgetCurrentView();
     i0.ɵɵelementContainerStart(0);
-    i0.ɵɵelementStart(1, "a", 22);
-    i0.ɵɵlistener("click", function TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_1_Template_a_click_1_listener() { i0.ɵɵrestoreView(_r50); const element_r25 = i0.ɵɵnextContext(2).$implicit; const column_r5 = i0.ɵɵnextContext().$implicit; const ctx_r48 = i0.ɵɵnextContext(2); return ctx_r48.callFunction.emit(element_r25[column_r5.key]); });
+    i0.ɵɵelementStart(1, "a", 23);
+    i0.ɵɵlistener("click", function TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_1_Template_a_click_1_listener() { i0.ɵɵrestoreView(_r51); const element_r26 = i0.ɵɵnextContext(2).$implicit; const column_r5 = i0.ɵɵnextContext().$implicit; const ctx_r49 = i0.ɵɵnextContext(2); return ctx_r49.callFunction.emit(element_r26[column_r5.key]); });
     i0.ɵɵelementEnd();
     i0.ɵɵelementContainerEnd();
 } if (rf & 2) {
-    const ctx_r27 = i0.ɵɵnextContext(5);
+    const ctx_r28 = i0.ɵɵnextContext(5);
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("matTooltip", ctx_r27.open)("innerHTML", ctx_r27.details, i0.ɵɵsanitizeHtml);
+    i0.ɵɵproperty("matTooltip", ctx_r28.open)("innerHTML", ctx_r28.details, i0.ɵɵsanitizeHtml);
 } }
 function TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_2_a_1_ng_container_1_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementContainerStart(0);
-    i0.ɵɵelement(1, "app-is-mat-icon", 11);
+    i0.ɵɵelement(1, "app-is-mat-icon", 12);
     i0.ɵɵelementContainerEnd();
 } if (rf & 2) {
     const column_r5 = i0.ɵɵnextContext(5).$implicit;
@@ -2228,27 +2228,27 @@ function TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_
 } }
 function TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_2_a_1_ng_container_2_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementContainerStart(0);
-    i0.ɵɵelement(1, "span", 26);
+    i0.ɵɵelement(1, "span", 27);
     i0.ɵɵelementContainerEnd();
 } if (rf & 2) {
-    const element_r25 = i0.ɵɵnextContext(4).$implicit;
+    const element_r26 = i0.ɵɵnextContext(4).$implicit;
     const column_r5 = i0.ɵɵnextContext().$implicit;
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("innerHTML", element_r25[column_r5.key], i0.ɵɵsanitizeHtml);
+    i0.ɵɵproperty("innerHTML", element_r26[column_r5.key], i0.ɵɵsanitizeHtml);
 } }
 function TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_2_a_1_Template(rf, ctx) { if (rf & 1) {
-    const _r61 = i0.ɵɵgetCurrentView();
-    i0.ɵɵelementStart(0, "a", 25);
-    i0.ɵɵlistener("click", function TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_2_a_1_Template_a_click_0_listener() { i0.ɵɵrestoreView(_r61); const element_r25 = i0.ɵɵnextContext(3).$implicit; return element_r25.new = false; });
+    const _r62 = i0.ɵɵgetCurrentView();
+    i0.ɵɵelementStart(0, "a", 26);
+    i0.ɵɵlistener("click", function TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_2_a_1_Template_a_click_0_listener() { i0.ɵɵrestoreView(_r62); const element_r26 = i0.ɵɵnextContext(3).$implicit; return element_r26.new = false; });
     i0.ɵɵtemplate(1, TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_2_a_1_ng_container_1_Template, 2, 1, "ng-container", 2);
     i0.ɵɵtemplate(2, TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_2_a_1_ng_container_2_Template, 2, 1, "ng-container", 2);
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    const element_r25 = i0.ɵɵnextContext(3).$implicit;
+    const element_r26 = i0.ɵɵnextContext(3).$implicit;
     const column_r5 = i0.ɵɵnextContext().$implicit;
-    const ctx_r52 = i0.ɵɵnextContext(2);
-    i0.ɵɵpropertyInterpolate("routerLink", column_r5.override ? ctx_r52.buildLink(column_r5.override, element_r25) : element_r25[column_r5.key]);
-    i0.ɵɵproperty("matTooltip", ctx_r52.open)("ngClass", ctx_r52.btnOverride == true ? "link-btn" : "nowboard-btn");
+    const ctx_r53 = i0.ɵɵnextContext(2);
+    i0.ɵɵpropertyInterpolate("routerLink", column_r5.override ? ctx_r53.buildLink(column_r5.override, element_r26) : element_r26[column_r5.key]);
+    i0.ɵɵproperty("matTooltip", ctx_r53.open)("ngClass", ctx_r53.btnOverride == true ? "link-btn" : "nowboard-btn");
     i0.ɵɵadvance(1);
     i0.ɵɵproperty("ngIf", column_r5.display);
     i0.ɵɵadvance(1);
@@ -2256,7 +2256,7 @@ function TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_
 } }
 function TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_2_a_2_ng_container_1_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementContainerStart(0);
-    i0.ɵɵelement(1, "app-is-mat-icon", 28);
+    i0.ɵɵelement(1, "app-is-mat-icon", 29);
     i0.ɵɵelementContainerEnd();
 } if (rf & 2) {
     const column_r5 = i0.ɵɵnextContext(5).$implicit;
@@ -2265,25 +2265,25 @@ function TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_
 } }
 function TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_2_a_2_ng_container_2_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementContainerStart(0);
-    i0.ɵɵelement(1, "span", 26);
+    i0.ɵɵelement(1, "span", 27);
     i0.ɵɵelementContainerEnd();
 } if (rf & 2) {
-    const element_r25 = i0.ɵɵnextContext(4).$implicit;
+    const element_r26 = i0.ɵɵnextContext(4).$implicit;
     const column_r5 = i0.ɵɵnextContext().$implicit;
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("innerHTML", element_r25[column_r5.key], i0.ɵɵsanitizeHtml);
+    i0.ɵɵproperty("innerHTML", element_r26[column_r5.key], i0.ɵɵsanitizeHtml);
 } }
 function TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_2_a_2_Template(rf, ctx) { if (rf & 1) {
-    i0.ɵɵelementStart(0, "a", 27);
+    i0.ɵɵelementStart(0, "a", 28);
     i0.ɵɵtemplate(1, TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_2_a_2_ng_container_1_Template, 2, 1, "ng-container", 2);
     i0.ɵɵtemplate(2, TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_2_a_2_ng_container_2_Template, 2, 1, "ng-container", 2);
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    const element_r25 = i0.ɵɵnextContext(3).$implicit;
+    const element_r26 = i0.ɵɵnextContext(3).$implicit;
     const column_r5 = i0.ɵɵnextContext().$implicit;
-    const ctx_r53 = i0.ɵɵnextContext(2);
-    i0.ɵɵpropertyInterpolate("routerLink", column_r5.override ? ctx_r53.buildLink(column_r5.override, element_r25) : element_r25[column_r5.key]);
-    i0.ɵɵproperty("matTooltip", ctx_r53.open)("ngClass", ctx_r53.btnOverride == true ? "link-btn" : "nowboard-btn");
+    const ctx_r54 = i0.ɵɵnextContext(2);
+    i0.ɵɵpropertyInterpolate("routerLink", column_r5.override ? ctx_r54.buildLink(column_r5.override, element_r26) : element_r26[column_r5.key]);
+    i0.ɵɵproperty("matTooltip", ctx_r54.open)("ngClass", ctx_r54.btnOverride == true ? "link-btn" : "nowboard-btn");
     i0.ɵɵadvance(1);
     i0.ɵɵproperty("ngIf", column_r5.display);
     i0.ɵɵadvance(1);
@@ -2291,176 +2291,176 @@ function TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_
 } }
 function TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_2_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementContainerStart(0);
-    i0.ɵɵtemplate(1, TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_2_a_1_Template, 3, 5, "a", 23);
-    i0.ɵɵtemplate(2, TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_2_a_2_Template, 3, 5, "a", 24);
+    i0.ɵɵtemplate(1, TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_2_a_1_Template, 3, 5, "a", 24);
+    i0.ɵɵtemplate(2, TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_2_a_2_Template, 3, 5, "a", 25);
     i0.ɵɵelementContainerEnd();
 } if (rf & 2) {
-    const element_r25 = i0.ɵɵnextContext(2).$implicit;
+    const element_r26 = i0.ɵɵnextContext(2).$implicit;
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("ngIf", element_r25.new);
+    i0.ɵɵproperty("ngIf", element_r26.new);
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("ngIf", !element_r25.new);
+    i0.ɵɵproperty("ngIf", !element_r26.new);
 } }
 function TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_3_Template(rf, ctx) { if (rf & 1) {
-    const _r74 = i0.ɵɵgetCurrentView();
+    const _r75 = i0.ɵɵgetCurrentView();
     i0.ɵɵelementContainerStart(0);
-    i0.ɵɵelementStart(1, "a", 29);
-    i0.ɵɵlistener("click", function TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_3_Template_a_click_1_listener() { i0.ɵɵrestoreView(_r74); const element_r25 = i0.ɵɵnextContext(2).$implicit; return element_r25.new = false; });
+    i0.ɵɵelementStart(1, "a", 30);
+    i0.ɵɵlistener("click", function TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_3_Template_a_click_1_listener() { i0.ɵɵrestoreView(_r75); const element_r26 = i0.ɵɵnextContext(2).$implicit; return element_r26.new = false; });
     i0.ɵɵtext(2);
     i0.ɵɵelementEnd();
     i0.ɵɵelementContainerEnd();
 } if (rf & 2) {
-    const element_r25 = i0.ɵɵnextContext(2).$implicit;
+    const element_r26 = i0.ɵɵnextContext(2).$implicit;
     const column_r5 = i0.ɵɵnextContext().$implicit;
-    const ctx_r29 = i0.ɵɵnextContext(2);
+    const ctx_r30 = i0.ɵɵnextContext(2);
     i0.ɵɵadvance(1);
-    i0.ɵɵpropertyInterpolate("routerLink", column_r5.override ? ctx_r29.buildLink(column_r5.override, element_r25) : element_r25[column_r5.key]);
-    i0.ɵɵproperty("matTooltip", ctx_r29.open);
+    i0.ɵɵpropertyInterpolate("routerLink", column_r5.override ? ctx_r30.buildLink(column_r5.override, element_r26) : element_r26[column_r5.key]);
+    i0.ɵɵproperty("matTooltip", ctx_r30.open);
     i0.ɵɵadvance(1);
-    i0.ɵɵtextInterpolate1(" ", column_r5.value == "Actions" ? ctx_r29.details : column_r5.key, " ");
+    i0.ɵɵtextInterpolate1(" ", column_r5.value == "Actions" ? ctx_r30.details : column_r5.key, " ");
 } }
 function TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_4_img_2_Template(rf, ctx) { if (rf & 1) {
-    i0.ɵɵelement(0, "img", 32);
+    i0.ɵɵelement(0, "img", 33);
 } if (rf & 2) {
-    const element_r25 = i0.ɵɵnextContext(3).$implicit;
+    const element_r26 = i0.ɵɵnextContext(3).$implicit;
     const column_r5 = i0.ɵɵnextContext().$implicit;
-    i0.ɵɵproperty("src", column_r5.valueOverride[element_r25[column_r5.key]], i0.ɵɵsanitizeUrl);
+    i0.ɵɵproperty("src", column_r5.valueOverride[element_r26[column_r5.key]], i0.ɵɵsanitizeUrl);
 } }
 function TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_4_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementContainerStart(0);
-    i0.ɵɵelement(1, "input", 30);
-    i0.ɵɵtemplate(2, TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_4_img_2_Template, 1, 1, "img", 31);
+    i0.ɵɵelement(1, "input", 31);
+    i0.ɵɵtemplate(2, TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_4_img_2_Template, 1, 1, "img", 32);
     i0.ɵɵelementContainerEnd();
 } if (rf & 2) {
-    const element_r25 = i0.ɵɵnextContext(2).$implicit;
+    const element_r26 = i0.ɵɵnextContext(2).$implicit;
     const column_r5 = i0.ɵɵnextContext().$implicit;
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("value", element_r25[column_r5.key]);
+    i0.ɵɵproperty("value", element_r26[column_r5.key]);
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("ngIf", element_r25[column_r5.key] && column_r5.valueOverride);
+    i0.ɵɵproperty("ngIf", element_r26[column_r5.key] && column_r5.valueOverride);
 } }
 function TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_5_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementContainerStart(0);
-    i0.ɵɵelement(1, "app-equipement-type", 33);
+    i0.ɵɵelement(1, "app-equipement-type", 34);
     i0.ɵɵelementContainerEnd();
 } if (rf & 2) {
-    const element_r25 = i0.ɵɵnextContext(2).$implicit;
+    const element_r26 = i0.ɵɵnextContext(2).$implicit;
     const column_r5 = i0.ɵɵnextContext().$implicit;
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("name", element_r25[column_r5.key])("type", element_r25[column_r5.override]);
+    i0.ɵɵproperty("name", element_r26[column_r5.key])("type", element_r26[column_r5.override]);
 } }
 function TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_6_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementContainerStart(0);
-    i0.ɵɵelement(1, "app-equipement-status", 34);
+    i0.ɵɵelement(1, "app-equipement-status", 35);
     i0.ɵɵelementContainerEnd();
 } if (rf & 2) {
-    const element_r25 = i0.ɵɵnextContext(2).$implicit;
+    const element_r26 = i0.ɵɵnextContext(2).$implicit;
     const column_r5 = i0.ɵɵnextContext().$implicit;
-    const ctx_r32 = i0.ɵɵnextContext(2);
+    const ctx_r33 = i0.ɵɵnextContext(2);
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("lang", ctx_r32.lang)("type", element_r25[column_r5.key]);
+    i0.ɵɵproperty("lang", ctx_r33.lang)("type", element_r26[column_r5.key]);
 } }
 function TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_7_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementContainerStart(0);
-    i0.ɵɵelement(1, "app-customer-rank", 35);
+    i0.ɵɵelement(1, "app-customer-rank", 36);
     i0.ɵɵelementContainerEnd();
 } if (rf & 2) {
-    const element_r25 = i0.ɵɵnextContext(2).$implicit;
+    const element_r26 = i0.ɵɵnextContext(2).$implicit;
     const column_r5 = i0.ɵɵnextContext().$implicit;
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("type", element_r25[column_r5.key]);
+    i0.ɵɵproperty("type", element_r26[column_r5.key]);
 } }
 function TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_8_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementContainerStart(0);
-    i0.ɵɵelement(1, "icon-priority", 36);
+    i0.ɵɵelement(1, "icon-priority", 37);
     i0.ɵɵelementContainerEnd();
 } if (rf & 2) {
-    const element_r25 = i0.ɵɵnextContext(2).$implicit;
+    const element_r26 = i0.ɵɵnextContext(2).$implicit;
     const column_r5 = i0.ɵɵnextContext().$implicit;
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("icon", element_r25["Icon"])("iconLabel", element_r25[column_r5.key] || null);
+    i0.ɵɵproperty("icon", element_r26["Icon"])("iconLabel", element_r26[column_r5.key] || null);
 } }
 function TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_9_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementContainerStart(0);
-    i0.ɵɵelement(1, "status", 37);
+    i0.ɵɵelement(1, "status", 38);
     i0.ɵɵelementContainerEnd();
 } if (rf & 2) {
-    const element_r25 = i0.ɵɵnextContext(2).$implicit;
+    const element_r26 = i0.ɵɵnextContext(2).$implicit;
     const column_r5 = i0.ɵɵnextContext().$implicit;
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("label", element_r25[column_r5.key]);
+    i0.ɵɵproperty("label", element_r26[column_r5.key]);
 } }
 function TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_10_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementContainerStart(0);
-    i0.ɵɵelement(1, "status-icon", 37);
+    i0.ɵɵelement(1, "status-icon", 38);
     i0.ɵɵelementContainerEnd();
 } if (rf & 2) {
-    const element_r25 = i0.ɵɵnextContext(2).$implicit;
+    const element_r26 = i0.ɵɵnextContext(2).$implicit;
     const column_r5 = i0.ɵɵnextContext().$implicit;
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("label", element_r25[column_r5.key]);
+    i0.ɵɵproperty("label", element_r26[column_r5.key]);
 } }
 function TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_11_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementContainerStart(0);
-    i0.ɵɵelement(1, "app-gender", 35);
+    i0.ɵɵelement(1, "app-gender", 36);
     i0.ɵɵelementContainerEnd();
 } if (rf & 2) {
-    const element_r25 = i0.ɵɵnextContext(2).$implicit;
+    const element_r26 = i0.ɵɵnextContext(2).$implicit;
     const column_r5 = i0.ɵɵnextContext().$implicit;
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("type", element_r25[column_r5.key]);
+    i0.ɵɵproperty("type", element_r26[column_r5.key]);
 } }
 function TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_12_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementContainerStart(0);
-    i0.ɵɵelement(1, "png-icon", 38);
+    i0.ɵɵelement(1, "png-icon", 39);
     i0.ɵɵelementContainerEnd();
 } if (rf & 2) {
-    const element_r25 = i0.ɵɵnextContext(2).$implicit;
+    const element_r26 = i0.ɵɵnextContext(2).$implicit;
     const column_r5 = i0.ɵɵnextContext().$implicit;
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("src", element_r25[column_r5.key])("fontSize", column_r5.fontSize)("color", column_r5.color);
+    i0.ɵɵproperty("src", element_r26[column_r5.key])("fontSize", column_r5.fontSize)("color", column_r5.color);
 } }
 function TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_13_Template(rf, ctx) { if (rf & 1) {
-    const _r99 = i0.ɵɵgetCurrentView();
+    const _r100 = i0.ɵɵgetCurrentView();
     i0.ɵɵelementContainerStart(0);
-    i0.ɵɵelementStart(1, "menu", 39);
-    i0.ɵɵlistener("callHandler", function TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_13_Template_menu_callHandler_1_listener($event) { i0.ɵɵrestoreView(_r99); const ctx_r98 = i0.ɵɵnextContext(5); return ctx_r98.callFunction.emit($event); });
+    i0.ɵɵelementStart(1, "menu", 40);
+    i0.ɵɵlistener("callHandler", function TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_13_Template_menu_callHandler_1_listener($event) { i0.ɵɵrestoreView(_r100); const ctx_r99 = i0.ɵɵnextContext(5); return ctx_r99.callFunction.emit($event); });
     i0.ɵɵelementEnd();
     i0.ɵɵelementContainerEnd();
 } if (rf & 2) {
-    const element_r25 = i0.ɵɵnextContext(2).$implicit;
+    const element_r26 = i0.ɵɵnextContext(2).$implicit;
     const column_r5 = i0.ɵɵnextContext().$implicit;
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("element", element_r25)("menuSettings", column_r5.config);
+    i0.ɵɵproperty("element", element_r26)("menuSettings", column_r5.config);
 } }
 function TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_14_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementContainerStart(0);
-    i0.ɵɵelement(1, "app-phone-display", 40);
+    i0.ɵɵelement(1, "app-phone-display", 41);
     i0.ɵɵelementContainerEnd();
 } if (rf & 2) {
-    const element_r25 = i0.ɵɵnextContext(2).$implicit;
+    const element_r26 = i0.ɵɵnextContext(2).$implicit;
     const column_r5 = i0.ɵɵnextContext().$implicit;
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("number", element_r25[column_r5.key]);
+    i0.ɵɵproperty("number", element_r26[column_r5.key]);
 } }
 function TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_15_app_yes_nox_1_Template(rf, ctx) { if (rf & 1) {
-    i0.ɵɵelement(0, "app-yes-nox", 43);
-} if (rf & 2) {
-    const element_r25 = i0.ɵɵnextContext(3).$implicit;
-    const column_r5 = i0.ɵɵnextContext().$implicit;
-    i0.ɵɵproperty("valid", element_r25[column_r5.key])("size", column_r5.config == null ? null : column_r5.config.sizeIcon)("displayNo", column_r5.config.displayYes)("displayYes", column_r5.config.displayNo);
-} }
-function TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_15_app_yes_nox_2_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelement(0, "app-yes-nox", 44);
 } if (rf & 2) {
-    const element_r25 = i0.ɵɵnextContext(3).$implicit;
+    const element_r26 = i0.ɵɵnextContext(3).$implicit;
     const column_r5 = i0.ɵɵnextContext().$implicit;
-    i0.ɵɵproperty("valid", element_r25[column_r5.key])("size", column_r5.config == null ? null : column_r5.config.sizeIcon);
+    i0.ɵɵproperty("valid", element_r26[column_r5.key])("size", column_r5.config == null ? null : column_r5.config.sizeIcon)("displayNo", column_r5.config.displayYes)("displayYes", column_r5.config.displayNo);
+} }
+function TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_15_app_yes_nox_2_Template(rf, ctx) { if (rf & 1) {
+    i0.ɵɵelement(0, "app-yes-nox", 45);
+} if (rf & 2) {
+    const element_r26 = i0.ɵɵnextContext(3).$implicit;
+    const column_r5 = i0.ɵɵnextContext().$implicit;
+    i0.ɵɵproperty("valid", element_r26[column_r5.key])("size", column_r5.config == null ? null : column_r5.config.sizeIcon);
 } }
 function TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_15_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementContainerStart(0);
-    i0.ɵɵtemplate(1, TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_15_app_yes_nox_1_Template, 1, 4, "app-yes-nox", 41);
-    i0.ɵɵtemplate(2, TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_15_app_yes_nox_2_Template, 1, 2, "app-yes-nox", 42);
+    i0.ɵɵtemplate(1, TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_15_app_yes_nox_1_Template, 1, 4, "app-yes-nox", 42);
+    i0.ɵɵtemplate(2, TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_15_app_yes_nox_2_Template, 1, 2, "app-yes-nox", 43);
     i0.ɵɵelementContainerEnd();
 } if (rf & 2) {
     const column_r5 = i0.ɵɵnextContext(3).$implicit;
@@ -2471,91 +2471,91 @@ function TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_
 } }
 function TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_16_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementContainerStart(0);
-    i0.ɵɵelement(1, "icon-origin", 45);
+    i0.ɵɵelement(1, "icon-origin", 46);
     i0.ɵɵelementContainerEnd();
 } if (rf & 2) {
-    const element_r25 = i0.ɵɵnextContext(2).$implicit;
+    const element_r26 = i0.ɵɵnextContext(2).$implicit;
     const column_r5 = i0.ɵɵnextContext().$implicit;
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("icon", element_r25[column_r5.key]);
+    i0.ɵɵproperty("icon", element_r26[column_r5.key]);
 } }
 function TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_17_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementContainerStart(0);
-    i0.ɵɵelement(1, "name-avatar", 46);
+    i0.ɵɵelement(1, "name-avatar", 47);
     i0.ɵɵelementContainerEnd();
 } if (rf & 2) {
-    const element_r25 = i0.ɵɵnextContext(2).$implicit;
+    const element_r26 = i0.ɵɵnextContext(2).$implicit;
     const column_r5 = i0.ɵɵnextContext().$implicit;
-    const ctx_r43 = i0.ɵɵnextContext(2);
+    const ctx_r44 = i0.ɵɵnextContext(2);
     i0.ɵɵadvance(1);
-    i0.ɵɵpropertyInterpolate("matTooltip", ctx_r43.Join(element_r25, column_r5.override));
-    i0.ɵɵproperty("src", element_r25[column_r5.key])("fontSize", column_r5.fontSize)("matTooltipClass", "my-tooltip");
+    i0.ɵɵpropertyInterpolate("matTooltip", ctx_r44.Join(element_r26, column_r5.override));
+    i0.ɵɵproperty("src", element_r26[column_r5.key])("fontSize", column_r5.fontSize)("matTooltipClass", "my-tooltip");
 } }
 function TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_18_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementContainerStart(0);
-    i0.ɵɵelement(1, "date-format", 47);
+    i0.ɵɵelement(1, "date-format", 48);
     i0.ɵɵelementContainerEnd();
 } if (rf & 2) {
-    const element_r25 = i0.ɵɵnextContext(2).$implicit;
+    const element_r26 = i0.ɵɵnextContext(2).$implicit;
     const column_r5 = i0.ɵɵnextContext().$implicit;
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("date", element_r25[column_r5.key]);
+    i0.ɵɵproperty("date", element_r26[column_r5.key]);
 } }
 function TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_19_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementContainerStart(0);
-    i0.ɵɵelementStart(1, "span", 48);
+    i0.ɵɵelementStart(1, "span", 49);
     i0.ɵɵtext(2);
     i0.ɵɵelementEnd();
     i0.ɵɵelementContainerEnd();
 } if (rf & 2) {
-    const element_r25 = i0.ɵɵnextContext(2).$implicit;
+    const element_r26 = i0.ɵɵnextContext(2).$implicit;
     const column_r5 = i0.ɵɵnextContext().$implicit;
     i0.ɵɵadvance(2);
-    i0.ɵɵtextInterpolate1(" ", element_r25[column_r5.key] && element_r25[column_r5.key].length ? element_r25[column_r5.key].length : "-", " ");
+    i0.ɵɵtextInterpolate1(" ", element_r26[column_r5.key] && element_r26[column_r5.key].length ? element_r26[column_r5.key].length : "-", " ");
 } }
 function TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_20_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementContainerStart(0);
-    i0.ɵɵelement(1, "double-line", 49);
+    i0.ɵɵelement(1, "double-line", 50);
     i0.ɵɵelementContainerEnd();
 } if (rf & 2) {
-    const element_r25 = i0.ɵɵnextContext(2).$implicit;
+    const element_r26 = i0.ɵɵnextContext(2).$implicit;
     const column_r5 = i0.ɵɵnextContext().$implicit;
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("line1", element_r25[column_r5.key])("line2", element_r25[column_r5.override]);
+    i0.ɵɵproperty("line1", element_r26[column_r5.key])("line2", element_r26[column_r5.override]);
 } }
 function TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_21_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementContainerStart(0);
-    i0.ɵɵelement(1, "span", 26);
+    i0.ɵɵelement(1, "span", 27);
     i0.ɵɵelementContainerEnd();
 } if (rf & 2) {
-    const element_r25 = i0.ɵɵnextContext(2).$implicit;
+    const element_r26 = i0.ɵɵnextContext(2).$implicit;
     const column_r5 = i0.ɵɵnextContext().$implicit;
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("innerHTML", element_r25[column_r5.key], i0.ɵɵsanitizeHtml);
+    i0.ɵɵproperty("innerHTML", element_r26[column_r5.key], i0.ɵɵsanitizeHtml);
 } }
 function TableComponent_table_1_ng_container_2_td_3_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-    i0.ɵɵelementContainerStart(0, 19);
-    i0.ɵɵtemplate(1, TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_1_Template, 2, 2, "ng-container", 20);
-    i0.ɵɵtemplate(2, TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_2_Template, 3, 2, "ng-container", 20);
-    i0.ɵɵtemplate(3, TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_3_Template, 3, 3, "ng-container", 20);
-    i0.ɵɵtemplate(4, TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_4_Template, 3, 2, "ng-container", 20);
-    i0.ɵɵtemplate(5, TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_5_Template, 2, 2, "ng-container", 20);
-    i0.ɵɵtemplate(6, TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_6_Template, 2, 2, "ng-container", 20);
-    i0.ɵɵtemplate(7, TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_7_Template, 2, 1, "ng-container", 20);
-    i0.ɵɵtemplate(8, TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_8_Template, 2, 2, "ng-container", 20);
-    i0.ɵɵtemplate(9, TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_9_Template, 2, 1, "ng-container", 20);
-    i0.ɵɵtemplate(10, TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_10_Template, 2, 1, "ng-container", 20);
-    i0.ɵɵtemplate(11, TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_11_Template, 2, 1, "ng-container", 20);
-    i0.ɵɵtemplate(12, TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_12_Template, 2, 3, "ng-container", 20);
-    i0.ɵɵtemplate(13, TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_13_Template, 2, 2, "ng-container", 20);
-    i0.ɵɵtemplate(14, TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_14_Template, 2, 1, "ng-container", 20);
-    i0.ɵɵtemplate(15, TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_15_Template, 3, 2, "ng-container", 20);
-    i0.ɵɵtemplate(16, TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_16_Template, 2, 1, "ng-container", 20);
-    i0.ɵɵtemplate(17, TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_17_Template, 2, 4, "ng-container", 20);
-    i0.ɵɵtemplate(18, TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_18_Template, 2, 1, "ng-container", 20);
-    i0.ɵɵtemplate(19, TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_19_Template, 3, 1, "ng-container", 20);
-    i0.ɵɵtemplate(20, TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_20_Template, 2, 2, "ng-container", 20);
-    i0.ɵɵtemplate(21, TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_21_Template, 2, 1, "ng-container", 21);
+    i0.ɵɵelementContainerStart(0, 20);
+    i0.ɵɵtemplate(1, TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_1_Template, 2, 2, "ng-container", 21);
+    i0.ɵɵtemplate(2, TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_2_Template, 3, 2, "ng-container", 21);
+    i0.ɵɵtemplate(3, TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_3_Template, 3, 3, "ng-container", 21);
+    i0.ɵɵtemplate(4, TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_4_Template, 3, 2, "ng-container", 21);
+    i0.ɵɵtemplate(5, TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_5_Template, 2, 2, "ng-container", 21);
+    i0.ɵɵtemplate(6, TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_6_Template, 2, 2, "ng-container", 21);
+    i0.ɵɵtemplate(7, TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_7_Template, 2, 1, "ng-container", 21);
+    i0.ɵɵtemplate(8, TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_8_Template, 2, 2, "ng-container", 21);
+    i0.ɵɵtemplate(9, TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_9_Template, 2, 1, "ng-container", 21);
+    i0.ɵɵtemplate(10, TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_10_Template, 2, 1, "ng-container", 21);
+    i0.ɵɵtemplate(11, TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_11_Template, 2, 1, "ng-container", 21);
+    i0.ɵɵtemplate(12, TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_12_Template, 2, 3, "ng-container", 21);
+    i0.ɵɵtemplate(13, TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_13_Template, 2, 2, "ng-container", 21);
+    i0.ɵɵtemplate(14, TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_14_Template, 2, 1, "ng-container", 21);
+    i0.ɵɵtemplate(15, TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_15_Template, 3, 2, "ng-container", 21);
+    i0.ɵɵtemplate(16, TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_16_Template, 2, 1, "ng-container", 21);
+    i0.ɵɵtemplate(17, TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_17_Template, 2, 4, "ng-container", 21);
+    i0.ɵɵtemplate(18, TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_18_Template, 2, 1, "ng-container", 21);
+    i0.ɵɵtemplate(19, TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_19_Template, 3, 1, "ng-container", 21);
+    i0.ɵɵtemplate(20, TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_20_Template, 2, 2, "ng-container", 21);
+    i0.ɵɵtemplate(21, TableComponent_table_1_ng_container_2_td_3_ng_container_1_ng_container_21_Template, 2, 1, "ng-container", 22);
     i0.ɵɵelementContainerEnd();
 } if (rf & 2) {
     const column_r5 = i0.ɵɵnextContext(2).$implicit;
@@ -2602,36 +2602,43 @@ function TableComponent_table_1_ng_container_2_td_3_ng_container_1_Template(rf, 
     i0.ɵɵproperty("ngSwitchCase", "double-line");
 } }
 function TableComponent_table_1_ng_container_2_td_3_Template(rf, ctx) { if (rf & 1) {
-    i0.ɵɵelementStart(0, "td", 17);
-    i0.ɵɵtemplate(1, TableComponent_table_1_ng_container_2_td_3_ng_container_1_Template, 22, 21, "ng-container", 18);
+    i0.ɵɵelementStart(0, "td", 18);
+    i0.ɵɵtemplate(1, TableComponent_table_1_ng_container_2_td_3_ng_container_1_Template, 22, 21, "ng-container", 19);
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    const element_r25 = ctx.$implicit;
+    const element_r26 = ctx.$implicit;
     const column_r5 = i0.ɵɵnextContext().$implicit;
     const ctx_r8 = i0.ɵɵnextContext(2);
     i0.ɵɵclassMap(ctx_r8.generateClass(i0.ɵɵpureFunction2(3, _c2, column_r5.class, column_r5.align ? "text-align-" + column_r5.align : "")));
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("ngIf", element_r25 !== "empty");
+    i0.ɵɵproperty("ngIf", element_r26 !== "empty");
+} }
+function TableComponent_table_1_ng_container_2_tr_4_Template(rf, ctx) { if (rf & 1) {
+    i0.ɵɵelement(0, "tr", 51);
 } }
 function TableComponent_table_1_ng_container_2_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementContainerStart(0, 7);
     i0.ɵɵtemplate(1, TableComponent_table_1_ng_container_2_ng_container_1_Template, 2, 0, "ng-container", 2);
     i0.ɵɵtemplate(2, TableComponent_table_1_ng_container_2_ng_container_2_Template, 4, 2, "ng-container", 2);
     i0.ɵɵtemplate(3, TableComponent_table_1_ng_container_2_td_3_Template, 2, 6, "td", 8);
+    i0.ɵɵtemplate(4, TableComponent_table_1_ng_container_2_tr_4_Template, 1, 0, "tr", 9);
     i0.ɵɵelementContainerEnd();
 } if (rf & 2) {
     const column_r5 = ctx.$implicit;
+    const ctx_r4 = i0.ɵɵnextContext(2);
     i0.ɵɵproperty("matColumnDef", column_r5.key);
     i0.ɵɵadvance(1);
     i0.ɵɵproperty("ngIf", column_r5.sort);
     i0.ɵɵadvance(1);
     i0.ɵɵproperty("ngIf", !column_r5.sort);
+    i0.ɵɵadvance(2);
+    i0.ɵɵproperty("matRowDefColumns", ctx_r4.displayedColumns);
 } }
 function TableComponent_table_1_Template(rf, ctx) { if (rf & 1) {
-    const _r126 = i0.ɵɵgetCurrentView();
+    const _r128 = i0.ɵɵgetCurrentView();
     i0.ɵɵelementStart(0, "table", 4, 5);
-    i0.ɵɵlistener("matSortChange", function TableComponent_table_1_Template_table_matSortChange_0_listener($event) { i0.ɵɵrestoreView(_r126); const ctx_r125 = i0.ɵɵnextContext(); return ctx_r125.data.sortIt($event); });
-    i0.ɵɵtemplate(2, TableComponent_table_1_ng_container_2_Template, 4, 3, "ng-container", 6);
+    i0.ɵɵlistener("matSortChange", function TableComponent_table_1_Template_table_matSortChange_0_listener($event) { i0.ɵɵrestoreView(_r128); const ctx_r127 = i0.ɵɵnextContext(); return ctx_r127.data.sortIt($event); });
+    i0.ɵɵtemplate(2, TableComponent_table_1_ng_container_2_Template, 5, 4, "ng-container", 6);
     i0.ɵɵelementEnd();
 } if (rf & 2) {
     const ctx_r0 = i0.ɵɵnextContext();
@@ -2641,7 +2648,7 @@ function TableComponent_table_1_Template(rf, ctx) { if (rf & 1) {
 } }
 function TableComponent_ng_container_2_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementContainerStart(0);
-    i0.ɵɵelementStart(1, "div", 50)(2, "div", 51)(3, "div", 52);
+    i0.ɵɵelementStart(1, "div", 52)(2, "div", 53)(3, "div", 54);
     i0.ɵɵtext(4);
     i0.ɵɵelementEnd()()();
     i0.ɵɵelementContainerEnd();
@@ -2651,9 +2658,9 @@ function TableComponent_ng_container_2_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵtextInterpolate1(" ", ctx_r1.noResult, " ");
 } }
 function TableComponent_mat_paginator_3_Template(rf, ctx) { if (rf & 1) {
-    const _r129 = i0.ɵɵgetCurrentView();
-    i0.ɵɵelementStart(0, "mat-paginator", 53, 54);
-    i0.ɵɵlistener("page", function TableComponent_mat_paginator_3_Template_mat_paginator_page_0_listener($event) { i0.ɵɵrestoreView(_r129); const ctx_r128 = i0.ɵɵnextContext(); return ctx_r128.data.fetch($event.pageIndex); });
+    const _r131 = i0.ɵɵgetCurrentView();
+    i0.ɵɵelementStart(0, "mat-paginator", 55, 56);
+    i0.ɵɵlistener("page", function TableComponent_mat_paginator_3_Template_mat_paginator_page_0_listener($event) { i0.ɵɵrestoreView(_r131); const ctx_r130 = i0.ɵɵnextContext(); return ctx_r130.data.fetch($event.pageIndex); });
     i0.ɵɵelementEnd();
 } if (rf & 2) {
     const ctx_r2 = i0.ɵɵnextContext();
@@ -2847,7 +2854,7 @@ TableComponent.ɵcmp = /*@__PURE__*/ i0.ɵɵdefineComponent({ type: TableCompone
         let _t;
         i0.ɵɵqueryRefresh(_t = i0.ɵɵloadQuery()) && (ctx.paginatorCurrent = _t.first);
         i0.ɵɵqueryRefresh(_t = i0.ɵɵloadQuery()) && (ctx.sortCurrent = _t.first);
-    } }, inputs: { columnDefinitions: "columnDefinitions", displayDetail: "displayDetail", displayComponent: "displayComponent", data: "data", lang: "lang", btnOverride: "btnOverride", inputSearch: "inputSearch", EmptyRow: "EmptyRow", blockDetails: "blockDetails" }, outputs: { callFunction: "callFunction", onReady: "onReady", clicked: "clicked" }, features: [i0.ɵɵNgOnChangesFeature], decls: 4, vars: 3, consts: [[1, "table-wrapper"], ["mat-table", "", "multiTemplateDataRows", "", "matSort", "", "class", "", 3, "dataSource", "matSortChange", 4, "ngIf"], [4, "ngIf"], ["showFirstLastButtons", "", 3, "length", "pageSize", "pageIndex", "hidePageSize", "page", 4, "ngIf"], ["mat-table", "", "multiTemplateDataRows", "", "matSort", "", 1, "", 3, "dataSource", "matSortChange"], ["table", "matSort"], [3, "matColumnDef", 4, "ngFor", "ngForOf"], [3, "matColumnDef"], ["class", "row-style", "mat-cell", "", 3, "class", 4, "matCellDef"], ["mat-header-cell", "", "mat-sort-header", "", 3, "class", 4, "matHeaderCellDef"], ["mat-header-cell", "", "mat-sort-header", ""], [3, "input"], ["mat-header-cell", "", 3, "class", 4, "matHeaderCellDef"], ["mat-header-cell", "", "style", "cursor: pointer;", 3, "class", "click", 4, "matHeaderCellDef"], ["mat-header-cell", "", 2, "cursor", "pointer", 3, "click"], [3, "input", 4, "ngIf"], ["mat-header-cell", ""], ["mat-cell", "", 1, "row-style"], [3, "ngSwitch", 4, "ngIf"], [3, "ngSwitch"], [4, "ngSwitchCase"], [4, "ngSwitchDefault"], [1, "btn-link-text", 3, "matTooltip", "innerHTML", "click"], ["class", "mat-button btn-xs", 3, "matTooltip", "ngClass", "routerLink", "click", 4, "ngIf"], ["class", "mat-button btn-xs", 3, "matTooltip", "ngClass", "routerLink", 4, "ngIf"], [1, "mat-button", "btn-xs", 3, "matTooltip", "ngClass", "routerLink", "click"], [3, "innerHTML"], [1, "mat-button", "btn-xs", 3, "matTooltip", "ngClass", "routerLink"], [1, "is-mat-icon-cell", 3, "input"], [1, "btn-link-text", "btn-xs", 3, "matTooltip", "routerLink", "click"], ["type", "hidden", 3, "value"], ["style", "width: 20px; height: 20px;", 3, "src", 4, "ngIf"], [2, "width", "20px", "height", "20px", 3, "src"], [3, "name", "type"], [3, "lang", "type"], [3, "type"], [3, "icon", "iconLabel"], [3, "label"], [3, "src", "fontSize", "color"], [3, "element", "menuSettings", "callHandler"], [3, "number"], [3, "valid", "size", "displayNo", "displayYes", 4, "ngIf"], [3, "valid", "size", 4, "ngIf"], [3, "valid", "size", "displayNo", "displayYes"], [3, "valid", "size"], [3, "icon"], [3, "matTooltip", "src", "fontSize", "matTooltipClass"], [2, "padding-right", "10px", 3, "date"], [2, "padding-left", "14px"], [3, "line1", "line2"], [1, "row", 2, "height", "84px", "background", "transparent!important"], [1, ""], [1, "col-lg-12", "search-container", 2, "text-align", "center"], ["showFirstLastButtons", "", 3, "length", "pageSize", "pageIndex", "hidePageSize", "page"], ["MatPaginatorCurrent", ""]], template: function TableComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, inputs: { columnDefinitions: "columnDefinitions", displayDetail: "displayDetail", displayComponent: "displayComponent", data: "data", lang: "lang", btnOverride: "btnOverride", inputSearch: "inputSearch", EmptyRow: "EmptyRow", blockDetails: "blockDetails" }, outputs: { callFunction: "callFunction", onReady: "onReady", clicked: "clicked" }, features: [i0.ɵɵNgOnChangesFeature], decls: 4, vars: 3, consts: [[1, "table-wrapper"], ["mat-table", "", "multiTemplateDataRows", "", "matSort", "", "class", "", 3, "dataSource", "matSortChange", 4, "ngIf"], [4, "ngIf"], ["showFirstLastButtons", "", 3, "length", "pageSize", "pageIndex", "hidePageSize", "page", 4, "ngIf"], ["mat-table", "", "multiTemplateDataRows", "", "matSort", "", 1, "", 3, "dataSource", "matSortChange"], ["table", "matSort"], [3, "matColumnDef", 4, "ngFor", "ngForOf"], [3, "matColumnDef"], ["class", "row-style", "mat-cell", "", 3, "class", 4, "matCellDef"], ["mat-row", "", 4, "matRowDef", "matRowDefColumns"], ["mat-header-cell", "", "mat-sort-header", "", 3, "class", 4, "matHeaderCellDef"], ["mat-header-cell", "", "mat-sort-header", ""], [3, "input"], ["mat-header-cell", "", 3, "class", 4, "matHeaderCellDef"], ["mat-header-cell", "", "style", "cursor: pointer;", 3, "class", "click", 4, "matHeaderCellDef"], ["mat-header-cell", "", 2, "cursor", "pointer", 3, "click"], [3, "input", 4, "ngIf"], ["mat-header-cell", ""], ["mat-cell", "", 1, "row-style"], [3, "ngSwitch", 4, "ngIf"], [3, "ngSwitch"], [4, "ngSwitchCase"], [4, "ngSwitchDefault"], [1, "btn-link-text", 3, "matTooltip", "innerHTML", "click"], ["class", "mat-button btn-xs", 3, "matTooltip", "ngClass", "routerLink", "click", 4, "ngIf"], ["class", "mat-button btn-xs", 3, "matTooltip", "ngClass", "routerLink", 4, "ngIf"], [1, "mat-button", "btn-xs", 3, "matTooltip", "ngClass", "routerLink", "click"], [3, "innerHTML"], [1, "mat-button", "btn-xs", 3, "matTooltip", "ngClass", "routerLink"], [1, "is-mat-icon-cell", 3, "input"], [1, "btn-link-text", "btn-xs", 3, "matTooltip", "routerLink", "click"], ["type", "hidden", 3, "value"], ["style", "width: 20px; height: 20px;", 3, "src", 4, "ngIf"], [2, "width", "20px", "height", "20px", 3, "src"], [3, "name", "type"], [3, "lang", "type"], [3, "type"], [3, "icon", "iconLabel"], [3, "label"], [3, "src", "fontSize", "color"], [3, "element", "menuSettings", "callHandler"], [3, "number"], [3, "valid", "size", "displayNo", "displayYes", 4, "ngIf"], [3, "valid", "size", 4, "ngIf"], [3, "valid", "size", "displayNo", "displayYes"], [3, "valid", "size"], [3, "icon"], [3, "matTooltip", "src", "fontSize", "matTooltipClass"], [2, "padding-right", "10px", 3, "date"], [2, "padding-left", "14px"], [3, "line1", "line2"], ["mat-row", ""], [1, "row", 2, "height", "84px", "background", "transparent!important"], [1, ""], [1, "col-lg-12", "search-container", 2, "text-align", "center"], ["showFirstLastButtons", "", 3, "length", "pageSize", "pageIndex", "hidePageSize", "page"], ["MatPaginatorCurrent", ""]], template: function TableComponent_Template(rf, ctx) { if (rf & 1) {
         i0.ɵɵelementStart(0, "div", 0);
         i0.ɵɵtemplate(1, TableComponent_table_1_Template, 3, 2, "table", 1);
         i0.ɵɵtemplate(2, TableComponent_ng_container_2_Template, 5, 1, "ng-container", 2);
@@ -2860,7 +2867,7 @@ TableComponent.ɵcmp = /*@__PURE__*/ i0.ɵɵdefineComponent({ type: TableCompone
         i0.ɵɵproperty("ngIf", ctx.data && ctx.data.totalElements === 0);
         i0.ɵɵadvance(1);
         i0.ɵɵproperty("ngIf", ctx.data && ctx.data.totalElements > 0);
-    } }, directives: [i4.NgIf, i5.MatTable, i6.MatSort, i4.NgForOf, i5.MatColumnDef, i5.MatHeaderCellDef, i5.MatHeaderCell, i6.MatSortHeader, IsMatIconComponent, i5.MatCellDef, i5.MatCell, i4.NgSwitch, i4.NgSwitchCase, i2.MatTooltip, i1$2.RouterLinkWithHref, i4.NgClass, EquipementTypeComponent, EquipementStatusComponent, CustomerRankComponent, PriorityComponent, StatusComponent, StatusIconComponent, GenderComponent, PngIconComponent, MenuComponent, PhoneDisplayComponent, YesNoComponent, OriginComponent, NameAvatarComponent, DateFormatComponent, DoubleLineComponent, i4.NgSwitchDefault, i24.MatPaginator], styles: [".table-wrapper table{width:100%}.table-wrapper .mat-cell{padding-left:10px}.table-wrapper png-icon{padding-left:17px}.table-wrapper tr:nth-child(1){min-height:48px}.table-wrapper .detail-row{height:auto!important}.table-wrapper tr.element-row:not(.expanded-row):hover{background:#f5f5f5}.table-wrapper tr.element-row:not(.expanded-row):active{background:#efefef}.table-wrapper .text-align-right{text-align:right!important}.table-wrapper .text-align-left{text-align:left!important}.table-wrapper .text-align-center{text-align:center!important}.table-wrapper .element-detail{overflow:hidden;display:flex;padding-top:10px;padding-bottom:10px}@media screen and (min-width: 1441px){.table-wrapper .mat-cell{padding-top:15px;padding-bottom:10px;font-size:13px!important}}@media screen and (max-width: 1440px){.table-wrapper a.mat-button{padding-top:10px}.table-wrapper .mat-cell{padding-top:15px;padding-bottom:10px}}.table-wrapper .u-1{width:4%!important;max-width:4%!important;min-width:4%!important}.table-wrapper .u-2{width:5%!important;max-width:5%!important;min-width:5%!important}.table-wrapper .u-3{width:7%!important;max-width:7%!important;min-width:7%!important}@media screen and (max-width: 1440px){.table-wrapper .u-1{width:5%!important;max-width:5%!important;min-width:5%!important}.table-wrapper .u-2{width:6%!important;max-width:6%!important;min-width:6%!important}.table-wrapper .u-3{width:10%!important;max-width:10%!important;min-width:10%!important}}.table-wrapper .u-4{max-width:11%!important;width:11%!important;min-width:11%!important}.table-wrapper .u-5{max-width:10%!important;width:10%!important;min-width:10%!important}.table-wrapper .u-6{max-width:15%!important;width:15%!important;min-width:15%!important}.table-wrapper .u-7{width:20%!important;min-width:20%!important}.table-wrapper .u-8{width:25%!important;min-width:25%!important}.table-wrapper .u-9{width:30%!important;min-width:30%!important}.is-mat-icon-cell{width:auto;height:auto;display:auto}.is-mat-icon-cell .mat-icon{font-size:14px}.is-mat-icon-cell span{margin:auto}app-is-mat-icon span{margin:auto}.link-btn{color:#171f26;font-family:Nexa Text Bold;font-size:14px!important;letter-spacing:0px;text-align:center;text-decoration:underline}.expanded>.mat-cell>.link-btn{text-decoration:none;font-weight:400}.btn-link-text{background:#E5E8EE 0% 0% no-repeat padding-box;border-radius:4px;text-align:left;font: 700 12px/19px Nexa Text;letter-spacing:0px;color:#707070;cursor:pointer;padding:10px}.empty-row{background:none!important;height:10px!important}.empty-row td{background:none!important;height:0}.empty-row-none{display:none!important}\n"], encapsulation: 2, data: { animation: [trigger('detailExpand', [
+    } }, directives: [i4.NgIf, i5.MatTable, i6.MatSort, i4.NgForOf, i5.MatColumnDef, i5.MatHeaderCellDef, i5.MatHeaderCell, i6.MatSortHeader, IsMatIconComponent, i5.MatCellDef, i5.MatCell, i4.NgSwitch, i4.NgSwitchCase, i2.MatTooltip, i1$2.RouterLinkWithHref, i4.NgClass, EquipementTypeComponent, EquipementStatusComponent, CustomerRankComponent, PriorityComponent, StatusComponent, StatusIconComponent, GenderComponent, PngIconComponent, MenuComponent, PhoneDisplayComponent, YesNoComponent, OriginComponent, NameAvatarComponent, DateFormatComponent, DoubleLineComponent, i4.NgSwitchDefault, i5.MatRowDef, i5.MatRow, i24.MatPaginator], styles: [".table-wrapper table{width:100%}.table-wrapper .mat-cell{padding-left:10px}.table-wrapper png-icon{padding-left:17px}.table-wrapper tr:nth-child(1){min-height:48px}.table-wrapper .detail-row{height:auto!important}.table-wrapper tr.element-row:not(.expanded-row):hover{background:#f5f5f5}.table-wrapper tr.element-row:not(.expanded-row):active{background:#efefef}.table-wrapper .text-align-right{text-align:right!important}.table-wrapper .text-align-left{text-align:left!important}.table-wrapper .text-align-center{text-align:center!important}.table-wrapper .element-detail{overflow:hidden;display:flex;padding-top:10px;padding-bottom:10px}@media screen and (min-width: 1441px){.table-wrapper .mat-cell{padding-top:15px;padding-bottom:10px;font-size:13px!important}}@media screen and (max-width: 1440px){.table-wrapper a.mat-button{padding-top:10px}.table-wrapper .mat-cell{padding-top:15px;padding-bottom:10px}}.table-wrapper .u-1{width:4%!important;max-width:4%!important;min-width:4%!important}.table-wrapper .u-2{width:5%!important;max-width:5%!important;min-width:5%!important}.table-wrapper .u-3{width:7%!important;max-width:7%!important;min-width:7%!important}@media screen and (max-width: 1440px){.table-wrapper .u-1{width:5%!important;max-width:5%!important;min-width:5%!important}.table-wrapper .u-2{width:6%!important;max-width:6%!important;min-width:6%!important}.table-wrapper .u-3{width:10%!important;max-width:10%!important;min-width:10%!important}}.table-wrapper .u-4{max-width:11%!important;width:11%!important;min-width:11%!important}.table-wrapper .u-5{max-width:10%!important;width:10%!important;min-width:10%!important}.table-wrapper .u-6{max-width:15%!important;width:15%!important;min-width:15%!important}.table-wrapper .u-7{width:20%!important;min-width:20%!important}.table-wrapper .u-8{width:25%!important;min-width:25%!important}.table-wrapper .u-9{width:30%!important;min-width:30%!important}.is-mat-icon-cell{width:auto;height:auto;display:auto}.is-mat-icon-cell .mat-icon{font-size:14px}.is-mat-icon-cell span{margin:auto}app-is-mat-icon span{margin:auto}.link-btn{color:#171f26;font-family:Nexa Text Bold;font-size:14px!important;letter-spacing:0px;text-align:center;text-decoration:underline}.expanded>.mat-cell>.link-btn{text-decoration:none;font-weight:400}.btn-link-text{background:#E5E8EE 0% 0% no-repeat padding-box;border-radius:4px;text-align:left;font: 700 12px/19px Nexa Text;letter-spacing:0px;color:#707070;cursor:pointer;padding:10px}.empty-row{background:none!important;height:10px!important}.empty-row td{background:none!important;height:0}.empty-row-none{display:none!important}\n"], encapsulation: 2, data: { animation: [trigger('detailExpand', [
                 state('collapsed', style({ height: '0px', minHeight: '0', display: 'none' })),
                 state('expanded', style({ height: '*' })),
                 transition('expanded <=> collapsed', animate('225ms cubic-bezier(0.4, 0.0, 0.2, 1)')),
@@ -2871,7 +2878,7 @@ TableComponent.ɵcmp = /*@__PURE__*/ i0.ɵɵdefineComponent({ type: TableCompone
                         state('collapsed', style({ height: '0px', minHeight: '0', display: 'none' })),
                         state('expanded', style({ height: '*' })),
                         transition('expanded <=> collapsed', animate('225ms cubic-bezier(0.4, 0.0, 0.2, 1)')),
-                    ])], encapsulation: ViewEncapsulation.None, template: "<div class=\"table-wrapper\">\n    <!-- Table -->\n    <table mat-table #table=\"matSort\"\n           [dataSource]=\"data \" multiTemplateDataRows matSort\n           class=\"\" *ngIf=\"displayedColumns && columnsToDisplay && data && data.totalElements\"\n           (matSortChange)=\"data.sortIt($event)\">\n        <ng-container [matColumnDef]=\"column.key\" *ngFor=\"let column of displayedColumns\">\n            <ng-container *ngIf=\"column.sort\">\n                <th mat-header-cell *matHeaderCellDef\n                    [class]=\"generateClass([column.class, column.align ? 'text-align-'+column.align : 'text-align-left'])\"\n                    mat-sort-header>\n                    <app-is-mat-icon [input]=\"column.value\"></app-is-mat-icon>\n                </th>\n            </ng-container>\n            <ng-container *ngIf=\"!column.sort\">\n                <!-- Ajouter fonction generate Class -->\n                <ng-container *ngIf=\"column.clickable\">\n                    <th mat-header-cell *matHeaderCellDef\n                        (click)=\"clicked.emit({key : column.key, statement : (column.statement = !column.statement)})\"\n                        [class]=\"generateClass([column.class, column.align ? 'text-align-'+column.align : 'text-align-left'])\"\n                        style=\"cursor: pointer;\">\n                        <app-is-mat-icon [input]=\"column.value\"></app-is-mat-icon>\n                        <app-is-mat-icon\n                                *ngIf=\"column.valueStatement && column.statement !== undefined\"\n                                [input]=\"column.valueStatement[column.statement ? 1 : 0]\">\n                        </app-is-mat-icon>\n                    </th>\n                </ng-container>\n                <ng-container *ngIf=\"!column.clickable\">\n                    <th mat-header-cell *matHeaderCellDef\n                        [class]=\"generateClass([column.class, column.align ? 'text-align-'+column.align : 'text-align-left'])\">\n                        <app-is-mat-icon [input]=\"column.value\"></app-is-mat-icon>\n                    </th>\n                </ng-container>\n                <th mat-header-cell *matHeaderCellDef\n                    [class]=\"generateClass([column.class, column.align ? 'text-align-'+column.align : 'text-align-left'])\">\n                    <app-is-mat-icon [input]=\"column.value\"></app-is-mat-icon>\n                </th>\n            </ng-container>\n\n            <td class=\"row-style\" mat-cell *matCellDef=\"let element\"\n                [class]=\"generateClass([column.class, column.align ? 'text-align-'+column.align : ''])\">\n                <ng-container *ngIf=\"element !== 'empty'\" [ngSwitch]=\"column.module\">\n                    <!-- Button click -->\n                    <ng-container *ngSwitchCase=\"'button-click'\">\n                        <a [matTooltip]=\"open\" class=\"btn-link-text\" (click)=\"callFunction.emit(element[column.key])\"\n                           [innerHTML]=\"details\"></a>\n                    </ng-container>\n                    <!-- Button link -->\n                    <ng-container *ngSwitchCase=\"'button-link'\">\n                        <!--                matBadge=\"*\" matBadgePosition=\"before\"\n                           matBadgeColor=\"accent\" -->\n                        <a *ngIf=\"element.new\" [matTooltip]=\"open\"\n                           class=\"mat-button btn-xs\"\n                           (click)=\"element.new = false\"\n                           [ngClass]=\"btnOverride == true ? 'link-btn': 'nowboard-btn'\"\n                           routerLink=\"{{column.override ? buildLink(column.override, element) : element[column.key]}}\">\n                            <ng-container *ngIf=\"column.display\">\n                                <app-is-mat-icon [input]=\"column.display\"></app-is-mat-icon>\n                            </ng-container>\n                            <ng-container *ngIf=\"!column.display\">\n                                <span [innerHTML]=\"element[column.key]\"></span>\n                            </ng-container>\n                        </a>\n                        <a *ngIf=\"!element.new\"\n                           [matTooltip]=\"open\"\n                           class=\"mat-button btn-xs\"\n                           [ngClass]=\"btnOverride == true ? 'link-btn': 'nowboard-btn'\"\n                           routerLink=\"{{column.override ? buildLink(column.override, element) : element[column.key]}}\">\n                            <ng-container *ngIf=\"column.display\">\n                                <app-is-mat-icon class=\"is-mat-icon-cell\" [input]=\"column.display\"></app-is-mat-icon>\n                            </ng-container>\n                            <ng-container *ngIf=\"!column.display\">\n                                <span [innerHTML]=\"element[column.key]\"></span>\n                            </ng-container>\n                        </a>\n                    </ng-container>\n                    <!-- Button link text -->\n                    <ng-container *ngSwitchCase=\"'button-link-text'\">\n                        <a [matTooltip]=\"open\"\n                           class=\"btn-link-text btn-xs\"\n                           (click)=\"element.new = false\"\n                           routerLink=\"{{column.override ? buildLink(column.override, element) : element[column.key]}}\">\n                            {{ column.value == 'Actions' ? details : column.key }}\n                        </a>\n                    </ng-container>\n                    <!-- icon custom-->\n                    <ng-container *ngSwitchCase=\"'custom-icon'\">\n                        <input type=\"hidden\" [value]=\"element[column.key]\">\n                        <img *ngIf=\"element[column.key] && column.valueOverride\"\n                             [src]=\"column.valueOverride[element[column.key]]\" style=\"width: 20px; height: 20px;\">\n                    </ng-container>\n                    <ng-container *ngSwitchCase=\"'it-category'\">\n                        <app-equipement-type [name]=\"element[column.key]\"\n                                             [type]=\"element[column.override]\"></app-equipement-type>\n                    </ng-container>\n                    <!-- icon it status -->\n                    <ng-container *ngSwitchCase=\"'it-status'\">\n                        <app-equipement-status [lang]=\"lang\" [type]=\"element[column.key]\"></app-equipement-status>\n                    </ng-container>\n                    <!-- icon customer rank -->\n                    <ng-container *ngSwitchCase=\"'customer-rank'\">\n                        <app-customer-rank [type]=\"element[column.key]\"></app-customer-rank>\n                    </ng-container>\n                    <!-- icon priority-->\n                    <ng-container *ngSwitchCase=\"'priority'\">\n                        <icon-priority [icon]=\"element['Icon']\"\n                                       [iconLabel]=\"element[column.key] || null\"></icon-priority>\n                    </ng-container>\n\n                    <!-- status -->\n                    <ng-container *ngSwitchCase=\"'status'\">\n                        <status [label]=\"element[column.key]\"></status>\n                    </ng-container>\n\n                    <!-- status -->\n                    <ng-container *ngSwitchCase=\"'status-icon'\">\n                        <status-icon [label]=\"element[column.key]\"></status-icon>\n                    </ng-container>\n\n                    <!-- icon gender avatar-->\n                    <ng-container *ngSwitchCase=\"'gender-avatar'\">\n                        <app-gender [type]=\"element[column.key]\"></app-gender>\n                    </ng-container>\n\n                    <!-- Png Icon -->\n                    <ng-container *ngSwitchCase=\"'png-icon'\">\n                        <png-icon [src]=\"element[column.key]\" [fontSize]=\"column.fontSize\"\n                                  [color]=\"column.color\"></png-icon>\n                    </ng-container>\n\n\n                    <!-- menu -->\n                    <ng-container *ngSwitchCase=\"'menu'\">\n                        <menu (callHandler)=\"callFunction.emit($event)\" [element]=\"element\"\n                              [menuSettings]=\"column.config\"></menu>\n                    </ng-container>\n\n                    <!-- icon gender avatar-->\n                    <ng-container *ngSwitchCase=\"'phone-display'\">\n                        <app-phone-display [number]=\"element[column.key]\"></app-phone-display>\n                    </ng-container>\n\n                    <!-- icon gender avatar-->\n                    <ng-container *ngSwitchCase=\"'yes-no-display'\">\n                        <app-yes-nox\n                                *ngIf=\"column.config && (column.config.displayNo !== undefined && column.config.displayYes !== undefined)\"\n                                [valid]=\"element[column.key]\" [size]=\"column.config?.sizeIcon\"\n                                [displayNo]=\"column.config.displayYes\" [displayYes]=\"column.config.displayNo\"\n                        >\n                        </app-yes-nox>\n                        <app-yes-nox\n                                *ngIf=\"(!column.config || (column.config && !(column.config.displayNo || column.config.displayYes)))\"\n                                [valid]=\"element[column.key]\" [size]=\"column.config?.sizeIcon\">\n                        </app-yes-nox>\n                    </ng-container>\n                    <!-- icon origin-->\n                    <ng-container *ngSwitchCase=\"'origin'\">\n                        <icon-origin [icon]=\"element[column.key]\"></icon-origin>\n                    </ng-container>\n                    <!-- icon name avatar-->\n                    <ng-container *ngSwitchCase=\"'name-avatar'\">\n                        <name-avatar matTooltip=\"{{Join(element, column.override)}}\"\n                                     [src]=\"element[column.key]\"\n                                     [fontSize]=\"column.fontSize\"\n                                     [matTooltipClass]=\"'my-tooltip'\">\n                        </name-avatar>\n                    </ng-container>\n                    <!-- date format -->\n                    <ng-container *ngSwitchCase=\"'date-format'\">\n                        <date-format style=\"padding-right: 10px\" [date]=\"element[column.key]\"></date-format>\n                    </ng-container>\n                    <!-- count rows -->\n                    <ng-container *ngSwitchCase=\"'count-row'\">\n                       <span style=\"padding-left: 14px\">\n                           {{(element[column.key] && element[column.key].length ? element[column.key].length : '-')}}\n                       </span>\n                    </ng-container>\n                    <!-- double line -->\n                    <ng-container *ngSwitchCase=\"'double-line'\">\n                        <double-line [line1]=\"element[column.key]\" [line2]=\"element[column.override]\"></double-line>\n                    </ng-container>\n                    <ng-container *ngSwitchDefault>\n                        <span [innerHTML]=\"element[column.key]\"></span>\n                    </ng-container>\n                </ng-container>\n            </td>\n        </ng-container>\n    </table>\n    <ng-container *ngIf=\"data && data.totalElements === 0\">\n        <div class=\"row\" style=\"height: 84px;background: transparent!important;\">\n            <div class=\"\">\n                <div class=\"col-lg-12 search-container\" style=\"text-align: center\">\n                    {{ noResult }}\n                </div>\n            </div>\n        </div>\n    </ng-container>\n    <mat-paginator #MatPaginatorCurrent *ngIf=\"data && data.totalElements > 0\" [length]=\"data.totalElements\"\n                   [pageSize]=\"data.size\" [pageIndex]=\"data.number\" [hidePageSize]=\"true\"\n                   (page)=\"data.fetch($event.pageIndex)\" showFirstLastButtons></mat-paginator>\n</div>\n", styles: [".table-wrapper table{width:100%}.table-wrapper .mat-cell{padding-left:10px}.table-wrapper png-icon{padding-left:17px}.table-wrapper tr:nth-child(1){min-height:48px}.table-wrapper .detail-row{height:auto!important}.table-wrapper tr.element-row:not(.expanded-row):hover{background:#f5f5f5}.table-wrapper tr.element-row:not(.expanded-row):active{background:#efefef}.table-wrapper .text-align-right{text-align:right!important}.table-wrapper .text-align-left{text-align:left!important}.table-wrapper .text-align-center{text-align:center!important}.table-wrapper .element-detail{overflow:hidden;display:flex;padding-top:10px;padding-bottom:10px}@media screen and (min-width: 1441px){.table-wrapper .mat-cell{padding-top:15px;padding-bottom:10px;font-size:13px!important}}@media screen and (max-width: 1440px){.table-wrapper a.mat-button{padding-top:10px}.table-wrapper .mat-cell{padding-top:15px;padding-bottom:10px}}.table-wrapper .u-1{width:4%!important;max-width:4%!important;min-width:4%!important}.table-wrapper .u-2{width:5%!important;max-width:5%!important;min-width:5%!important}.table-wrapper .u-3{width:7%!important;max-width:7%!important;min-width:7%!important}@media screen and (max-width: 1440px){.table-wrapper .u-1{width:5%!important;max-width:5%!important;min-width:5%!important}.table-wrapper .u-2{width:6%!important;max-width:6%!important;min-width:6%!important}.table-wrapper .u-3{width:10%!important;max-width:10%!important;min-width:10%!important}}.table-wrapper .u-4{max-width:11%!important;width:11%!important;min-width:11%!important}.table-wrapper .u-5{max-width:10%!important;width:10%!important;min-width:10%!important}.table-wrapper .u-6{max-width:15%!important;width:15%!important;min-width:15%!important}.table-wrapper .u-7{width:20%!important;min-width:20%!important}.table-wrapper .u-8{width:25%!important;min-width:25%!important}.table-wrapper .u-9{width:30%!important;min-width:30%!important}.is-mat-icon-cell{width:auto;height:auto;display:auto}.is-mat-icon-cell .mat-icon{font-size:14px}.is-mat-icon-cell span{margin:auto}app-is-mat-icon span{margin:auto}.link-btn{color:#171f26;font-family:Nexa Text Bold;font-size:14px!important;letter-spacing:0px;text-align:center;text-decoration:underline}.expanded>.mat-cell>.link-btn{text-decoration:none;font-weight:400}.btn-link-text{background:#E5E8EE 0% 0% no-repeat padding-box;border-radius:4px;text-align:left;font: 700 12px/19px Nexa Text;letter-spacing:0px;color:#707070;cursor:pointer;padding:10px}.empty-row{background:none!important;height:10px!important}.empty-row td{background:none!important;height:0}.empty-row-none{display:none!important}\n"] }]
+                    ])], encapsulation: ViewEncapsulation.None, template: "<div class=\"table-wrapper\">\n    <!-- Table -->\n    <table mat-table #table=\"matSort\"\n           [dataSource]=\"data \" multiTemplateDataRows matSort\n           class=\"\" *ngIf=\"displayedColumns && columnsToDisplay && data && data.totalElements\"\n           (matSortChange)=\"data.sortIt($event)\">\n        <ng-container [matColumnDef]=\"column.key\" *ngFor=\"let column of displayedColumns\">\n            <ng-container *ngIf=\"column.sort\">\n                <th mat-header-cell *matHeaderCellDef\n                    [class]=\"generateClass([column.class, column.align ? 'text-align-'+column.align : 'text-align-left'])\"\n                    mat-sort-header>\n                    <app-is-mat-icon [input]=\"column.value\"></app-is-mat-icon>\n                </th>\n            </ng-container>\n            <ng-container *ngIf=\"!column.sort\">\n                <!-- Ajouter fonction generate Class -->\n                <ng-container *ngIf=\"column.clickable\">\n                    <th mat-header-cell *matHeaderCellDef\n                        (click)=\"clicked.emit({key : column.key, statement : (column.statement = !column.statement)})\"\n                        [class]=\"generateClass([column.class, column.align ? 'text-align-'+column.align : 'text-align-left'])\"\n                        style=\"cursor: pointer;\">\n                        <app-is-mat-icon [input]=\"column.value\"></app-is-mat-icon>\n                        <app-is-mat-icon\n                                *ngIf=\"column.valueStatement && column.statement !== undefined\"\n                                [input]=\"column.valueStatement[column.statement ? 1 : 0]\">\n                        </app-is-mat-icon>\n                    </th>\n                </ng-container>\n                <ng-container *ngIf=\"!column.clickable\">\n                    <th mat-header-cell *matHeaderCellDef\n                        [class]=\"generateClass([column.class, column.align ? 'text-align-'+column.align : 'text-align-left'])\">\n                        <app-is-mat-icon [input]=\"column.value\"></app-is-mat-icon>\n                    </th>\n                </ng-container>\n                <th mat-header-cell *matHeaderCellDef\n                    [class]=\"generateClass([column.class, column.align ? 'text-align-'+column.align : 'text-align-left'])\">\n                    <app-is-mat-icon [input]=\"column.value\"></app-is-mat-icon>\n                </th>\n            </ng-container>\n\n            <td class=\"row-style\" mat-cell *matCellDef=\"let element\"\n                [class]=\"generateClass([column.class, column.align ? 'text-align-'+column.align : ''])\">\n                <ng-container *ngIf=\"element !== 'empty'\" [ngSwitch]=\"column.module\">\n                    <!-- Button click -->\n                    <ng-container *ngSwitchCase=\"'button-click'\">\n                        <a [matTooltip]=\"open\" class=\"btn-link-text\" (click)=\"callFunction.emit(element[column.key])\"\n                           [innerHTML]=\"details\"></a>\n                    </ng-container>\n                    <!-- Button link -->\n                    <ng-container *ngSwitchCase=\"'button-link'\">\n                        <!--                matBadge=\"*\" matBadgePosition=\"before\"\n                           matBadgeColor=\"accent\" -->\n                        <a *ngIf=\"element.new\" [matTooltip]=\"open\"\n                           class=\"mat-button btn-xs\"\n                           (click)=\"element.new = false\"\n                           [ngClass]=\"btnOverride == true ? 'link-btn': 'nowboard-btn'\"\n                           routerLink=\"{{column.override ? buildLink(column.override, element) : element[column.key]}}\">\n                            <ng-container *ngIf=\"column.display\">\n                                <app-is-mat-icon [input]=\"column.display\"></app-is-mat-icon>\n                            </ng-container>\n                            <ng-container *ngIf=\"!column.display\">\n                                <span [innerHTML]=\"element[column.key]\"></span>\n                            </ng-container>\n                        </a>\n                        <a *ngIf=\"!element.new\"\n                           [matTooltip]=\"open\"\n                           class=\"mat-button btn-xs\"\n                           [ngClass]=\"btnOverride == true ? 'link-btn': 'nowboard-btn'\"\n                           routerLink=\"{{column.override ? buildLink(column.override, element) : element[column.key]}}\">\n                            <ng-container *ngIf=\"column.display\">\n                                <app-is-mat-icon class=\"is-mat-icon-cell\" [input]=\"column.display\"></app-is-mat-icon>\n                            </ng-container>\n                            <ng-container *ngIf=\"!column.display\">\n                                <span [innerHTML]=\"element[column.key]\"></span>\n                            </ng-container>\n                        </a>\n                    </ng-container>\n                    <!-- Button link text -->\n                    <ng-container *ngSwitchCase=\"'button-link-text'\">\n                        <a [matTooltip]=\"open\"\n                           class=\"btn-link-text btn-xs\"\n                           (click)=\"element.new = false\"\n                           routerLink=\"{{column.override ? buildLink(column.override, element) : element[column.key]}}\">\n                            {{ column.value == 'Actions' ? details : column.key }}\n                        </a>\n                    </ng-container>\n                    <!-- icon custom-->\n                    <ng-container *ngSwitchCase=\"'custom-icon'\">\n                        <input type=\"hidden\" [value]=\"element[column.key]\">\n                        <img *ngIf=\"element[column.key] && column.valueOverride\"\n                             [src]=\"column.valueOverride[element[column.key]]\" style=\"width: 20px; height: 20px;\">\n                    </ng-container>\n                    <ng-container *ngSwitchCase=\"'it-category'\">\n                        <app-equipement-type [name]=\"element[column.key]\"\n                                             [type]=\"element[column.override]\"></app-equipement-type>\n                    </ng-container>\n                    <!-- icon it status -->\n                    <ng-container *ngSwitchCase=\"'it-status'\">\n                        <app-equipement-status [lang]=\"lang\" [type]=\"element[column.key]\"></app-equipement-status>\n                    </ng-container>\n                    <!-- icon customer rank -->\n                    <ng-container *ngSwitchCase=\"'customer-rank'\">\n                        <app-customer-rank [type]=\"element[column.key]\"></app-customer-rank>\n                    </ng-container>\n                    <!-- icon priority-->\n                    <ng-container *ngSwitchCase=\"'priority'\">\n                        <icon-priority [icon]=\"element['Icon']\"\n                                       [iconLabel]=\"element[column.key] || null\"></icon-priority>\n                    </ng-container>\n\n                    <!-- status -->\n                    <ng-container *ngSwitchCase=\"'status'\">\n                        <status [label]=\"element[column.key]\"></status>\n                    </ng-container>\n\n                    <!-- status -->\n                    <ng-container *ngSwitchCase=\"'status-icon'\">\n                        <status-icon [label]=\"element[column.key]\"></status-icon>\n                    </ng-container>\n\n                    <!-- icon gender avatar-->\n                    <ng-container *ngSwitchCase=\"'gender-avatar'\">\n                        <app-gender [type]=\"element[column.key]\"></app-gender>\n                    </ng-container>\n\n                    <!-- Png Icon -->\n                    <ng-container *ngSwitchCase=\"'png-icon'\">\n                        <png-icon [src]=\"element[column.key]\" [fontSize]=\"column.fontSize\"\n                                  [color]=\"column.color\"></png-icon>\n                    </ng-container>\n\n\n                    <!-- menu -->\n                    <ng-container *ngSwitchCase=\"'menu'\">\n                        <menu (callHandler)=\"callFunction.emit($event)\" [element]=\"element\"\n                              [menuSettings]=\"column.config\"></menu>\n                    </ng-container>\n\n                    <!-- icon gender avatar-->\n                    <ng-container *ngSwitchCase=\"'phone-display'\">\n                        <app-phone-display [number]=\"element[column.key]\"></app-phone-display>\n                    </ng-container>\n\n                    <!-- icon gender avatar-->\n                    <ng-container *ngSwitchCase=\"'yes-no-display'\">\n                        <app-yes-nox\n                                *ngIf=\"column.config && (column.config.displayNo !== undefined && column.config.displayYes !== undefined)\"\n                                [valid]=\"element[column.key]\" [size]=\"column.config?.sizeIcon\"\n                                [displayNo]=\"column.config.displayYes\" [displayYes]=\"column.config.displayNo\"\n                        >\n                        </app-yes-nox>\n                        <app-yes-nox\n                                *ngIf=\"(!column.config || (column.config && !(column.config.displayNo || column.config.displayYes)))\"\n                                [valid]=\"element[column.key]\" [size]=\"column.config?.sizeIcon\">\n                        </app-yes-nox>\n                    </ng-container>\n                    <!-- icon origin-->\n                    <ng-container *ngSwitchCase=\"'origin'\">\n                        <icon-origin [icon]=\"element[column.key]\"></icon-origin>\n                    </ng-container>\n                    <!-- icon name avatar-->\n                    <ng-container *ngSwitchCase=\"'name-avatar'\">\n                        <name-avatar matTooltip=\"{{Join(element, column.override)}}\"\n                                     [src]=\"element[column.key]\"\n                                     [fontSize]=\"column.fontSize\"\n                                     [matTooltipClass]=\"'my-tooltip'\">\n                        </name-avatar>\n                    </ng-container>\n                    <!-- date format -->\n                    <ng-container *ngSwitchCase=\"'date-format'\">\n                        <date-format style=\"padding-right: 10px\" [date]=\"element[column.key]\"></date-format>\n                    </ng-container>\n                    <!-- count rows -->\n                    <ng-container *ngSwitchCase=\"'count-row'\">\n                       <span style=\"padding-left: 14px\">\n                           {{(element[column.key] && element[column.key].length ? element[column.key].length : '-')}}\n                       </span>\n                    </ng-container>\n                    <!-- double line -->\n                    <ng-container *ngSwitchCase=\"'double-line'\">\n                        <double-line [line1]=\"element[column.key]\" [line2]=\"element[column.override]\"></double-line>\n                    </ng-container>\n                    <ng-container *ngSwitchDefault>\n                        <span [innerHTML]=\"element[column.key]\"></span>\n                    </ng-container>\n                </ng-container>\n            </td>\n            <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\n        </ng-container>\n    </table>\n    <ng-container *ngIf=\"data && data.totalElements === 0\">\n        <div class=\"row\" style=\"height: 84px;background: transparent!important;\">\n            <div class=\"\">\n                <div class=\"col-lg-12 search-container\" style=\"text-align: center\">\n                    {{ noResult }}\n                </div>\n            </div>\n        </div>\n    </ng-container>\n    <mat-paginator #MatPaginatorCurrent *ngIf=\"data && data.totalElements > 0\" [length]=\"data.totalElements\"\n                   [pageSize]=\"data.size\" [pageIndex]=\"data.number\" [hidePageSize]=\"true\"\n                   (page)=\"data.fetch($event.pageIndex)\" showFirstLastButtons></mat-paginator>\n</div>\n", styles: [".table-wrapper table{width:100%}.table-wrapper .mat-cell{padding-left:10px}.table-wrapper png-icon{padding-left:17px}.table-wrapper tr:nth-child(1){min-height:48px}.table-wrapper .detail-row{height:auto!important}.table-wrapper tr.element-row:not(.expanded-row):hover{background:#f5f5f5}.table-wrapper tr.element-row:not(.expanded-row):active{background:#efefef}.table-wrapper .text-align-right{text-align:right!important}.table-wrapper .text-align-left{text-align:left!important}.table-wrapper .text-align-center{text-align:center!important}.table-wrapper .element-detail{overflow:hidden;display:flex;padding-top:10px;padding-bottom:10px}@media screen and (min-width: 1441px){.table-wrapper .mat-cell{padding-top:15px;padding-bottom:10px;font-size:13px!important}}@media screen and (max-width: 1440px){.table-wrapper a.mat-button{padding-top:10px}.table-wrapper .mat-cell{padding-top:15px;padding-bottom:10px}}.table-wrapper .u-1{width:4%!important;max-width:4%!important;min-width:4%!important}.table-wrapper .u-2{width:5%!important;max-width:5%!important;min-width:5%!important}.table-wrapper .u-3{width:7%!important;max-width:7%!important;min-width:7%!important}@media screen and (max-width: 1440px){.table-wrapper .u-1{width:5%!important;max-width:5%!important;min-width:5%!important}.table-wrapper .u-2{width:6%!important;max-width:6%!important;min-width:6%!important}.table-wrapper .u-3{width:10%!important;max-width:10%!important;min-width:10%!important}}.table-wrapper .u-4{max-width:11%!important;width:11%!important;min-width:11%!important}.table-wrapper .u-5{max-width:10%!important;width:10%!important;min-width:10%!important}.table-wrapper .u-6{max-width:15%!important;width:15%!important;min-width:15%!important}.table-wrapper .u-7{width:20%!important;min-width:20%!important}.table-wrapper .u-8{width:25%!important;min-width:25%!important}.table-wrapper .u-9{width:30%!important;min-width:30%!important}.is-mat-icon-cell{width:auto;height:auto;display:auto}.is-mat-icon-cell .mat-icon{font-size:14px}.is-mat-icon-cell span{margin:auto}app-is-mat-icon span{margin:auto}.link-btn{color:#171f26;font-family:Nexa Text Bold;font-size:14px!important;letter-spacing:0px;text-align:center;text-decoration:underline}.expanded>.mat-cell>.link-btn{text-decoration:none;font-weight:400}.btn-link-text{background:#E5E8EE 0% 0% no-repeat padding-box;border-radius:4px;text-align:left;font: 700 12px/19px Nexa Text;letter-spacing:0px;color:#707070;cursor:pointer;padding:10px}.empty-row{background:none!important;height:10px!important}.empty-row td{background:none!important;height:0}.empty-row-none{display:none!important}\n"] }]
     }], function () { return [{ type: i1$2.Router }, { type: i1$2.ActivatedRoute }, { type: TableService }, { type: i0.ChangeDetectorRef }, { type: TranslateService }, { type: i0.ChangeDetectorRef }]; }, { paginatorCurrent: [{
             type: ViewChild,
             args: ['MatPaginatorCurrent', { static: true }]
