@@ -2761,8 +2761,10 @@ class TableComponent {
         }
     }
     ngOnDestroy() {
-        this.service.updateHeader.unsubscribe();
-        this.data.pageNumber.unsubscribe();
+        if (this.service.updateHeader)
+            this.service.updateHeader.unsubscribe();
+        if (this.data.pageNumber)
+            this.data.pageNumber.unsubscribe();
     }
     ngAfterViewChecked() {
         this.showTable = true;
