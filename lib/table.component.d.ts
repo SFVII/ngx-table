@@ -75,7 +75,7 @@ declare class TableComponent implements OnInit, OnChanges, OnDestroy {
     ngOnInit(): Promise<void>;
     ngOnDestroy(): void;
     ngAfterViewChecked(): void;
-    buildHeaders(): Promise<void>;
+    buildHeaders(): void;
     generateClass(Class: string[]): string[];
     sort(): displayedColumnsInterface[];
     buildLink(override: string[], element: any): string;
