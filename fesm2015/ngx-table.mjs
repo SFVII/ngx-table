@@ -2303,10 +2303,13 @@ class AppDatePipe extends DatePipe {
         this.showTime = true;
     }
     transform(value, lang) {
+        console.log('DATE', value, lang);
         if (lang && lang == AppLanguages.Fr) {
+            console.log('IS FR');
             return super.transform(value, this.showTime ? DateFormatConstants.DATE_TIME_FMT_FR : DateFormatConstants.DATE_FMT_FR, DateFormatConstants.timezone, DateFormatConstants.dateLocalFr);
         }
         else {
+            console.log('IS EN');
             return super.transform(value, this.showTime ? DateFormatConstants.DATE_TIME_FMT_EN : DateFormatConstants.DATE_FMT_EN, DateFormatConstants.timezone, DateFormatConstants.dateLocalEn);
         }
     }
