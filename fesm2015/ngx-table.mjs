@@ -2298,19 +2298,17 @@ var AppLanguages;
     AppLanguages["En"] = "en";
 })(AppLanguages || (AppLanguages = {}));
 class AppDatePipe extends DatePipe {
-    constructor() {
-        super(...arguments);
-        this.showTime = true;
-    }
     transform(value, lang) {
-        console.log('DATE', value, lang);
-        if (lang && lang == AppLanguages.Fr) {
-            console.log('IS FR');
-            return super.transform(value, this.showTime ? DateFormatConstants.DATE_TIME_FMT_FR : DateFormatConstants.DATE_FMT_FR, DateFormatConstants.timezone, DateFormatConstants.dateLocalFr);
+        if (lang == AppLanguages.Fr) {
+            return super.transform(value, DateFormatConstants.DATE_TIME_FMT_FR, DateFormatConstants.timezone, DateFormatConstants.dateLocalFr);
         }
         else {
-            console.log('IS EN');
-            return super.transform(value, this.showTime ? DateFormatConstants.DATE_TIME_FMT_EN : DateFormatConstants.DATE_FMT_EN, DateFormatConstants.timezone, DateFormatConstants.dateLocalEn);
+            if (!lang) {
+                return super.transform(value, DateFormatConstants.DATE_TIME_FMT_FR, DateFormatConstants.timezone, DateFormatConstants.dateLocalFr);
+            }
+            else {
+                return super.transform(value, DateFormatConstants.DATE_TIME_FMT_EN, DateFormatConstants.timezone, DateFormatConstants.dateLocalEn);
+            }
         }
     }
 }
@@ -2322,9 +2320,7 @@ AppDatePipe.ɵpipe = /*@__PURE__*/ i0.ɵɵdefinePipe({ name: "appDate", type: Ap
             args: [{
                     name: 'appDate'
                 }]
-        }], null, { showTime: [{
-                type: Input
-            }] });
+        }], null, null);
 })();
 
 const _c0 = ["MatPaginatorCurrent"];
