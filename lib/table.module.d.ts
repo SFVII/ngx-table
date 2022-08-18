@@ -19,22 +19,23 @@ import * as i15 from "./cells-component/status/status.component";
 import * as i16 from "./cells-component/status-icon/status-icon.component";
 import * as i17 from "./cells-component/double-line/double-line.component";
 import * as i18 from "./core-data-table/app-date.pipe";
-import * as i19 from "./cells-component/png-icon/png-icon.module";
-import * as i20 from "@angular/material/paginator";
-import * as i21 from "@angular/material/table";
-import * as i22 from "@angular/material/sort";
-import * as i23 from "@angular/material/tooltip";
-import * as i24 from "@angular/common";
-import * as i25 from "@angular/material/icon";
-import * as i26 from "@angular/router";
-import * as i27 from "@angular/material/badge";
-import * as i28 from "@angular/material/menu";
-import * as i29 from "nowboard-icon";
+import * as i19 from "./cells-component/custom-cell/custom-cell.component";
+import * as i20 from "./cells-component/png-icon/png-icon.module";
+import * as i21 from "@angular/material/paginator";
+import * as i22 from "@angular/material/table";
+import * as i23 from "@angular/material/sort";
+import * as i24 from "@angular/material/tooltip";
+import * as i25 from "@angular/common";
+import * as i26 from "@angular/material/icon";
+import * as i27 from "@angular/router";
+import * as i28 from "@angular/material/badge";
+import * as i29 from "@angular/material/menu";
+import * as i30 from "nowboard-icon";
 export declare class TableModule {
     constructor(parentModule?: TableModule);
     static forRoot(config: DesignTableInterface): ModuleWithProviders<TableModule>;
     static ɵfac: i0.ɵɵFactoryDeclaration<TableModule, [{ optional: true; skipSelf: true; }]>;
-    static ɵmod: i0.ɵɵNgModuleDeclaration<TableModule, [typeof i1.TableComponent, typeof i2.CustomerRankComponent, typeof i3.DateFormatComponent, typeof i4.EquipementStatusComponent, typeof i5.EquipementTypeComponent, typeof i6.GenderComponent, typeof i7.IsMatIconComponent, typeof i8.NameAvatarComponent, typeof i9.OriginComponent, typeof i10.PhoneDisplayComponent, typeof i11.PriorityComponent, typeof i12.YesNoComponent, typeof i13.NgxFlagsComponent, typeof i14.MenuComponent, typeof i15.StatusComponent, typeof i16.StatusIconComponent, typeof i17.DoubleLineComponent, typeof i18.AppDatePipe], [typeof i19.PngIconModule, typeof i20.MatPaginatorModule, typeof i21.MatTableModule, typeof i22.MatSortModule, typeof i23.MatTooltipModule, typeof i24.CommonModule, typeof i25.MatIconModule, typeof i26.RouterModule, typeof i27.MatBadgeModule, typeof i28.MatMenuModule, typeof i29.NowboardIconModule], [typeof i1.TableComponent, typeof i2.CustomerRankComponent, typeof i3.DateFormatComponent, typeof i4.EquipementStatusComponent, typeof i5.EquipementTypeComponent, typeof i6.GenderComponent, typeof i7.IsMatIconComponent, typeof i8.NameAvatarComponent, typeof i9.OriginComponent, typeof i10.PhoneDisplayComponent, typeof i11.PriorityComponent, typeof i12.YesNoComponent, typeof i19.PngIconModule, typeof i20.MatPaginatorModule, typeof i21.MatTableModule, typeof i22.MatSortModule, typeof i23.MatTooltipModule, typeof i24.CommonModule, typeof i25.MatIconModule, typeof i26.RouterModule, typeof i27.MatBadgeModule, typeof i13.NgxFlagsComponent, typeof i28.MatMenuModule, typeof i29.NowboardIconModule, typeof i15.StatusComponent]>;
+    static ɵmod: i0.ɵɵNgModuleDeclaration<TableModule, [typeof i1.TableComponent, typeof i2.CustomerRankComponent, typeof i3.DateFormatComponent, typeof i4.EquipementStatusComponent, typeof i5.EquipementTypeComponent, typeof i6.GenderComponent, typeof i7.IsMatIconComponent, typeof i8.NameAvatarComponent, typeof i9.OriginComponent, typeof i10.PhoneDisplayComponent, typeof i11.PriorityComponent, typeof i12.YesNoComponent, typeof i13.NgxFlagsComponent, typeof i14.MenuComponent, typeof i15.StatusComponent, typeof i16.StatusIconComponent, typeof i17.DoubleLineComponent, typeof i18.AppDatePipe, typeof i19.CustomCellComponent], [typeof i20.PngIconModule, typeof i21.MatPaginatorModule, typeof i22.MatTableModule, typeof i23.MatSortModule, typeof i24.MatTooltipModule, typeof i25.CommonModule, typeof i26.MatIconModule, typeof i27.RouterModule, typeof i28.MatBadgeModule, typeof i29.MatMenuModule, typeof i30.NowboardIconModule], [typeof i1.TableComponent, typeof i2.CustomerRankComponent, typeof i3.DateFormatComponent, typeof i4.EquipementStatusComponent, typeof i5.EquipementTypeComponent, typeof i6.GenderComponent, typeof i7.IsMatIconComponent, typeof i8.NameAvatarComponent, typeof i9.OriginComponent, typeof i10.PhoneDisplayComponent, typeof i11.PriorityComponent, typeof i12.YesNoComponent, typeof i20.PngIconModule, typeof i21.MatPaginatorModule, typeof i22.MatTableModule, typeof i23.MatSortModule, typeof i24.MatTooltipModule, typeof i25.CommonModule, typeof i26.MatIconModule, typeof i27.RouterModule, typeof i28.MatBadgeModule, typeof i13.NgxFlagsComponent, typeof i29.MatMenuModule, typeof i30.NowboardIconModule, typeof i15.StatusComponent]>;
     static ɵinj: i0.ɵɵInjectorDeclaration<TableModule>;
 }
 //# sourceMappingURL=table.module.d.ts.map

@@ -1,9 +1,9 @@
-import { ChangeDetectorRef, EventEmitter, OnChanges, OnDestroy, OnInit, SimpleChanges } from '@angular/core';
-import { CellsComponentList } from "./setting/CellsComponentRegistry";
-import { MatSort } from "@angular/material/sort";
-import { MatPaginator } from "@angular/material/paginator";
-import { CoreMatTable, CoreMatTableInterface, FilterDateInterface, Page, PageRequest, Sort } from "./core-data-table";
 import { ActivatedRoute, Router } from "@angular/router";
+import { ChangeDetectorRef, EventEmitter, OnChanges, OnDestroy, OnInit, SimpleChanges } from '@angular/core';
+import { CoreMatTable, CoreMatTableInterface, FilterDateInterface, Page, PageRequest, Sort } from "./core-data-table";
+import { CellsComponentList } from "./setting/CellsComponentRegistry";
+import { MatPaginator } from "@angular/material/paginator";
+import { MatSort } from "@angular/material/sort";
 import { TableService } from "./table.service";
 import { TranslateService } from './translate.service';
 import * as i0 from "@angular/core";
@@ -26,6 +26,7 @@ interface displayedColumnsInterface {
     clickable?: boolean;
     statement?: boolean;
     valueStatement?: string[];
+    subTitle?: string;
     config?: displayColumnsConfig;
     valueOverride?: {
         [key: string]: string;
