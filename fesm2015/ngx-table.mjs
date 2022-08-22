@@ -203,12 +203,12 @@ class TranslateService {
         };
     }
     translate(l, word) {
-        if (this.lang && this.lang[l] && this.lang[l][word])
+        if (this.lang && l && this.lang[l] && this.lang[l][word])
             try {
                 return this.lang[l][word];
             }
             catch (err) {
-                return word;
+                return l;
             }
     }
 }
