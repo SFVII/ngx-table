@@ -15,6 +15,7 @@ export declare enum AppLanguages {
     En = "en"
 }
 export declare class AppDatePipe extends DatePipe implements PipeTransform {
+    showTime?: boolean;
     transform(value: any, lang?: any): any;
     static ɵfac: i0.ɵɵFactoryDeclaration<AppDatePipe, never>;
     static ɵpipe: i0.ɵɵPipeDeclaration<AppDatePipe, "appDate">;

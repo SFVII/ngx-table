@@ -24,6 +24,7 @@ export declare enum CellsComponentList {
     Menu = "menu",
     Status = "status",
     StatusIcon = "status-icon",
-    DoubleLine = "double-line"
+    DoubleLine = "double-line",
+    CustomCell = "custom-cell"
 }
 //# sourceMappingURL=CellsComponentRegistry.d.ts.map
