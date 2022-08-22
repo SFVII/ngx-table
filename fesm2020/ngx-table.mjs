@@ -2176,21 +2176,19 @@ var AppLanguages;
     AppLanguages["Fr"] = "fr";
     AppLanguages["En"] = "en";
 })(AppLanguages || (AppLanguages = {}));
-class AppDatePipe extends DatePipe {
+class AppDatePipe {
     // @ts-ignore
     transform(value, lang, showDate = true) {
-        //console.log('DATE', value, lang);
+        const datePipe = new DatePipe(lang && lang == AppLanguages.Fr ? DateFormatConstants.dateLocalFr : DateFormatConstants.dateLocalEn);
         if (lang && lang == AppLanguages.Fr) {
-            //console.log('IS FR')
-            return super.transform(value, showDate ? DateFormatConstants.DATE_TIME_FMT_FR : DateFormatConstants.DATE_FMT_FR, DateFormatConstants.timezone, DateFormatConstants.dateLocalFr);
+            return datePipe.transform(value, showDate ? DateFormatConstants.DATE_TIME_FMT_FR : DateFormatConstants.DATE_FMT_FR, DateFormatConstants.timezone, DateFormatConstants.dateLocalFr);
         }
         else {
-            //console.log('IS EN')
-            return super.transform(value, showDate ? DateFormatConstants.DATE_TIME_FMT_EN : DateFormatConstants.DATE_FMT_EN, DateFormatConstants.timezone, DateFormatConstants.dateLocalEn);
+            return datePipe.transform(value, showDate ? DateFormatConstants.DATE_TIME_FMT_EN : DateFormatConstants.DATE_FMT_EN, DateFormatConstants.timezone, DateFormatConstants.dateLocalEn);
         }
     }
 }
-AppDatePipe.ɵfac = /*@__PURE__*/ function () { let ɵAppDatePipe_BaseFactory; return function AppDatePipe_Factory(t) { return (ɵAppDatePipe_BaseFactory || (ɵAppDatePipe_BaseFactory = i0.ɵɵgetInheritedFactory(AppDatePipe)))(t || AppDatePipe); }; }();
+AppDatePipe.ɵfac = function AppDatePipe_Factory(t) { return new (t || AppDatePipe)(); };
 AppDatePipe.ɵpipe = /*@__PURE__*/ i0.ɵɵdefinePipe({ name: "appDate", type: AppDatePipe, pure: true });
 (function () { (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(AppDatePipe, [{
         type: Pipe,

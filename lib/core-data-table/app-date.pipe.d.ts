@@ -1,5 +1,4 @@
 import { PipeTransform } from '@angular/core';
-import { DatePipe } from '@angular/common';
 import * as i0 from "@angular/core";
 export declare class DateFormatConstants {
     static readonly dateLocalFr = "fr-FR";
@@ -14,7 +13,7 @@ export declare enum AppLanguages {
     Fr = "fr",
     En = "en"
 }
-export declare class AppDatePipe extends DatePipe implements PipeTransform {
+export declare class AppDatePipe implements PipeTransform {
     transform(value: any, lang?: any, showDate?: boolean): any;
     static ɵfac: i0.ɵɵFactoryDeclaration<AppDatePipe, never>;
     static ɵpipe: i0.ɵɵPipeDeclaration<AppDatePipe, "appDate">;
