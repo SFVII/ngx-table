@@ -1841,7 +1841,7 @@ class MenuComponent {
         console.log(this.element);
         console.log(menu);
         console.log(menu.DataParam);
-        if (menu.DataParam && menu.Data.length > 0 && menu.Type == 'link') {
+        if (menu.DataParam && menu.DataParam.length > 0 && menu.Type == 'link') {
             let list = [];
             for (const dat of menu.DataParam) {
                 console.log(this.element[dat]);
@@ -1850,15 +1850,13 @@ class MenuComponent {
             ;
             menu.Data = list;
         }
-        else if (menu.Data && menu.Data.length > 0 && menu.Type == 'modal') {
-            console.log(menu.Data);
+        else if (menu.DataParam && menu.DataParam.length > 0 && menu.Type == 'modal') {
             let list = [];
             for (const dat of menu.DataParam) {
                 console.log(dat);
                 list[dat] = this.element[dat];
             }
             ;
-            console.log(menu.Data);
             menu.Data = list;
             console.log(menu.Data);
         }
