@@ -1836,11 +1836,9 @@ class MenuComponent {
         this.callHandler = new EventEmitter();
     }
     ngOnInit() {
-        console.log(this.element);
     }
     action(menu) {
         console.log(this.element);
-        menu.Data = {};
         if (menu.Data && menu.Data.length > 0 && menu.Type == 'link') {
             let list = [];
             for (const dat of menu.Data) {
@@ -1851,6 +1849,7 @@ class MenuComponent {
             menu.Data = list;
         }
         else if (menu.Data && menu.Data.length > 0 && menu.Type == 'modal') {
+            menu.Data = {};
             console.log(menu.Data);
             let list = [];
             for (const dat of menu.Data) {
