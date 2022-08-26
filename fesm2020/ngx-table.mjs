@@ -1839,6 +1839,8 @@ class MenuComponent {
     }
     action(menu) {
         console.log(this.element);
+        console.log(menu);
+        console.log(menu.Data);
         if (menu.Data && menu.Data.length > 0 && menu.Type == 'link') {
             let list = [];
             for (const dat of menu.Data) {
