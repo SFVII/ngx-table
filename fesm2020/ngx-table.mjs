@@ -161,7 +161,12 @@ class TranslateService {
         };
     }
     translate(l, word) {
-        return this.lang[l][word];
+        if (this.lang && this.lang[l]) {
+            return this.lang[l][word];
+        }
+        else {
+            return word;
+        }
     }
 }
 TranslateService.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: TranslateService, deps: [], target: i0.ɵɵFactoryTarget.Injectable });
