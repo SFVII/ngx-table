@@ -1838,13 +1838,9 @@ class MenuComponent {
     ngOnInit() {
     }
     action(menu) {
-        console.log(this.element);
-        console.log(menu);
-        console.log(menu.DataParam);
         if (menu.DataParam && menu.DataParam.length > 0 && menu.Type == 'link') {
             let list = [];
             for (const dat of menu.DataParam) {
-                console.log(this.element[dat]);
                 list.push(this.element[dat]);
             }
             ;
@@ -1853,12 +1849,10 @@ class MenuComponent {
         else if (menu.DataParam && menu.DataParam.length > 0 && menu.Type == 'modal') {
             let list = [];
             for (const dat of menu.DataParam) {
-                console.log(dat);
                 list[dat] = this.element[dat];
             }
             ;
             menu.Data = list;
-            console.log(menu.Data);
         }
         this.callHandler.emit(menu);
     }
