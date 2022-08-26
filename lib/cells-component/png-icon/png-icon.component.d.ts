@@ -13,4 +13,3 @@ export declare class PngIconComponent implements OnInit {
     static ɵfac: i0.ɵɵFactoryDeclaration<PngIconComponent, never>;
     static ɵcmp: i0.ɵɵComponentDeclaration<PngIconComponent, "png-icon", never, { "src": "src"; "fontSize": "fontSize"; "color": "color"; }, {}, never, never>;
 }
-//# sourceMappingURL=png-icon.component.d.ts.map

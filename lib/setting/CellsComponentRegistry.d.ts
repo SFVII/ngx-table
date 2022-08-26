@@ -27,4 +27,3 @@ export declare enum CellsComponentList {
     DoubleLine = "double-line",
     CustomCell = "custom-cell"
 }
-//# sourceMappingURL=CellsComponentRegistry.d.ts.map

@@ -11,4 +11,3 @@ export declare class OriginComponent implements OnInit, OnChanges {
     static ɵfac: i0.ɵɵFactoryDeclaration<OriginComponent, never>;
     static ɵcmp: i0.ɵɵComponentDeclaration<OriginComponent, "icon-origin", never, { "icon": "icon"; }, {}, never, never>;
 }
-//# sourceMappingURL=origin.component.d.ts.map

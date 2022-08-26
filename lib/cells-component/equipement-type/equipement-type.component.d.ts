@@ -15,4 +15,3 @@ export declare class EquipementTypeComponent implements OnInit, OnChanges {
     static ɵfac: i0.ɵɵFactoryDeclaration<EquipementTypeComponent, never>;
     static ɵcmp: i0.ɵɵComponentDeclaration<EquipementTypeComponent, "app-equipement-type", never, { "name": "name"; "type": "type"; "size": "size"; }, {}, never, never>;
 }
-//# sourceMappingURL=equipement-type.component.d.ts.map

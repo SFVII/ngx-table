@@ -6,4 +6,3 @@ export declare class PngIconModule {
     static ɵmod: i0.ɵɵNgModuleDeclaration<PngIconModule, [typeof i1.PngIconComponent], [typeof i2.CommonModule], [typeof i1.PngIconComponent]>;
     static ɵinj: i0.ɵɵInjectorDeclaration<PngIconModule>;
 }
-//# sourceMappingURL=png-icon.module.d.ts.map

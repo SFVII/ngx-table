@@ -8,4 +8,3 @@ export declare class DoubleLineComponent implements OnInit {
     static ɵfac: i0.ɵɵFactoryDeclaration<DoubleLineComponent, never>;
     static ɵcmp: i0.ɵɵComponentDeclaration<DoubleLineComponent, "double-line", never, { "line1": "line1"; "line2": "line2"; }, {}, never, never>;
 }
-//# sourceMappingURL=double-line.component.d.ts.map
