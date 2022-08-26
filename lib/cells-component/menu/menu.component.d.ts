@@ -1,6 +1,7 @@
 import { OnInit, EventEmitter } from '@angular/core';
 import * as i0 from "@angular/core";
 interface IMenuSettings {
+    DataParam: any;
     Label: string;
     Icon?: string;
     IconColor?: string;

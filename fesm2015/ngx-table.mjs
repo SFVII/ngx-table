@@ -1843,10 +1843,10 @@ class MenuComponent {
     action(menu) {
         console.log(this.element);
         console.log(menu);
-        console.log(menu.Data);
-        if (menu.Data && menu.Data.length > 0 && menu.Type == 'link') {
+        console.log(menu.DataParam);
+        if (menu.DataParam && menu.Data.length > 0 && menu.Type == 'link') {
             let list = [];
-            for (const dat of menu.Data) {
+            for (const dat of menu.DataParam) {
                 console.log(this.element[dat]);
                 list.push(this.element[dat]);
             }
@@ -1856,7 +1856,7 @@ class MenuComponent {
         else if (menu.Data && menu.Data.length > 0 && menu.Type == 'modal') {
             console.log(menu.Data);
             let list = [];
-            for (const dat of menu.Data) {
+            for (const dat of menu.DataParam) {
                 console.log(dat);
                 list[dat] = this.element[dat];
             }
