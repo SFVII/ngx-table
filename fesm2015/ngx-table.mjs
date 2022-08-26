@@ -1852,10 +1852,10 @@ class MenuComponent {
             menu.Data = list;
         }
         else if (menu.Data && menu.Data.length > 0 && menu.Type == 'modal') {
-            menu.Data = {};
             console.log(menu.Data);
             let list = [];
             for (const dat of menu.Data) {
+                console.log(dat);
                 list[dat] = this.element[dat];
             }
             ;
