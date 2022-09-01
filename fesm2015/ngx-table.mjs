@@ -1389,10 +1389,9 @@ class PhoneDisplayComponent {
         this.flag = '';
     }
     ngOnInit() {
-        var _a;
         this.display = this.normalize(this.number);
-        this.flag = (this.number && this.number != '' && isValidPhoneNumber(this.number) ? (_a = parsePhoneNumber('' + this.number)) === null || _a === void 0 ? void 0 : _a.country : 'FR');
-        this.flag = !this.number ? '' : this.flag;
+        //this.flag = (this.number && this.number != '' && isValidPhoneNumber(this.number) ? parsePhoneNumber(''+this.number)?.country : 'FR');
+        //this.flag = !this.number ? '': this.flag;
     }
     ngOnChanges(changes) {
         this.ngOnInit();
@@ -2117,6 +2116,9 @@ class TableComponent {
     expandShow(template) {
     }
     ngOnChanges(changes) {
+        console.log(this.inputSearch);
+        console.log(this.data);
+        console.log('------ avant filter -----');
         if ((this.inputSearch.length > 1 || this.inputSearch.length === 0)
             && this.inputSearch.length < 200) {
             console.log(this.inputSearch);
