@@ -1742,9 +1742,7 @@ class CoreMatTable extends DataSource {
         this.pageSort.next(sortidea);
     }
     filter(myFilter) {
-        console.log(myFilter.trim(), myFilter);
         if (!myFilter && this.data || !myFilter.trim() && this.data) {
-            console.log(this.data.length);
             this._totalElements.next(this.data.length);
         }
         this.pageFilter.next(myFilter.toString());
@@ -2113,14 +2111,9 @@ class TableComponent {
     expandShow(template) {
     }
     ngOnChanges(changes) {
-        console.log(this.inputSearch);
-        console.log(this.data);
-        console.log('------ avant filter -----');
         if ((this.inputSearch.length > 1 || this.inputSearch.length === 0)
             && this.inputSearch.length < 200) {
-            console.log(this.inputSearch);
             if (this.data) {
-                console.log(this.data);
                 this.data.filter(this.inputSearch);
                 this.data.pageNumber.next(0);
                 this.data.fetch(0);
