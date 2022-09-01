@@ -6,7 +6,7 @@ import * as i3 from '@angular/material/tooltip';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import * as i23 from '@angular/common';
 import { CommonModule, DatePipe } from '@angular/common';
-import { parsePhoneNumber, isValidPhoneNumber } from 'libphonenumber-js';
+import { isValidPhoneNumber, parsePhoneNumber } from 'libphonenumber-js';
 import * as i1 from '@angular/forms';
 import { __awaiter } from 'tslib';
 import { BehaviorSubject, from } from 'rxjs';
@@ -1389,9 +1389,9 @@ class PhoneDisplayComponent {
         this.flag = '';
     }
     ngOnInit() {
+        var _a;
         this.display = this.normalize(this.number);
-        console.log(parsePhoneNumber(this.number));
-        this.flag = (this.number && this.number != '' && isValidPhoneNumber(this.number) ? parsePhoneNumber(this.number).country : 'FR');
+        this.flag = (this.number && this.number != '' && isValidPhoneNumber(this.number) ? (_a = parsePhoneNumber('' + this.number)) === null || _a === void 0 ? void 0 : _a.country : 'FR');
         this.flag = !this.number ? '' : this.flag;
     }
     ngOnChanges(changes) {
@@ -2121,6 +2121,7 @@ class TableComponent {
             && this.inputSearch.length < 200) {
             console.log(this.inputSearch);
             if (this.data) {
+                console.log(this.data);
                 this.data.filter(this.inputSearch);
                 this.data.pageNumber.next(0);
                 this.data.fetch(0);
