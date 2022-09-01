@@ -28,6 +28,7 @@ interface displayedColumnsInterface {
     valueStatement?: string[];
     subTitle?: string;
     addClass?: string;
+    subTitleFormat?: string;
     config?: displayColumnsConfig;
     valueOverride?: {
         [key: string]: string;
