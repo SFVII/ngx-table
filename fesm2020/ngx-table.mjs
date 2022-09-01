@@ -1742,6 +1742,7 @@ class CoreMatTable extends DataSource {
         this.pageSort.next(sortidea);
     }
     filter(myFilter) {
+        console.log(myFilter.trim(), myFilter);
         if (!myFilter && this.data || !myFilter.trim() && this.data) {
             console.log(this.data.length);
             this._totalElements.next(this.data.length);
