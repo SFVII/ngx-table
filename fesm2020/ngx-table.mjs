@@ -1878,7 +1878,6 @@ class CustomButtonComponent {
     ngOnInit() {
     }
     action() {
-        console.log(this.element);
         this.callHandler.emit(this.element);
     }
 }
