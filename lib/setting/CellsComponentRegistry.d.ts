@@ -25,5 +25,6 @@ export declare enum CellsComponentList {
     Status = "status",
     StatusIcon = "status-icon",
     DoubleLine = "double-line",
-    CustomCell = "custom-cell"
+    CustomCell = "custom-cell",
+    CustomButton = "custom-button"
 }
