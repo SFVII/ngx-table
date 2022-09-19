@@ -213,7 +213,7 @@ class EquipementStatusComponent {
                 this.status = 'Spare';
                 break;
             case '':
-                this.status = '-';
+                this.status = '';
                 break;
             default:
                 this.status = this.translate.translate(this.lang, 'KO');
