@@ -212,12 +212,12 @@ class EquipementStatusComponent {
             case 'spare':
                 this.status = 'Spare';
                 break;
+            case '':
+                this.status = '-';
+                break;
             default:
                 this.status = this.translate.translate(this.lang, 'KO');
                 break;
-        }
-        if (clean == 'spare') {
-            console.log(params);
         }
         if (params[clean]) {
             this.icon = params[clean];
