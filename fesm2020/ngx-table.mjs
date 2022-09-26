@@ -147,7 +147,8 @@ class TranslateService {
                 'NO_RESULT': 'Aucun résultat correspondant',
                 'DETAILS': 'Détails',
                 'FUNCTIONAL': 'Fonctionnel',
-                'KO': 'HS'
+                'KO': 'HS',
+                'ACTIVE': 'Actif',
             },
             'en': {
                 'SEARCH': `Search...`,
@@ -156,7 +157,8 @@ class TranslateService {
                 'NO_RESULT': 'No corresponding result',
                 'DETAILS': 'Details',
                 'FUNCTIONAL': 'Functional',
-                'KO': 'HS'
+                'KO': 'HS',
+                'ACTIVE': 'Active',
             }
         };
     }
@@ -204,7 +206,7 @@ class EquipementStatusComponent {
         const clean = (this.type || "").toLocaleLowerCase().replace(/[^A-Z0-9]+/ig, "");
         switch (clean) {
             case 'actif':
-                this.status = this.translate.translate(this.lang, 'FUNCTIONAL');
+                this.status = this.translate.translate(this.lang, 'ACTIVE');
                 break;
             case 'spare':
                 this.status = 'Spare';
