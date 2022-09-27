@@ -1397,7 +1397,9 @@ class PhoneDisplayComponent {
         this.flag = '';
     }
     ngOnInit() {
-        this.display = this.normalize(this.number);
+        if (this.number) {
+            this.display = this.normalize(this.number);
+        }
         //this.flag = (this.number && this.number != '' && isValidPhoneNumber(this.number) ? parsePhoneNumber(''+this.number)?.country : 'FR');
         //this.flag = !this.number ? '': this.flag;
     }
