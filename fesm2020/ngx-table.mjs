@@ -6,7 +6,7 @@ import * as i2$1 from '@angular/material/tooltip';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import * as i24 from '@angular/common';
 import { CommonModule, DatePipe } from '@angular/common';
-import { isValidPhoneNumber, parsePhoneNumber } from 'libphonenumber-js';
+import { isValidPhoneNumber, parsePhoneNumber, parsePhoneNumberWithError } from 'libphonenumber-js';
 import * as i1 from '@angular/forms';
 import { BehaviorSubject, from } from 'rxjs';
 import { switchMap, debounceTime, share, pluck } from 'rxjs/operators';
@@ -1410,7 +1410,12 @@ class PhoneDisplayComponent {
             return parsePhoneNumber(str).formatNational();
         }
         else if (str) {
-            const phone = parsePhoneNumber(str);
+            const phone = parsePhoneNumberWithError(str);
+            if (phone) {
+                console.log(phone.formatNational());
+            }
+            const phone2 = parsePhoneNumberWithError(str, 'FR');
+            console.log('phone2', phone2);
             if (phone.isValid()) {
                 return phone.formatNational();
             }
