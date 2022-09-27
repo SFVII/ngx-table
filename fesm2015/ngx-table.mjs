@@ -1413,7 +1413,7 @@ class PhoneDisplayComponent {
             return parsePhoneNumber(str).formatNational();
         }
         else if (str) {
-            const phone = parsePhoneNumber(str, 'FR');
+            const phone = parsePhoneNumber(str);
             if (phone.isValid()) {
                 return phone.formatNational();
             }
