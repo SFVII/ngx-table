@@ -6,7 +6,7 @@ import * as i2$1 from '@angular/material/tooltip';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import * as i24 from '@angular/common';
 import { CommonModule, DatePipe } from '@angular/common';
-import { isValidPhoneNumber, parsePhoneNumber, formatIncompletePhoneNumber } from 'libphonenumber-js';
+import { isValidPhoneNumber, parsePhoneNumber } from 'libphonenumber-js';
 import * as i1 from '@angular/forms';
 import { __awaiter } from 'tslib';
 import { BehaviorSubject, from } from 'rxjs';
@@ -1415,7 +1415,6 @@ class PhoneDisplayComponent {
             if (phone) {
                 console.log(phone.formatNational())
             }*/
-            console.log(formatIncompletePhoneNumber(str, 'FR'));
             let p = str.split('+')[1];
             let newp = '';
             for (let i = 0; i < p.length; i++) {
