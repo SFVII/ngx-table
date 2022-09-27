@@ -1415,7 +1415,7 @@ class PhoneDisplayComponent {
             if (phone) {
                 console.log(phone.formatNational())
             }*/
-            console.log(formatIncompletePhoneNumber(str));
+            console.log(formatIncompletePhoneNumber(str, 'FR'));
             let p = str.split('+')[1];
             let newp = '';
             for (let i = 0; i < p.length; i++) {
