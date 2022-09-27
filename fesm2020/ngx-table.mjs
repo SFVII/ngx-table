@@ -1412,6 +1412,7 @@ class PhoneDisplayComponent {
             if (phone) {
                 console.log(phone.formatNational())
             }*/
+            console.log(isPossible(str), str);
             let p = str.split('+')[1];
             let newp = '';
             for (let i = 0; i < p.length; i++) {
@@ -1460,6 +1461,9 @@ i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "13.3.11", ngImpo
         }], ctorParameters: function () { return [{ type: i1.FormBuilder }]; }, propDecorators: { number: [{
                 type: Input
             }] } });
+function isPossible(str) {
+    throw new Error('Function not implemented.');
+}
 
 class PngIconModule {
 }
