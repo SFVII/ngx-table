@@ -1414,12 +1414,14 @@ class PhoneDisplayComponent {
             }*/
             let p = str.split('+')[1];
             let newp = '';
-            for (let i = 0; i < p.length; i++) {
-                if (p.split('')[i]) {
-                    if (i % 2 == 0 && i > 0) {
-                        newp += ' ';
+            if (p) {
+                for (let i = 0; i < p.length; i++) {
+                    if (p.split('')[i]) {
+                        if (i % 2 == 0 && i > 0) {
+                            newp += ' ';
+                        }
+                        newp += p.split('')[i];
                     }
-                    newp += p.split('')[i];
                 }
             }
             return newp;
