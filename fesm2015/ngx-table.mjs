@@ -1663,6 +1663,7 @@ class CoreMatTable extends DataSource {
         return pond;
     }
     filterData(data, filter) {
+        console.log('filterdata', this.pageNumber.getValue());
         if (this.pageNumber.getValue() > 0) {
             this.pageNumber.next(0);
             this.number = 0;
@@ -1706,6 +1707,7 @@ class CoreMatTable extends DataSource {
         }
     }
     filterDataObject(data, filter) {
+        console.log('filterdataobject', this.pageNumber.getValue());
         if (this.pageNumber.getValue() > 0) {
             this.pageNumber.next(0);
             this.number = 0;
@@ -2170,18 +2172,14 @@ class TableComponent {
         this.data.pageNumber.subscribe((p) => {
             console.log(p);
         });
-        console.log(this.inputSearch.length);
         if ((this.inputSearch.length > 1 || this.inputSearch.length === 0)
             && this.inputSearch.length < 200) {
-            console.log(this.inputSearch.length, 'length');
             if (this.data) {
                 this.data.filter(this.inputSearch);
+                this.data.pageNumber.next(0);
                 this.data.fetch(0);
                 this.data.number = 0;
                 this.changeDetectorRef.markForCheck();
-            }
-            if (this.inputSearch.length > 0) {
-                this.data.pageNumber.next(0);
             }
         }
         //  this.ngOnDestroy();
