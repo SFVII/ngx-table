@@ -2169,8 +2169,15 @@ class TableComponent {
     expandShow(template) {
     }
     ngOnChanges(changes) {
-        this.data.pageNumber.subscribe((p) => {
-            console.log(p);
+        this.data.pageNumber.subscribe((newpage) => {
+            console.log(newpage);
+            if (newpage > 0) {
+                this.router.navigate([], {
+                    relativeTo: this.route,
+                    queryParams: { page: newpage + 1 },
+                    queryParamsHandling: 'merge', // remove to replace all query params by provided
+                });
+            }
         });
         if ((this.inputSearch.length > 1 || this.inputSearch.length === 0)
             && this.inputSearch.length < 200) {
