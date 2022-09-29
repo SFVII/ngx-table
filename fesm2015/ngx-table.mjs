@@ -2173,10 +2173,12 @@ class TableComponent {
             && this.inputSearch.length < 200) {
             if (this.data) {
                 this.data.filter(this.inputSearch);
-                this.data.pageNumber.next(0);
                 this.data.fetch(0);
                 this.data.number = 0;
                 this.changeDetectorRef.markForCheck();
+            }
+            if (this.inputSearch.length > 0) {
+                this.data.pageNumber.next(0);
             }
         }
         //  this.ngOnDestroy();
