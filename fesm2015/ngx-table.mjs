@@ -2169,7 +2169,7 @@ class TableComponent {
         this.data.pageNumber.subscribe((p) => {
             console.log(p);
         });
-        if ((this.inputSearch.length > 1)
+        if ((this.inputSearch.length > 1 || this.inputSearch.length === 0)
             && this.inputSearch.length < 200) {
             if (this.data) {
                 this.data.filter(this.inputSearch);
