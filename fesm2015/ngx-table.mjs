@@ -1765,6 +1765,7 @@ class CoreMatTable extends DataSource {
     }
     fetch(page) {
         this.pageNumber.next(page);
+        console.log('page', page);
     }
     sortIt(sortidea) {
         this.pageSort.next(sortidea);
@@ -2054,7 +2055,6 @@ class TableComponent {
                 };
             }
             this.data.pageNumber.subscribe((newpage) => {
-                console.log('newpage', newpage);
                 if (newpage > 0) {
                     this.router.navigate([], {
                         relativeTo: this.route,
