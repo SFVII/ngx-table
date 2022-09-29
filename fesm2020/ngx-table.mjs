@@ -2082,6 +2082,7 @@ class TableComponent {
             this.data.paginator = this.paginatorCurrent;
             this.data.sort = this.sortCurrent;
             const page = this.route.snapshot.queryParams["page"];
+            this.data.pageNumber.next(page);
             const currentPage = page ? Number(page) - 1 : 0;
             this.data.startWith = currentPage;
             this.data.fetch(currentPage);
