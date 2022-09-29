@@ -2051,6 +2051,7 @@ class TableComponent {
             };
         }
         this.data.pageNumber.subscribe((newpage) => {
+            console.log(newpage, 'newpage');
             if (newpage > 0) {
                 this.router.navigate([], {
                     relativeTo: this.route,
@@ -2164,6 +2165,7 @@ class TableComponent {
         this.data.pageNumber.subscribe((p) => {
             console.log(p);
         });
+        console.log(this.inputSearch.length);
         if ((this.inputSearch.length > 1 || this.inputSearch.length === 0)
             && this.inputSearch.length < 200) {
             if (this.data) {
