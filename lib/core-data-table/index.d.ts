@@ -2,7 +2,6 @@ import { BehaviorSubject, Observable, Subject } from "rxjs";
 import { MatPaginator } from "@angular/material/paginator";
 import { MatSort } from "@angular/material/sort";
 import { DataSource } from "@angular/cdk/collections";
-import { Router, ActivatedRoute } from "@angular/router";
 export interface Sort {
     active: string;
     direction: 'asc' | 'desc';
@@ -39,8 +38,6 @@ export interface FilterDateInterface {
     valueEnd: Date;
 }
 export declare class CoreMatTable extends DataSource<Element> {
-    private router;
-    private route;
     page$: Observable<Page>;
     totalElements: number;
     number: number;
@@ -58,7 +55,7 @@ export declare class CoreMatTable extends DataSource<Element> {
     private emptyRow;
     private filterTable;
     private dataAfterSearch;
-    constructor(data: any, sortRules: Sort, rangeRules: FilterDateInterface, size: number, detailRaws: boolean, emptyRow: boolean, filterT: any, router: Router, route: ActivatedRoute);
+    constructor(data: any, sortRules: Sort, rangeRules: FilterDateInterface, size?: number, detailRaws?: boolean, emptyRow?: boolean, filterT?: any);
     filterDateRange(data: any, range: FilterDateInterface): any;
     ponderation(str: string, searchKey: string): number;
     filterData(data: any, filter: any): any;
