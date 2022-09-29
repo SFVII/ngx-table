@@ -1601,8 +1601,10 @@ i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "13.3.11", ngImpo
             }] } });
 
 class CoreMatTable extends DataSource {
-    constructor(data, sortRules, rangeRules, size = 20, detailRaws = true, emptyRow = false, filterT = {}) {
+    constructor(data, sortRules, rangeRules, size = 20, detailRaws = true, emptyRow = false, filterT = {}, router, route) {
         super();
+        this.router = router;
+        this.route = route;
         this.totalElements = 0;
         this.number = 0;
         this.startWith = 0;
@@ -1762,7 +1764,21 @@ class CoreMatTable extends DataSource {
     }
     fetch(page) {
         this.pageNumber.next(page);
-        console.log('page', page);
+        console.log(page, 'page');
+        if (page > 0) {
+            this.router.navigate([], {
+                relativeTo: this.route,
+                queryParams: { page: page + 1 },
+                queryParamsHandling: 'merge', // remove to replace all query params by provided
+            });
+        }
+        else if (page === 0) {
+            this.router.navigate([], {
+                relativeTo: this.route,
+                queryParams: { page: null },
+                queryParamsHandling: 'merge', // remove to replace all query params by provided
+            });
+        }
     }
     sortIt(sortidea) {
         this.pageSort.next(sortidea);
