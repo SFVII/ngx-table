@@ -2050,28 +2050,6 @@ class TableComponent {
                 borderSpacing: this.rowMargin
             };
         }
-        this.data.pageNumber.subscribe((newpage) => {
-            console.log(newpage, 'newpage');
-            if (newpage > 0) {
-                this.router.navigate([], {
-                    relativeTo: this.route,
-                    queryParams: { page: newpage + 1 },
-                    queryParamsHandling: 'merge', // remove to replace all query params by provided
-                });
-            }
-            else if (newpage === 0) {
-                this.router.navigate([], {
-                    relativeTo: this.route,
-                    queryParams: { page: null },
-                    queryParamsHandling: 'merge', // remove to replace all query params by provided
-                });
-                this.changeDetectorRef.markForCheck();
-            }
-            if (this.data && this.data.paginator && this.data.paginator.pageIndex !== newpage) {
-                this.data.paginator.pageIndex = newpage;
-                this.changeDetectorRef.markForCheck();
-            }
-        });
         if (this.data && this.columnDefinitions) {
             this.PrivateColumnDefinitions = this.columnDefinitions;
             this.displayedColumns = this.sort();
@@ -2087,6 +2065,28 @@ class TableComponent {
             this.data.page$.pipe(debounceTime(500))
                 .subscribe((n) => {
                 this.onReady.emit(true);
+            });
+            this.data.pageNumber.subscribe((newpage) => {
+                console.log(newpage, 'newpage');
+                if (newpage > 0) {
+                    this.router.navigate([], {
+                        relativeTo: this.route,
+                        queryParams: { page: newpage + 1 },
+                        queryParamsHandling: 'merge', // remove to replace all query params by provided
+                    });
+                }
+                else if (newpage === 0) {
+                    this.router.navigate([], {
+                        relativeTo: this.route,
+                        queryParams: { page: null },
+                        queryParamsHandling: 'merge', // remove to replace all query params by provided
+                    });
+                    this.changeDetectorRef.markForCheck();
+                }
+                if (this.data && this.data.paginator && this.data.paginator.pageIndex !== newpage) {
+                    this.data.paginator.pageIndex = newpage;
+                    this.changeDetectorRef.markForCheck();
+                }
             });
             this.service.updateHeader.subscribe((status) => {
                 if (status === true) {
