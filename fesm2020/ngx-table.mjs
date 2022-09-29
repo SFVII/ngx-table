@@ -2050,6 +2050,7 @@ class TableComponent {
             };
         }
         this.data.pageNumber.subscribe((newpage) => {
+            console.log('newpage', newpage);
             if (newpage > 0) {
                 this.router.navigate([], {
                     relativeTo: this.route,
