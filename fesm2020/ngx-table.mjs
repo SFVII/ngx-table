@@ -1665,7 +1665,7 @@ class CoreMatTable extends DataSource {
         console.log('filter in filterdata', Object.keys(filter));
         if (this.pageNumber.getValue() > 0 && Object.keys(filter).length > 0) {
             console.log('next 0 in filterdata');
-            this.pageNumber.next(0);
+            // this.pageNumber.next(0);
             this.number = 0;
             //console.log('filterData log');
         }
@@ -1711,7 +1711,7 @@ class CoreMatTable extends DataSource {
         console.log('filter in filterdataobject', Object.keys(filter));
         if (this.pageNumber.getValue() > 0 && Object.keys(filter).length > 0) {
             console.log('next 0 in filterdataobject');
-            this.pageNumber.next(0);
+            // this.pageNumber.next(0);
             this.number = 0;
             //console.log('filterDataObject log')
         }
@@ -1769,7 +1769,8 @@ class CoreMatTable extends DataSource {
     }
     fetch(page) {
         console.log(page, 'page');
-        this.pageNumber.next(page);
+        if (page > 0)
+            this.pageNumber.next(page);
     }
     sortIt(sortidea) {
         this.pageSort.next(sortidea);
@@ -2088,7 +2089,8 @@ class TableComponent {
             this.data.sort = this.sortCurrent;
             const page = this.route.snapshot.queryParams["page"];
             console.log('next in ngoninit', page);
-            this.data.pageNumber.next(page);
+            if (page > 0)
+                this.data.pageNumber.next(page);
             const currentPage = page ? Number(page) - 1 : 0;
             if (this.data.paginator) {
                 this.data.paginator.pageIndex = currentPage;
@@ -2193,8 +2195,8 @@ class TableComponent {
             }
             if (this.inputSearch.length > 0) {
                 console.log('next 0 in input search');
-                this.data.pageNumber.next(0);
-                this.data.fetch(0);
+                // this.data.pageNumber.next(0)
+                // this.data.fetch(0);
             }
         }
         //  this.ngOnDestroy();
