@@ -1665,6 +1665,7 @@ class CoreMatTable extends DataSource {
     }
     filterData(data, filter) {
         console.log('filterdata', this.pageNumber.getValue());
+        console.log('filter in filterdata', Object.keys(filter));
         if (this.pageNumber.getValue() > 0 && Object.keys(filter).length > 0) {
             this.pageNumber.next(0);
             this.number = 0;
@@ -1709,6 +1710,7 @@ class CoreMatTable extends DataSource {
     }
     filterDataObject(data, filter) {
         console.log('filterdataobject', this.pageNumber.getValue());
+        console.log('filter in filterdataobject', Object.keys(filter));
         if (this.pageNumber.getValue() > 0 && Object.keys(filter).length > 0) {
             this.pageNumber.next(0);
             this.number = 0;
@@ -2188,6 +2190,7 @@ class TableComponent {
             && this.inputSearch.length < 200) {
             if (this.data) {
                 this.data.filter(this.inputSearch);
+                console.log('next 0 in input search');
                 this.data.pageNumber.next(0);
                 this.data.fetch(0);
                 this.data.number = 0;
