@@ -1769,8 +1769,8 @@ class CoreMatTable extends DataSource {
         return (((Array.isArray(a) ? a.length : a) > ((Array.isArray(b) ? b.length : b)) ? -1 : ((Array.isArray(b) ? b.length : b)) > ((Array.isArray(a) ? a.length : a)) ? 1 : 0) * (isAsc ? -1 : 1));
     }
     fetch(page) {
-        this.pageNumber.next(page);
         console.log(page, 'page');
+        this.pageNumber.next(page);
     }
     sortIt(sortidea) {
         this.pageSort.next(sortidea);
@@ -2190,13 +2190,13 @@ class TableComponent {
             && this.inputSearch.length < 200) {
             if (this.data) {
                 this.data.filter(this.inputSearch);
-                this.data.fetch(0);
                 this.data.number = 0;
                 this.changeDetectorRef.markForCheck();
             }
             if (this.inputSearch.length > 0) {
                 console.log('next 0 in input search');
                 this.data.pageNumber.next(0);
+                this.data.fetch(0);
             }
         }
         //  this.ngOnDestroy();
