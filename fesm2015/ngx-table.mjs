@@ -1612,6 +1612,7 @@ class CoreMatTable extends DataSource {
         this._totalElements = new BehaviorSubject(0);
         this.emptyRow = false;
         this.filterTable = {};
+        this.currentPage = 0;
         this.size = size;
         this.data = [...data];
         this.dataAfterSearch = [];
@@ -1664,7 +1665,7 @@ class CoreMatTable extends DataSource {
     }
     filterData(data, filter) {
         console.log('filterdata', this.pageNumber.getValue());
-        if (this.pageNumber.getValue() > 0) {
+        if (this.pageNumber.getValue() > 0 && Object.keys(filter).length > 0) {
             this.pageNumber.next(0);
             this.number = 0;
             //console.log('filterData log');
@@ -1708,7 +1709,7 @@ class CoreMatTable extends DataSource {
     }
     filterDataObject(data, filter) {
         console.log('filterdataobject', this.pageNumber.getValue());
-        if (this.pageNumber.getValue() > 0) {
+        if (this.pageNumber.getValue() > 0 && Object.keys(filter).length > 0) {
             this.pageNumber.next(0);
             this.number = 0;
             //console.log('filterDataObject log')
