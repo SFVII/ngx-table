@@ -1833,10 +1833,10 @@ class StatusComponent {
     }
 }
 StatusComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: StatusComponent, deps: [], target: i0.ɵɵFactoryTarget.Component });
-StatusComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "12.0.0", version: "13.3.11", type: StatusComponent, selector: "status", inputs: { label: "label" }, ngImport: i0, template: "<span matTooltip=\"{{ label }}\" class=\"status status-{{label.toLowerCase()}}\">\n    {{ label }}\n</span>", styles: [".status{background:#F6544C;border-radius:1000px;font-style:normal;font-weight:600;font-size:16px;line-height:125%;padding:8px 19px}\n"], directives: [{ type: i2$1.MatTooltip, selector: "[matTooltip]", exportAs: ["matTooltip"] }] });
+StatusComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "12.0.0", version: "13.3.11", type: StatusComponent, selector: "status", inputs: { label: "label" }, ngImport: i0, template: "<span matTooltip=\"{{ label }}\" class=\"status status-{{label?.toLowerCase()}}\">\n    {{ label }}\n</span>", styles: [".status{background:#F6544C;border-radius:1000px;font-style:normal;font-weight:600;font-size:16px;line-height:125%;padding:8px 19px}\n"], directives: [{ type: i2$1.MatTooltip, selector: "[matTooltip]", exportAs: ["matTooltip"] }] });
 i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: StatusComponent, decorators: [{
             type: Component,
-            args: [{ selector: 'status', template: "<span matTooltip=\"{{ label }}\" class=\"status status-{{label.toLowerCase()}}\">\n    {{ label }}\n</span>", styles: [".status{background:#F6544C;border-radius:1000px;font-style:normal;font-weight:600;font-size:16px;line-height:125%;padding:8px 19px}\n"] }]
+            args: [{ selector: 'status', template: "<span matTooltip=\"{{ label }}\" class=\"status status-{{label?.toLowerCase()}}\">\n    {{ label }}\n</span>", styles: [".status{background:#F6544C;border-radius:1000px;font-style:normal;font-weight:600;font-size:16px;line-height:125%;padding:8px 19px}\n"] }]
         }], ctorParameters: function () { return []; }, propDecorators: { label: [{
                 type: Input
             }] } });
@@ -1856,10 +1856,10 @@ class StatusIconComponent {
     }
 }
 StatusIconComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: StatusIconComponent, deps: [], target: i0.ɵɵFactoryTarget.Component });
-StatusIconComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "12.0.0", version: "13.3.11", type: StatusIconComponent, selector: "status-icon", inputs: { label: "label" }, ngImport: i0, template: "<span matTooltip=\"{{ label }}\" class=\"status status-{{label.toLowerCase()}}\">\n    <img src=\"{{ src }}\">\n    {{ label }}\n</span>", styles: [""], directives: [{ type: i2$1.MatTooltip, selector: "[matTooltip]", exportAs: ["matTooltip"] }] });
+StatusIconComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "12.0.0", version: "13.3.11", type: StatusIconComponent, selector: "status-icon", inputs: { label: "label" }, ngImport: i0, template: "<span matTooltip=\"{{ label }}\" class=\"status status-{{label?.toLowerCase()}}\">\n    <img src=\"{{ src }}\">\n    {{ label }}\n</span>", styles: [""], directives: [{ type: i2$1.MatTooltip, selector: "[matTooltip]", exportAs: ["matTooltip"] }] });
 i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: StatusIconComponent, decorators: [{
             type: Component,
-            args: [{ selector: 'status-icon', template: "<span matTooltip=\"{{ label }}\" class=\"status status-{{label.toLowerCase()}}\">\n    <img src=\"{{ src }}\">\n    {{ label }}\n</span>", styles: [""] }]
+            args: [{ selector: 'status-icon', template: "<span matTooltip=\"{{ label }}\" class=\"status status-{{label?.toLowerCase()}}\">\n    <img src=\"{{ src }}\">\n    {{ label }}\n</span>", styles: [""] }]
         }], ctorParameters: function () { return []; }, propDecorators: { label: [{
                 type: Input
             }] } });
