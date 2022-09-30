@@ -1664,6 +1664,7 @@ class CoreMatTable extends DataSource {
         console.log('filterdata', this.pageNumber.getValue());
         console.log('filter in filterdata', Object.keys(filter));
         if (this.pageNumber.getValue() > 0 && Object.keys(filter).length > 0) {
+            console.log('next 0 in filterdata');
             this.pageNumber.next(0);
             this.number = 0;
             //console.log('filterData log');
@@ -1709,6 +1710,7 @@ class CoreMatTable extends DataSource {
         console.log('filterdataobject', this.pageNumber.getValue());
         console.log('filter in filterdataobject', Object.keys(filter));
         if (this.pageNumber.getValue() > 0 && Object.keys(filter).length > 0) {
+            console.log('next 0 in filterdataobject');
             this.pageNumber.next(0);
             this.number = 0;
             //console.log('filterDataObject log')
