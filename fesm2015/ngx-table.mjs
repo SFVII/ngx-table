@@ -2129,12 +2129,14 @@ class TableComponent {
                     });
             }
         })*/
-        if (changes.data.firstChange) {
-            this.init();
+        if (changes.data) {
             this.pageNumberSub();
         }
+        if (changes.data.firstChange) {
+            this.init();
+        }
         else {
-            if ((this.inputSearch.length > 1 || this.inputSearch.length === 0)
+            if ((this.inputSearch.length > 3)
                 && this.inputSearch.length < 200) {
                 if (this.data) {
                     console.log('avant next 0');
@@ -2192,30 +2194,32 @@ class TableComponent {
         }
     }
     pageNumberSub() {
-        this.data.pageNumber.subscribe((newpage) => {
-            console.log(newpage, 'newpage');
-            if (newpage > 0 && newpage != this.previousPageNumber) {
-                this.previousPageNumber = newpage;
-                this.router.navigate([], {
-                    relativeTo: this.route,
-                    queryParams: { page: newpage + 1 },
-                    queryParamsHandling: 'merge', // remove to replace all query params by provided
-                });
-            }
-            else if (newpage === 0 && newpage != this.previousPageNumber) {
-                this.previousPageNumber = newpage;
-                this.router.navigate([], {
-                    relativeTo: this.route,
-                    queryParams: { page: null },
-                    queryParamsHandling: 'merge', // remove to replace all query params by provided
-                });
-                this.changeDetectorRef.markForCheck();
-            }
-            if (this.data && this.data.paginator && this.data.paginator.pageIndex !== newpage) {
-                this.data.paginator.pageIndex = newpage;
-                this.changeDetectorRef.markForCheck();
-            }
-        });
+        if (this.data) {
+            this.data.pageNumber.subscribe((newpage) => {
+                console.log(newpage, 'newpage');
+                if (newpage > 0 && newpage != this.previousPageNumber) {
+                    this.previousPageNumber = newpage;
+                    this.router.navigate([], {
+                        relativeTo: this.route,
+                        queryParams: { page: newpage + 1 },
+                        queryParamsHandling: 'merge', // remove to replace all query params by provided
+                    });
+                }
+                else if (newpage === 0 && newpage != this.previousPageNumber) {
+                    this.previousPageNumber = newpage;
+                    this.router.navigate([], {
+                        relativeTo: this.route,
+                        queryParams: { page: null },
+                        queryParamsHandling: 'merge', // remove to replace all query params by provided
+                    });
+                    this.changeDetectorRef.markForCheck();
+                }
+                if (this.data && this.data.paginator && this.data.paginator.pageIndex !== newpage) {
+                    this.data.paginator.pageIndex = newpage;
+                    this.changeDetectorRef.markForCheck();
+                }
+            });
+        }
     }
 }
 TableComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: TableComponent, deps: [{ token: i1$2.Router }, { token: i1$2.ActivatedRoute }, { token: TableService }, { token: i0.ChangeDetectorRef }, { token: TranslateService }, { token: i0.ChangeDetectorRef }], target: i0.ɵɵFactoryTarget.Component });
