@@ -1702,10 +1702,12 @@ class CoreMatTable extends DataSource {
                 }
             }
             this.dataAfterSearch = result.filter((e => e.pond)).sort((a, b) => a > b ? 1 : (a < b ? -1 : 0));
+            console.log(this.dataAfterSearch, 'data');
             return result.filter((e => e.pond)).sort((a, b) => a > b ? 1 : (a < b ? -1 : 0));
         }
         else {
             this.dataAfterSearch = data;
+            console.log(this.dataAfterSearch, 'data');
             return data;
         }
     }
@@ -1741,10 +1743,12 @@ class CoreMatTable extends DataSource {
                     result.push(e);
                 }
             }
+            console.log(result, 'data object');
             return result;
             //return result.filter((e => e.pond)).sort((a, b) => a > b ? 1 : (a < b ? -1 : 0));
         }
         else {
+            console.log(data, 'data object');
             return data;
         }
     }
