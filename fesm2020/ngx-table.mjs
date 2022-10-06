@@ -1661,13 +1661,13 @@ class CoreMatTable extends DataSource {
         return pond;
     }
     filterData(data, filter) {
-        // console.log('filterdata', this.pageNumber.getValue());
-        // console.log('filter in filterdata', Object.keys(filter));
+        console.log('filterdata', this.pageNumber.getValue());
+        console.log('filter in filterdata', Object.keys(filter));
         if (this.pageNumber.getValue() > 0) {
-            // console.log('next 0 in filterdata');
+            console.log('next 0 in filterdata');
             this.pageNumber.next(0);
             this.number = 0;
-            //console.log('filterData log');
+            console.log('filterData log');
         }
         /*if (data.length === 0 && this.data) {
           data = this.data;
@@ -1707,13 +1707,13 @@ class CoreMatTable extends DataSource {
         }
     }
     filterDataObject(data, filter) {
-        // console.log('filterdataobject', this.pageNumber.getValue());
-        // console.log('filter in filterdataobject', Object.keys(filter));
+        console.log('filterdataobject', this.pageNumber.getValue());
+        console.log('filter in filterdataobject', Object.keys(filter));
         if (this.pageNumber.getValue() > 0) {
-            // console.log('next 0 in filterdataobject');
+            console.log('next 0 in filterdataobject');
             this.pageNumber.next(0);
             this.number = 0;
-            //console.log('filterDataObject log')
+            console.log('filterDataObject log');
         }
         if (data.length === 0 && this.data) {
             //data = this.data;
@@ -1768,7 +1768,7 @@ class CoreMatTable extends DataSource {
         return (((Array.isArray(a) ? a.length : a) > ((Array.isArray(b) ? b.length : b)) ? -1 : ((Array.isArray(b) ? b.length : b)) > ((Array.isArray(a) ? a.length : a)) ? 1 : 0) * (isAsc ? -1 : 1));
     }
     fetch(page) {
-        // console.log(page, 'page');
+        console.log(page, 'page');
         this.pageNumber.next(page);
     }
     sortIt(sortidea) {
@@ -2058,7 +2058,7 @@ class TableComponent {
             };
         }
         this.data.pageNumber.subscribe((newpage) => {
-            // console.log(newpage, 'newpage')
+            console.log(newpage, 'newpage');
             if (newpage > 0) {
                 this.router.navigate([], {
                     relativeTo: this.route,
@@ -2087,11 +2087,11 @@ class TableComponent {
             this.data.paginator = this.paginatorCurrent;
             this.data.sort = this.sortCurrent;
             const page = this.route.snapshot.queryParams["page"];
-            //this.data.pageNumber.next(page);
+            this.data.pageNumber.next(page);
             const currentPage = page ? Number(page) - 1 : 0;
-            /*if (this.data.paginator) {
+            if (this.data.paginator) {
                 this.data.paginator.pageIndex = currentPage;
-            }*/
+            }
             this.data.startWith = currentPage;
             this.data.fetch(currentPage);
             this.data.number = currentPage;
@@ -2173,18 +2173,16 @@ class TableComponent {
     expandShow(template) {
     }
     ngOnChanges(changes) {
-        /*this.data.pageNumber.subscribe((newpage) => {
+        this.data.pageNumber.subscribe((newpage) => {
             console.log(newpage);
             if (newpage > 0) {
-                this.router.navigate(
-                    [],
-                    {
-                        relativeTo: this.route,
-                        queryParams: { page: newpage + 1 },
-                        queryParamsHandling: 'merge', // remove to replace all query params by provided
-                    });
+                this.router.navigate([], {
+                    relativeTo: this.route,
+                    queryParams: { page: newpage + 1 },
+                    queryParamsHandling: 'merge', // remove to replace all query params by provided
+                });
             }
-        })*/
+        });
         if ((this.inputSearch.length > 1 || this.inputSearch.length === 0)
             && this.inputSearch.length < 200) {
             if (this.data) {
