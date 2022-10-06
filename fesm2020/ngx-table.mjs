@@ -2035,29 +2035,6 @@ class TableComponent {
         this.style = null;
         this.previousPageNumber = null;
         this.onReady.emit(false);
-    }
-    expand(element) {
-        if (this.blockDetails) {
-            return;
-        }
-        if (this.expandedElement === element) {
-            this.expandedElement = null;
-        }
-        else {
-            this.expandedElement = element;
-        }
-    }
-    async ngOnInit() {
-        this.open = this.translate.translate(this.lang, 'OPEN');
-        this.search = this.translate.translate(this.lang, 'SEARCH');
-        this.cancelSearch = this.translate.translate(this.lang, 'CANCEL_SEARCH');
-        this.noResult = this.translate.translate(this.lang, 'NO_RESULT');
-        this.details = this.translate.translate(this.lang, 'DETAILS');
-        if (this.rowMargin) {
-            this.style = {
-                borderSpacing: this.rowMargin
-            };
-        }
         this.data.pageNumber.subscribe((newpage) => {
             console.log(newpage, 'newpage');
             if (!this.previousPageNumber) {
@@ -2085,6 +2062,29 @@ class TableComponent {
                 this.changeDetectorRef.markForCheck();
             }
         });
+    }
+    expand(element) {
+        if (this.blockDetails) {
+            return;
+        }
+        if (this.expandedElement === element) {
+            this.expandedElement = null;
+        }
+        else {
+            this.expandedElement = element;
+        }
+    }
+    async ngOnInit() {
+        this.open = this.translate.translate(this.lang, 'OPEN');
+        this.search = this.translate.translate(this.lang, 'SEARCH');
+        this.cancelSearch = this.translate.translate(this.lang, 'CANCEL_SEARCH');
+        this.noResult = this.translate.translate(this.lang, 'NO_RESULT');
+        this.details = this.translate.translate(this.lang, 'DETAILS');
+        if (this.rowMargin) {
+            this.style = {
+                borderSpacing: this.rowMargin
+            };
+        }
         if (this.data && this.columnDefinitions) {
             this.PrivateColumnDefinitions = this.columnDefinitions;
             this.displayedColumns = this.sort();
@@ -2179,17 +2179,19 @@ class TableComponent {
     expandShow(template) {
     }
     ngOnChanges(changes) {
-        this.data.pageNumber.subscribe((newpage) => {
+        /*this.data.pageNumber.subscribe((newpage) => {
             console.log(newpage);
             if (newpage > 0 && this.previousPageNumber != newpage) {
                 this.previousPageNumber = newpage;
-                this.router.navigate([], {
-                    relativeTo: this.route,
-                    queryParams: { page: newpage + 1 },
-                    queryParamsHandling: 'merge', // remove to replace all query params by provided
-                });
+                this.router.navigate(
+                    [],
+                    {
+                        relativeTo: this.route,
+                        queryParams: { page: newpage + 1 },
+                        queryParamsHandling: 'merge', // remove to replace all query params by provided
+                    });
             }
-        });
+        })*/
         if ((this.inputSearch.length > 1 || this.inputSearch.length === 0)
             && this.inputSearch.length < 200) {
             if (this.data) {

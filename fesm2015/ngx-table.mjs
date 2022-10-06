@@ -2038,6 +2038,33 @@ class TableComponent {
         this.style = null;
         this.previousPageNumber = null;
         this.onReady.emit(false);
+        this.data.pageNumber.subscribe((newpage) => {
+            console.log(newpage, 'newpage');
+            if (!this.previousPageNumber) {
+                this.previousPageNumber = newpage;
+            }
+            if (newpage > 0 && newpage != this.previousPageNumber) {
+                this.previousPageNumber = newpage;
+                this.router.navigate([], {
+                    relativeTo: this.route,
+                    queryParams: { page: newpage + 1 },
+                    queryParamsHandling: 'merge', // remove to replace all query params by provided
+                });
+            }
+            else if (newpage === 0 && newpage != this.previousPageNumber) {
+                this.previousPageNumber = newpage;
+                this.router.navigate([], {
+                    relativeTo: this.route,
+                    queryParams: { page: null },
+                    queryParamsHandling: 'merge', // remove to replace all query params by provided
+                });
+                this.changeDetectorRef.markForCheck();
+            }
+            if (this.data && this.data.paginator && this.data.paginator.pageIndex !== newpage) {
+                this.data.paginator.pageIndex = newpage;
+                this.changeDetectorRef.markForCheck();
+            }
+        });
     }
     expand(element) {
         if (this.blockDetails) {
@@ -2062,33 +2089,6 @@ class TableComponent {
                     borderSpacing: this.rowMargin
                 };
             }
-            this.data.pageNumber.subscribe((newpage) => {
-                console.log(newpage, 'newpage');
-                if (!this.previousPageNumber) {
-                    this.previousPageNumber = newpage;
-                }
-                if (newpage > 0 && newpage != this.previousPageNumber) {
-                    this.previousPageNumber = newpage;
-                    this.router.navigate([], {
-                        relativeTo: this.route,
-                        queryParams: { page: newpage + 1 },
-                        queryParamsHandling: 'merge', // remove to replace all query params by provided
-                    });
-                }
-                else if (newpage === 0 && newpage != this.previousPageNumber) {
-                    this.previousPageNumber = newpage;
-                    this.router.navigate([], {
-                        relativeTo: this.route,
-                        queryParams: { page: null },
-                        queryParamsHandling: 'merge', // remove to replace all query params by provided
-                    });
-                    this.changeDetectorRef.markForCheck();
-                }
-                if (this.data && this.data.paginator && this.data.paginator.pageIndex !== newpage) {
-                    this.data.paginator.pageIndex = newpage;
-                    this.changeDetectorRef.markForCheck();
-                }
-            });
             if (this.data && this.columnDefinitions) {
                 this.PrivateColumnDefinitions = this.columnDefinitions;
                 this.displayedColumns = this.sort();
@@ -2184,17 +2184,19 @@ class TableComponent {
     expandShow(template) {
     }
     ngOnChanges(changes) {
-        this.data.pageNumber.subscribe((newpage) => {
+        /*this.data.pageNumber.subscribe((newpage) => {
             console.log(newpage);
             if (newpage > 0 && this.previousPageNumber != newpage) {
                 this.previousPageNumber = newpage;
-                this.router.navigate([], {
-                    relativeTo: this.route,
-                    queryParams: { page: newpage + 1 },
-                    queryParamsHandling: 'merge', // remove to replace all query params by provided
-                });
+                this.router.navigate(
+                    [],
+                    {
+                        relativeTo: this.route,
+                        queryParams: { page: newpage + 1 },
+                        queryParamsHandling: 'merge', // remove to replace all query params by provided
+                    });
             }
-        });
+        })*/
         if ((this.inputSearch.length > 1 || this.inputSearch.length === 0)
             && this.inputSearch.length < 200) {
             if (this.data) {
