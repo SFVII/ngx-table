@@ -29,6 +29,7 @@ export interface CoreMatTableInterface {
     filter: (myFilter: any) => void;
     filterData: (data: any, filter: any) => void;
     filterDate: (dateFilter: FilterDateInterface) => void;
+    setData: (data: Array<any>) => void;
     pageNumber: BehaviorSubject<number>;
     startWith: number;
 }
