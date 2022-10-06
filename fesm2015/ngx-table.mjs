@@ -1631,6 +1631,7 @@ class CoreMatTable extends DataSource {
             }])), share())))))));
     }
     filterDateRange(data, range) {
+        console.log(data, 'filter date range');
         if (!range || (!range.valueStart && !range.valueEnd)) {
             return data;
         }
@@ -1649,7 +1650,7 @@ class CoreMatTable extends DataSource {
             });
         }
         else {
-            return this.data;
+            return data;
         }
     }
     ponderation(str, searchKey) {
