@@ -87,6 +87,8 @@ declare class TableComponent implements OnInit, OnChanges, OnDestroy {
     reset(): boolean;
     expandShow(template: string): void;
     ngOnChanges(changes: SimpleChanges): void;
+    init(): void;
+    pageNumberSub(): void;
     static ɵfac: i0.ɵɵFactoryDeclaration<TableComponent, never>;
     static ɵcmp: i0.ɵɵComponentDeclaration<TableComponent, "ngx-design-table", never, { "columnDefinitions": "columnDefinitions"; "displayDetail": "displayDetail"; "displayComponent": "displayComponent"; "data": "data"; "rowMargin": "rowMargin"; "lang": "lang"; "btnOverride": "btnOverride"; "inputSearch": "inputSearch"; "EmptyRow": "EmptyRow"; "blockDetails": "blockDetails"; }, { "callFunction": "callFunction"; "onReady": "onReady"; "clicked": "clicked"; }, never, never>;
 }
