@@ -2036,6 +2036,7 @@ class TableComponent {
         this.details = '';
         this.showTable = false;
         this.style = null;
+        this.previousPageNumber = null;
         this.onReady.emit(false);
     }
     expand(element) {
@@ -2063,14 +2064,19 @@ class TableComponent {
             }
             this.data.pageNumber.subscribe((newpage) => {
                 console.log(newpage, 'newpage');
-                if (newpage > 0) {
+                if (!this.previousPageNumber) {
+                    this.previousPageNumber = newpage;
+                }
+                if (newpage > 0 && newpage != this.previousPageNumber) {
+                    this.previousPageNumber = newpage;
                     this.router.navigate([], {
                         relativeTo: this.route,
                         queryParams: { page: newpage + 1 },
                         queryParamsHandling: 'merge', // remove to replace all query params by provided
                     });
                 }
-                else if (newpage === 0) {
+                else if (newpage === 0 && newpage != this.previousPageNumber) {
+                    this.previousPageNumber = newpage;
                     this.router.navigate([], {
                         relativeTo: this.route,
                         queryParams: { page: null },
@@ -2180,7 +2186,8 @@ class TableComponent {
     ngOnChanges(changes) {
         this.data.pageNumber.subscribe((newpage) => {
             console.log(newpage);
-            if (newpage > 0) {
+            if (newpage > 0 && this.previousPageNumber != newpage) {
+                this.previousPageNumber = newpage;
                 this.router.navigate([], {
                     relativeTo: this.route,
                     queryParams: { page: newpage + 1 },

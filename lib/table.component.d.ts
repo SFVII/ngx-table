@@ -73,6 +73,7 @@ declare class TableComponent implements OnInit, OnChanges, OnDestroy {
     showTable: boolean;
     style: any;
     private PrivateColumnDefinitions;
+    private previousPageNumber;
     constructor(router: Router, route: ActivatedRoute, service: TableService, detector: ChangeDetectorRef, translate: TranslateService, changeDetectorRef: ChangeDetectorRef);
     expand(element: any): void;
     ngOnInit(): Promise<void>;
