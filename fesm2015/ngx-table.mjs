@@ -1781,7 +1781,9 @@ class CoreMatTable extends DataSource {
         if (!myFilter && this.data || !myFilter.trim() && this.data) {
             this._totalElements.next(this.data.length);
         }
-        this.pageFilter.next(myFilter.toString());
+        if (myFilter != undefined) {
+            this.pageFilter.next(myFilter.toString());
+        }
     }
     filterDate(dateFilter) {
         this.pageFilterDate.next(dateFilter);
