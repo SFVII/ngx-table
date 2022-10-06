@@ -1663,12 +1663,12 @@ class CoreMatTable extends DataSource {
     filterData(data, filter) {
         console.log('filterdata', this.pageNumber.getValue());
         console.log('filter in filterdata', Object.keys(filter));
-        if (this.pageNumber.getValue() > 0) {
-            console.log('next 0 in filterdata');
-            this.pageNumber.next(0);
-            this.number = 0;
-            console.log('filterData log');
-        }
+        // if (this.pageNumber.getValue() > 0) {
+        //     console.log('next 0 in filterdata');
+        //     this.pageNumber.next(0);
+        //     this.number = 0;
+        //     console.log('filterData log');
+        // }
         /*if (data.length === 0 && this.data) {
           data = this.data;
         }*/
@@ -1709,12 +1709,12 @@ class CoreMatTable extends DataSource {
     filterDataObject(data, filter) {
         console.log('filterdataobject', this.pageNumber.getValue());
         console.log('filter in filterdataobject', Object.keys(filter));
-        if (this.pageNumber.getValue() > 0) {
-            console.log('next 0 in filterdataobject');
-            this.pageNumber.next(0);
-            this.number = 0;
-            console.log('filterDataObject log');
-        }
+        // if (this.pageNumber.getValue() > 0) {
+        //     console.log('next 0 in filterdataobject');
+        //     this.pageNumber.next(0);
+        //     this.number = 0;
+        //     console.log('filterDataObject log')
+        // }
         if (data.length === 0 && this.data) {
             //data = this.data;
             return data;

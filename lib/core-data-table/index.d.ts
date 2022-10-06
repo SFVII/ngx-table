@@ -1,4 +1,4 @@
-import { BehaviorSubject, Observable, Subject } from "rxjs";
+import { BehaviorSubject, Observable } from "rxjs";
 import { MatPaginator } from "@angular/material/paginator";
 import { MatSort } from "@angular/material/sort";
 import { DataSource } from "@angular/cdk/collections";
@@ -29,7 +29,7 @@ export interface CoreMatTableInterface {
     filter: (myFilter: any) => void;
     filterData: (data: any, filter: any) => void;
     filterDate: (dateFilter: FilterDateInterface) => void;
-    pageNumber: Subject<number>;
+    pageNumber: BehaviorSubject<number>;
     startWith: number;
 }
 export interface FilterDateInterface {
