@@ -1771,7 +1771,7 @@ class CoreMatTable extends DataSource {
         return (((Array.isArray(a) ? a.length : a) > ((Array.isArray(b) ? b.length : b)) ? -1 : ((Array.isArray(b) ? b.length : b)) > ((Array.isArray(a) ? a.length : a)) ? 1 : 0) * (isAsc ? -1 : 1));
     }
     fetch(page) {
-        console.log(page, 'page');
+        console.log(page, 'page fetch');
         this.pageNumber.next(page);
     }
     sortIt(sortidea) {
@@ -2133,13 +2133,16 @@ class TableComponent {
             this.init();
             this.pageNumberSub();
         }
-        if ((this.inputSearch.length > 1 || this.inputSearch.length === 0)
-            && this.inputSearch.length < 200) {
-            if (this.data) {
-                this.data.filter(this.inputSearch);
-                this.data.pageNumber.next(0);
-                this.data.fetch(0);
-                this.changeDetectorRef.markForCheck();
+        else {
+            if ((this.inputSearch.length > 1 || this.inputSearch.length === 0)
+                && this.inputSearch.length < 200) {
+                if (this.data) {
+                    console.log('avant next 0');
+                    this.data.filter(this.inputSearch);
+                    this.data.pageNumber.next(0);
+                    this.data.fetch(0);
+                    this.changeDetectorRef.markForCheck();
+                }
             }
         }
         //  this.ngOnDestroy();
@@ -2191,9 +2194,6 @@ class TableComponent {
     pageNumberSub() {
         this.data.pageNumber.subscribe((newpage) => {
             console.log(newpage, 'newpage');
-            if (!this.previousPageNumber) {
-                this.previousPageNumber = newpage;
-            }
             if (newpage > 0 && newpage != this.previousPageNumber) {
                 this.previousPageNumber = newpage;
                 this.router.navigate([], {
