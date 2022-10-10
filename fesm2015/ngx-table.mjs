@@ -1627,9 +1627,12 @@ class CoreMatTable extends DataSource {
         this.pageNumber = new BehaviorSubject(this.startWith);
         this._totalElements.subscribe((page) => this.totalElements = page);
         this.page$ = this.pageSort.pipe(switchMap(sortAction => this.pageFilter.pipe(debounceTime(500))
-            .pipe(switchMap(filter => this.pageFilterDate.pipe(switchMap(range => this.pageNumber.pipe(switchMap(page => from([{
-                content: this.slice(this.sortData(this.filterDataObject(this.filterData(this.filterDateRange(this.data, range), filter), this.filterTable), sortAction), page, this.size, detailRaws)
-            }])), share())))))));
+            .pipe(switchMap(filter => this.pageFilterDate.pipe(switchMap((range) => {
+            this._totalElements.next(this.data.length);
+            return this.pageNumber.pipe(switchMap(page => from([{
+                    content: this.slice(this.sortData(this.filterDataObject(this.filterData(this.filterDateRange(this.data, range), filter), this.filterTable), sortAction), page, this.size, detailRaws)
+                }])), share());
+        }))))));
     }
     filterDateRange(data, range) {
         console.log(data, 'filter date range');
@@ -1787,8 +1790,8 @@ class CoreMatTable extends DataSource {
         this.pageSort.next(sortidea);
     }
     filter(myFilter) {
-        if (!myFilter && this.data || !myFilter.trim() && this.data) {
-            this._totalElements.next(this.data.length);
+        if (!myFilter && this.data || !(myFilter === null || myFilter === void 0 ? void 0 : myFilter.trim()) && this.data) {
+            // this._totalElements.next(this.data.length);
         }
         if (myFilter != undefined) {
             this.pageFilter.next(myFilter.toString());
