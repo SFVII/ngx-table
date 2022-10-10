@@ -1790,9 +1790,9 @@ class CoreMatTable extends DataSource {
         this.pageSort.next(sortidea);
     }
     filter(myFilter) {
-        if (!myFilter && this.data || !(myFilter === null || myFilter === void 0 ? void 0 : myFilter.trim()) && this.data) {
-            // this._totalElements.next(this.data.length);
-        }
+        // if (!myFilter && this.data || !myFilter?.trim() && this.data) {
+        //     this._totalElements.next(this.data.length);
+        // }
         if (myFilter != undefined) {
             this.pageFilter.next(myFilter.toString());
         }
