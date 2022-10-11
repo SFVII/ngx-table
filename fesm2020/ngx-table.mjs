@@ -1886,6 +1886,7 @@ class MenuComponent {
     ngOnInit() {
     }
     action(menu) {
+        console.log(this.element);
         if (menu.DataParam && menu.DataParam.length > 0 && menu.Type == 'link') {
             let list = [];
             for (const dat of menu.DataParam) {
