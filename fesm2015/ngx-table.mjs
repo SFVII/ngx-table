@@ -1630,7 +1630,7 @@ class CoreMatTable extends DataSource {
             .pipe(switchMap(filter => this.pageFilterDate.pipe(switchMap((range) => {
             this._totalElements.next(this.data.length);
             return this.pageNumber.pipe(switchMap(page => from([{
-                    content: this.slice(this.sortData(this.filterDataObject(this.filterData(this.filterDateRange(this.data, range), filter), this.filterTable), sortAction), page, this.size, detailRaws)
+                    content: this.slice(this.sortData(this.filterData(this.filterDateRange(this.data, range), filter), sortAction), page, this.size, detailRaws)
                 }])), share());
         }))))));
     }
