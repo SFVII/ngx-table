@@ -1740,7 +1740,7 @@ class CoreMatTable extends DataSource {
         //     console.log('filterDataObject log')
         // }
         console.log('ngx filter data object', data);
-        if (data && data.length === 0 && this.data) {
+        if ((data && data.length === 0 && this.data) || Object.keys(filter).length == 0) {
             //data = this.data;
             return data;
         }
