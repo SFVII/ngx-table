@@ -1683,14 +1683,14 @@ class CoreMatTable extends DataSource {
                         combination++;
                     }
                 }
-                console.log('Stack', stack, combination, stack.length, e.pond);
                 if (e.pond >= 1 && combination === stack.length) {
+                    console.log('Stack', stack, combination, stack.length, e.pond);
                     result.push(e);
                 }
             }
-            this.dataAfterSearch = result.filter((e => e.pond)).sort((a, b) => a > b ? 1 : (a < b ? -1 : 0));
-            return result.filter((e => e.pond)).sort((a, b) => a > b ? 1 : (a < b ? -1 : 0));
-            console.log('MY RESULT');
+            this.dataAfterSearch = result.filter((e => e.pond > 0)).sort((a, b) => a > b ? 1 : (a < b ? -1 : 0));
+            console.log('MY RESULT', this.dataAfterSearch);
+            return this.dataAfterSearch;
         }
         else {
             return data;
