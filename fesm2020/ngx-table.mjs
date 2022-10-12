@@ -1670,17 +1670,13 @@ class CoreMatTable extends DataSource {
                 const dataRaw = JSON.stringify(e).toLowerCase()
                     .replace(/[^a-zA-Z0-9 ]/g, " ");
                 const stack = filter.toLowerCase().replace(/[^a-zA-Z0-9 ]/g, " ")
-                    .split(' ');
+                    .split(' ').filter((e) => e && e !== '');
                 console.log(' SEARCH', filter);
                 let combination = 0;
                 for (let k of stack) {
                     if (dataRaw.includes(k)) {
                         console.log('-----includes ???', dataRaw.includes(k), dataRaw, k);
-                        const pond = this.ponderation(dataRaw, k);
-                        if (!e.pond) {
-                            e.pond = 0;
-                        }
-                        e.pond += pond;
+                        e.pond += 1;
                         combination++;
                     }
                 }
