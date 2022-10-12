@@ -1646,7 +1646,7 @@ class CoreMatTable extends DataSource {
             console.log('HUEUEUEUE2d2s2d2sd2d2s2dsUEU', filter, data?.length);
             if (filter.inputSearch) {
                 console.log('GOT INPUT SEARCH', filter.inputSearch);
-                inputSearch = filter.inputSearch;
+                const { inputSearch } = filter;
                 delete filter.inputSearch;
                 return this.filterDataObject(this._search(inputSearch, data), filter);
             }
@@ -1663,7 +1663,7 @@ class CoreMatTable extends DataSource {
     }
     _search(filter, data) {
         const result = [];
-        console.log(' SEARCH', filter.inputSearch);
+        console.log(' SEARCH', filter);
         if (filter && filter.replace(/[^a-zA-Z ]/g, " ")) {
             for (let e of data) {
                 e.pond = 0;
@@ -1671,11 +1671,11 @@ class CoreMatTable extends DataSource {
                     .replace(/[^a-zA-Z0-9 ]/g, " ");
                 const stack = filter.toLowerCase().replace(/[^a-zA-Z0-9 ]/g, " ")
                     .split(' ');
-                console.log(' SEARCH', filter.inputSearch);
+                console.log(' SEARCH', filter);
                 let combination = 0;
                 for (let k of stack) {
-                    console.log('-----includes ???', dataRaw.includes(k), dataRaw, k);
                     if (dataRaw.includes(k)) {
+                        console.log('-----includes ???', dataRaw.includes(k), dataRaw, k);
                         const pond = this.ponderation(dataRaw, k);
                         if (!e.pond) {
                             e.pond = 0;
