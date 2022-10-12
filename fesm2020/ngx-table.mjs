@@ -1675,12 +1675,13 @@ class CoreMatTable extends DataSource {
                 let combination = 0;
                 for (let k of stack) {
                     if (dataRaw.includes(k)) {
-                        console.log('-----includes ???', dataRaw.includes(k), dataRaw, k);
+                        console.log('-----includes ??? state %s , k %s', dataRaw.includes(k), k, dataRaw);
                         e.pond += 1;
                         combination++;
                     }
                 }
-                if (e.pond && combination === stack.length) {
+                console.log('Stack', stack, combination, stack.length, e.pond);
+                if (e.pond >= 1 && combination === stack.length) {
                     result.push(e);
                 }
             }
