@@ -1642,7 +1642,7 @@ class CoreMatTable extends DataSource {
     filterData(data, filter) {
         console.log('HUEUEUEUEUEU', filter, data?.length);
         let inputSearch;
-        if (typeof filter === "object") {
+        if (typeof filter === "object" && Object.keys(filter).length) {
             console.log('HUEUEUEUE2d2s2d2sd2d2s2dsUEU', filter, data?.length);
             if (filter.inputSearch) {
                 console.log('GOT INPUT SEARCH', filter.inputSearch);
