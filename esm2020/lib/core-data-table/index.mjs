@@ -94,13 +94,13 @@ export class CoreMatTable extends DataSource {
             for (let e of data) {
                 e.pond = 0;
                 const dataRaw = JSON.stringify(e).toLowerCase()
-                    .replace(/[^a-zA-Z0-9 ]/g, " ").split(" ");
+                    .replace(/[^a-zA-Z0-9 ]/g, " ");
                 const stack = filter.toLowerCase().replace(/[^a-zA-Z0-9 ]/g, " ")
                     .split(' ').filter((e) => e && e !== '');
                 console.log(' SEARCH', filter);
                 let combination = 0;
                 for (let k of stack) {
-                    if (dataRaw.indexOf(k) > -1) {
+                    if (dataRaw.includes(k)) {
                         console.log('-----includes ??? state %s , k %s', dataRaw.includes(k), k, dataRaw);
                         e.pond += 1;
                         combination++;
