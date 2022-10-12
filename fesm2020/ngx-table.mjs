@@ -1598,7 +1598,7 @@ class CoreMatTable extends DataSource {
         this.pageFilter = new BehaviorSubject('');
         this.pageNumber = new BehaviorSubject(this.startWith);
         this._totalElements.subscribe((page) => this.totalElements = page);
-        this.page$ = this.pageSort.pipe(switchMap(sortAction => this.pageFilter.pipe(debounceTime(500))
+        this.page$ = this.pageSort.pipe(switchMap(sortAction => this.pageFilter.pipe(debounceTime(100))
             .pipe(switchMap(filter => this.pageFilterDate.pipe(switchMap((range) => {
             this._totalElements.next(this.data.length);
             return this.pageNumber.pipe(switchMap(page => from([{
@@ -1640,8 +1640,10 @@ class CoreMatTable extends DataSource {
         return pond;
     }
     filterData(data, filter) {
+        console.log('HUEUEUEUEUEU', filter, data?.length);
         let inputSearch;
         if (typeof filter === "object") {
+            console.log('HUEUEUEUE2d2s2d2sd2d2s2dsUEU', filter, data?.length);
             if (filter.inputSearch) {
                 console.log('GOT INPUT SEARCH', filter.inputSearch);
                 inputSearch = filter.inputSearch;
@@ -1649,10 +1651,12 @@ class CoreMatTable extends DataSource {
                 return this.filterDataObject(this._search(inputSearch, data), filter);
             }
             else {
+                console.log('SDUCKCKCKKCKC', filter, data?.length);
                 return this.filterDataObject(data, filter);
             }
         }
         else {
+            console.log('TDDDDDDDDDDDDDDDDDDDDDDD', filter, data?.length);
             this.dataAfterSearch = data;
             return data;
         }
