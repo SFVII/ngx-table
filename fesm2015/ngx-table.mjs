@@ -191,8 +191,8 @@ class EquipementStatusComponent {
         this.translate = translate;
         this.css = {};
         this.status = '';
-        this.css.maxWidth = String((this.size || 22)) + 'px';
-        this.css.maxHeight = String((this.size || 22)) + 'px';
+        // this.css.maxWidth = String((this.size || 22)) + 'px';
+        // this.css.maxHeight = String((this.size || 22)) + 'px';
         //this.params = this.service.settingConfig.equipmentStatus;
     }
     ngOnInit() {
