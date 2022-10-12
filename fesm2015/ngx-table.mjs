@@ -1600,14 +1600,15 @@ class CoreMatTable extends DataSource {
         this.pageFilterDate = new BehaviorSubject(null);
         this.pageFilter = new BehaviorSubject('');
         this.pageNumber = new BehaviorSubject(this.startWith);
+        this.search = new BehaviorSubject('');
         this._totalElements.subscribe((page) => this.totalElements = page);
         this.page$ = this.pageSort.pipe(switchMap(sortAction => this.pageFilter.pipe(debounceTime(500))
-            .pipe(switchMap(filter => this.pageFilterDate.pipe(switchMap((range) => {
+            .pipe(switchMap(filter => this.search.pipe(switchMap(search => this.pageFilterDate.pipe(switchMap((range) => {
             this._totalElements.next(this.data.length);
             return this.pageNumber.pipe(switchMap(page => from([{
-                    content: this.slice(this.sortData(this.filterData(this.filterDateRange(this.data, range), filter), sortAction), page, this.size, detailRaws)
+                    content: this.slice(this.sortData(this._search(search, this.filterData(this.filterDateRange(this.data, range), filter)), sortAction), page, this.size, detailRaws)
                 }])), share());
-        }))))));
+        }))))))));
     }
     filterDateRange(data, range) {
         if (!range || (!range.valueStart && !range.valueEnd)) {
@@ -1644,17 +1645,9 @@ class CoreMatTable extends DataSource {
     }
     filterData(data, filter) {
         if (typeof filter === 'object' && Object.keys(filter).length) {
-            console.log('HUEUEUEUE2d2s2d2sd2d2s2dsUEU', filter, data === null || data === void 0 ? void 0 : data.length);
-            const { inputSearch } = filter;
             delete filter.inputSearch;
-            if (inputSearch) {
-                data = this._search(inputSearch, data);
-            }
-            else if (Object.keys(filter).length) {
-                data = this.filterDataObject(data, filter);
-            }
+            data = this.filterDataObject(data, filter);
         }
-        console.log('TDDDDDDDDDDDDDDDDDDDDDDD', filter, data === null || data === void 0 ? void 0 : data.length, data);
         this.dataAfterSearch = data;
         return data;
     }
