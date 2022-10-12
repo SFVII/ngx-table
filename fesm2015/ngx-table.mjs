@@ -1732,6 +1732,7 @@ class CoreMatTable extends DataSource {
     }
     setData(data) {
         this.data = [...data];
+        this.pageNumber.next(0);
     }
     sortData(data, sortAction) {
         if (sortAction.direction !== '' && data && data.length) {
