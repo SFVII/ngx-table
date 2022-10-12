@@ -1608,7 +1608,7 @@ class CoreMatTable extends DataSource {
         }))))))));
     }
     filterDateRange(data, range) {
-        if (data && data.length && range.active && (range.valueEnd && range.valueStart) || (range.valueEnd && !range.valueStart) || (!range.valueEnd && range.valueStart)) {
+        if (data && data.length && range && range.active && ((range.valueEnd && range.valueStart) || (range.valueEnd && !range.valueStart) || (!range.valueEnd && range.valueStart))) {
             return data.filter((e) => {
                 if (range.valueStart && range.valueEnd) {
                     return new Date(e[range.active]) >= new Date(range.valueStart)
