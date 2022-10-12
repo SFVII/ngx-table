@@ -9,5 +9,5 @@ export declare class OriginComponent implements OnInit, OnChanges {
     ngOnInit(): void;
     ngOnChanges(changes: SimpleChanges): void;
     static ɵfac: i0.ɵɵFactoryDeclaration<OriginComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDeclaration<OriginComponent, "icon-origin", never, { "icon": "icon"; }, {}, never, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<OriginComponent, "icon-origin", never, { "icon": "icon"; }, {}, never, never, false>;
 }

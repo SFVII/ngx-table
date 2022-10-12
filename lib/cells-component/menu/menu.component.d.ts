@@ -19,6 +19,6 @@ export declare class MenuComponent implements OnInit {
     ngOnInit(): void;
     action(menu: IMenuSettings): void;
     static ɵfac: i0.ɵɵFactoryDeclaration<MenuComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDeclaration<MenuComponent, "menu", never, { "menuSettings": "menuSettings"; "element": "element"; }, { "callHandler": "callHandler"; }, never, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<MenuComponent, "menu", never, { "menuSettings": "menuSettings"; "element": "element"; }, { "callHandler": "callHandler"; }, never, never, false>;
 }
 export {};

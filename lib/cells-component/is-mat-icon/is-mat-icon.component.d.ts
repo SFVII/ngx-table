@@ -8,5 +8,5 @@ export declare class IsMatIconComponent implements OnInit, OnChanges {
     ngOnChanges(changes: SimpleChanges): void;
     ngOnInit(): void;
     static ɵfac: i0.ɵɵFactoryDeclaration<IsMatIconComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDeclaration<IsMatIconComponent, "app-is-mat-icon", never, { "input": "input"; }, {}, never, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<IsMatIconComponent, "app-is-mat-icon", never, { "input": "input"; }, {}, never, never, false>;
 }

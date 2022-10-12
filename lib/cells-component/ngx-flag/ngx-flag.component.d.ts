@@ -821,5 +821,5 @@ export declare class NgxFlagsComponent implements OnChanges {
     getCode(): string;
     getFlag(code: string): string;
     static ɵfac: i0.ɵɵFactoryDeclaration<NgxFlagsComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDeclaration<NgxFlagsComponent, "flag", never, { "country": "country"; "format": "format"; "size": "size"; "class": "class"; }, {}, never, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<NgxFlagsComponent, "flag", never, { "country": "country"; "format": "format"; "size": "size"; "class": "class"; }, {}, never, never, false>;
 }

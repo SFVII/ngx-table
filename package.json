@@ -2,24 +2,24 @@
   "name": "ngx-table",
   "version": "1.0.0",
   "dependencies": {
-    "tslib": ">=2.x && <= 2.3.x"
+    "tslib": ">=2.x"
   },
   "peerDependencies": {
-    "@angular/common": ">=10.x && <= 13.x",
-    "@angular/core": ">=10.x  && <= 13.x"
+    "@angular/common": ">=14.x",
+    "@angular/core": ">=14.x"
   },
   "module": "fesm2015/ngx-table.mjs",
   "es2020": "fesm2020/ngx-table.mjs",
   "esm2020": "esm2020/ngx-table.mjs",
   "fesm2020": "fesm2020/ngx-table.mjs",
   "fesm2015": "fesm2015/ngx-table.mjs",
-  "typings": "ngx-table.d.ts",
+  "typings": "index.d.ts",
   "exports": {
     "./package.json": {
       "default": "./package.json"
     },
     ".": {
-      "types": "./ngx-table.d.ts",
+      "types": "./index.d.ts",
       "esm2020": "./esm2020/ngx-table.mjs",
       "es2020": "./fesm2020/ngx-table.mjs",
       "es2015": "./fesm2015/ngx-table.mjs",

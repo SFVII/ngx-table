@@ -11,5 +11,5 @@ export declare class GenderComponent implements OnInit, OnChanges {
     ngOnInit(): void;
     ngOnChanges(changes: SimpleChanges): void;
     static ɵfac: i0.ɵɵFactoryDeclaration<GenderComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDeclaration<GenderComponent, "app-gender", never, { "type": "type"; "size": "size"; }, {}, never, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<GenderComponent, "app-gender", never, { "type": "type"; "size": "size"; }, {}, never, never, false>;
 }

@@ -13,5 +13,5 @@ export declare class EquipementTypeComponent implements OnInit, OnChanges {
     ngOnInit(): void;
     ngOnChanges(changes: SimpleChanges): void;
     static ɵfac: i0.ɵɵFactoryDeclaration<EquipementTypeComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDeclaration<EquipementTypeComponent, "app-equipement-type", never, { "name": "name"; "type": "type"; "size": "size"; }, {}, never, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<EquipementTypeComponent, "app-equipement-type", never, { "name": "name"; "type": "type"; "size": "size"; }, {}, never, never, false>;
 }

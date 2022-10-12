@@ -1,29 +1,29 @@
 import * as i0 from '@angular/core';
 import { EventEmitter, Injectable, Inject, Component, Input, ViewChild, NgModule, Output, Pipe, ViewEncapsulation, Optional, SkipSelf } from '@angular/core';
-import * as i2 from '@angular/material/icon';
-import { MatIconModule } from '@angular/material/icon';
-import * as i2$1 from '@angular/material/tooltip';
+import * as i2 from '@angular/material/tooltip';
 import { MatTooltipModule } from '@angular/material/tooltip';
-import * as i24 from '@angular/common';
+import * as i1 from '@angular/common';
 import { CommonModule, DatePipe } from '@angular/common';
+import * as i4 from '@angular/material/icon';
+import { MatIconModule } from '@angular/material/icon';
 import { isValidPhoneNumber, parsePhoneNumber } from 'libphonenumber-js';
-import * as i1 from '@angular/forms';
+import * as i1$1 from '@angular/forms';
 import { BehaviorSubject, from } from 'rxjs';
 import { switchMap, debounceTime, share, pluck } from 'rxjs/operators';
 import { DataSource } from '@angular/cdk/collections';
 import { trigger, state, style, transition, animate } from '@angular/animations';
 import * as i1$2 from '@angular/router';
 import { RouterModule } from '@angular/router';
-import * as i4 from '@angular/material/table';
-import { MatTableModule } from '@angular/material/table';
-import * as i5 from '@angular/material/sort';
-import { MatSortModule } from '@angular/material/sort';
-import * as i1$1 from 'nowboard-icon';
-import { NowboardIconModule, NowboardIconService } from 'nowboard-icon';
-import * as i2$2 from '@angular/material/menu';
-import { MatMenuModule } from '@angular/material/menu';
-import * as i23 from '@angular/material/paginator';
+import * as i5 from '@angular/material/paginator';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import * as i6 from '@angular/material/table';
+import { MatTableModule } from '@angular/material/table';
+import * as i7 from '@angular/material/sort';
+import { MatSortModule } from '@angular/material/sort';
+import * as i2$1 from '@angular/material/menu';
+import { MatMenuModule } from '@angular/material/menu';
+import * as i3 from 'nowboard-icon';
+import { NowboardIconModule, NowboardIconService } from 'nowboard-icon';
 import { MatBadgeModule } from '@angular/material/badge';
 
 class TableService {
@@ -38,9 +38,9 @@ class TableService {
         this.updateHeader.emit(true);
     }
 }
-TableService.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: TableService, deps: [{ token: '__NgxDesignTable__' }], target: i0.ɵɵFactoryTarget.Injectable });
-TableService.ɵprov = i0.ɵɵngDeclareInjectable({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: TableService, providedIn: 'root' });
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: TableService, decorators: [{
+TableService.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.2.5", ngImport: i0, type: TableService, deps: [{ token: '__NgxDesignTable__' }], target: i0.ɵɵFactoryTarget.Injectable });
+TableService.ɵprov = i0.ɵɵngDeclareInjectable({ minVersion: "12.0.0", version: "14.2.5", ngImport: i0, type: TableService, providedIn: 'root' });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.2.5", ngImport: i0, type: TableService, decorators: [{
             type: Injectable,
             args: [{
                     providedIn: 'root'
@@ -93,9 +93,9 @@ class CustomerRankComponent {
         this.ngOnInit();
     }
 }
-CustomerRankComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: CustomerRankComponent, deps: [{ token: i0.ChangeDetectorRef }, { token: TableService }], target: i0.ɵɵFactoryTarget.Component });
-CustomerRankComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "12.0.0", version: "13.3.11", type: CustomerRankComponent, selector: "app-customer-rank", inputs: { type: "type" }, usesOnChanges: true, ngImport: i0, template: "<span [class]=\"typeClass\" matTooltip=\"Contrat de type : {{type}}\">\n  <span>{{type}}</span><mat-icon *ngIf=\"type !== 'CLASSIC'\">star_rate</mat-icon>\n</span>\n", styles: [".gold{font-size:12px;font-weight:700;color:gold}.silver{font-size:12px;font-weight:700;color:silver}.bronze{font-weight:700;font-size:12px;color:#cd7f32}.default{font-weight:700;font-size:12px;color:#000}\n"], components: [{ type: i2.MatIcon, selector: "mat-icon", inputs: ["color", "inline", "svgIcon", "fontSet", "fontIcon"], exportAs: ["matIcon"] }], directives: [{ type: i2$1.MatTooltip, selector: "[matTooltip]", exportAs: ["matTooltip"] }, { type: i24.NgIf, selector: "[ngIf]", inputs: ["ngIf", "ngIfThen", "ngIfElse"] }] });
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: CustomerRankComponent, decorators: [{
+CustomerRankComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.2.5", ngImport: i0, type: CustomerRankComponent, deps: [{ token: i0.ChangeDetectorRef }, { token: TableService }], target: i0.ɵɵFactoryTarget.Component });
+CustomerRankComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "14.2.5", type: CustomerRankComponent, selector: "app-customer-rank", inputs: { type: "type" }, usesOnChanges: true, ngImport: i0, template: "<span [class]=\"typeClass\" matTooltip=\"Contrat de type : {{type}}\">\n  <span>{{type}}</span><mat-icon *ngIf=\"type !== 'CLASSIC'\">star_rate</mat-icon>\n</span>\n", styles: [".gold{font-size:12px;font-weight:700;color:gold}.silver{font-size:12px;font-weight:700;color:silver}.bronze{font-weight:700;font-size:12px;color:#cd7f32}.default{font-weight:700;font-size:12px;color:#000}\n"], dependencies: [{ kind: "directive", type: i2.MatTooltip, selector: "[matTooltip]", exportAs: ["matTooltip"] }, { kind: "directive", type: i1.NgIf, selector: "[ngIf]", inputs: ["ngIf", "ngIfThen", "ngIfElse"] }, { kind: "component", type: i4.MatIcon, selector: "mat-icon", inputs: ["color", "inline", "svgIcon", "fontSet", "fontIcon"], exportAs: ["matIcon"] }] });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.2.5", ngImport: i0, type: CustomerRankComponent, decorators: [{
             type: Component,
             args: [{ selector: 'app-customer-rank', template: "<span [class]=\"typeClass\" matTooltip=\"Contrat de type : {{type}}\">\n  <span>{{type}}</span><mat-icon *ngIf=\"type !== 'CLASSIC'\">star_rate</mat-icon>\n</span>\n", styles: [".gold{font-size:12px;font-weight:700;color:gold}.silver{font-size:12px;font-weight:700;color:silver}.bronze{font-weight:700;font-size:12px;color:#cd7f32}.default{font-weight:700;font-size:12px;color:#000}\n"] }]
         }], ctorParameters: function () { return [{ type: i0.ChangeDetectorRef }, { type: TableService }]; }, propDecorators: { type: [{
@@ -126,9 +126,9 @@ class DateFormatComponent {
     ngOnChanges(changes) {
     }
 }
-DateFormatComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: DateFormatComponent, deps: [], target: i0.ɵɵFactoryTarget.Component });
-DateFormatComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "12.0.0", version: "13.3.11", type: DateFormatComponent, selector: "date-format", inputs: { date: "date", timezone: "timezone" }, usesOnChanges: true, ngImport: i0, template: "<span matTooltip=\"{{(date| date : 'short' : timezone)}}\" [innerHTML]=\"run((date| date : 'short' : timezone))\"></span>\n", styles: ["span.time-badge{display:block;text-align:center!important;padding-right:25px}span.time-badge .hour{display:block;font-weight:900;font-size:12px}span.time-badge .minute{display:block;font-weight:300;font-size:10px}\n"], directives: [{ type: i2$1.MatTooltip, selector: "[matTooltip]", exportAs: ["matTooltip"] }], pipes: { "date": i24.DatePipe } });
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: DateFormatComponent, decorators: [{
+DateFormatComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.2.5", ngImport: i0, type: DateFormatComponent, deps: [], target: i0.ɵɵFactoryTarget.Component });
+DateFormatComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "14.2.5", type: DateFormatComponent, selector: "date-format", inputs: { date: "date", timezone: "timezone" }, usesOnChanges: true, ngImport: i0, template: "<span matTooltip=\"{{(date| date : 'short' : timezone)}}\" [innerHTML]=\"run((date| date : 'short' : timezone))\"></span>\n", styles: ["span.time-badge{display:block;text-align:center!important;padding-right:25px}span.time-badge .hour{display:block;font-weight:900;font-size:12px}span.time-badge .minute{display:block;font-weight:300;font-size:10px}\n"], dependencies: [{ kind: "directive", type: i2.MatTooltip, selector: "[matTooltip]", exportAs: ["matTooltip"] }, { kind: "pipe", type: i1.DatePipe, name: "date" }] });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.2.5", ngImport: i0, type: DateFormatComponent, decorators: [{
             type: Component,
             args: [{ selector: 'date-format', template: "<span matTooltip=\"{{(date| date : 'short' : timezone)}}\" [innerHTML]=\"run((date| date : 'short' : timezone))\"></span>\n", styles: ["span.time-badge{display:block;text-align:center!important;padding-right:25px}span.time-badge .hour{display:block;font-weight:900;font-size:12px}span.time-badge .minute{display:block;font-weight:300;font-size:10px}\n"] }]
         }], ctorParameters: function () { return []; }, propDecorators: { date: [{
@@ -171,9 +171,9 @@ class TranslateService {
         }
     }
 }
-TranslateService.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: TranslateService, deps: [], target: i0.ɵɵFactoryTarget.Injectable });
-TranslateService.ɵprov = i0.ɵɵngDeclareInjectable({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: TranslateService, providedIn: 'root' });
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: TranslateService, decorators: [{
+TranslateService.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.2.5", ngImport: i0, type: TranslateService, deps: [], target: i0.ɵɵFactoryTarget.Injectable });
+TranslateService.ɵprov = i0.ɵɵngDeclareInjectable({ minVersion: "12.0.0", version: "14.2.5", ngImport: i0, type: TranslateService, providedIn: 'root' });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.2.5", ngImport: i0, type: TranslateService, decorators: [{
             type: Injectable,
             args: [{
                     providedIn: 'root'
@@ -188,13 +188,13 @@ class EquipementStatusComponent {
         this.translate = translate;
         this.css = {};
         this.status = '';
-        // this.css.maxWidth = String((this.size || 22)) + 'px';
-        // this.css.maxHeight = String((this.size || 22)) + 'px';
+        this.css.maxWidth = String((this.size || 22)) + 'px';
+        this.css.maxHeight = String((this.size || 22)) + 'px';
         //this.params = this.service.settingConfig.equipmentStatus;
     }
     ngOnInit() {
-        // this.css.maxWidth = String((this.size || 22)) + 'px';
-        // this.css.maxHeight = String((this.size || 22)) + 'px';
+        this.css.maxWidth = String((this.size || 22)) + 'px';
+        this.css.maxHeight = String((this.size || 22)) + 'px';
         const params = this.service.settingConfig.equipmentStatus; /*{
           "actif": "/assets/icons/status/actif.png",
           "oui": "/assets/icons/status/actif.png",
@@ -230,11 +230,11 @@ class EquipementStatusComponent {
         this.ngOnInit();
     }
 }
-EquipementStatusComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: EquipementStatusComponent, deps: [{ token: i0.ChangeDetectorRef }, { token: TableService }, { token: TranslateService }], target: i0.ɵɵFactoryTarget.Component });
-EquipementStatusComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "12.0.0", version: "13.3.11", type: EquipementStatusComponent, selector: "app-equipement-status", inputs: { type: "type", size: "size", lang: "lang" }, usesOnChanges: true, ngImport: i0, template: "<span [style]=\"css\" matTooltip=\"{{type}}\">\n    <img [src]=\"icon\" [style]=\"css\" class=\"equipement-status\">\n    {{ status }}\n</span>", styles: [""], directives: [{ type: i2$1.MatTooltip, selector: "[matTooltip]", exportAs: ["matTooltip"] }] });
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: EquipementStatusComponent, decorators: [{
+EquipementStatusComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.2.5", ngImport: i0, type: EquipementStatusComponent, deps: [{ token: i0.ChangeDetectorRef }, { token: TableService }, { token: TranslateService }], target: i0.ɵɵFactoryTarget.Component });
+EquipementStatusComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "14.2.5", type: EquipementStatusComponent, selector: "app-equipement-status", inputs: { type: "type", size: "size", lang: "lang" }, usesOnChanges: true, ngImport: i0, template: "<span [style]=\"css\" matTooltip=\"{{type}}\">\n    <img [src]=\"icon\" [style]=\"css\" class=\"equipement-status\">\n    {{ status }}\n</span>", styles: [""], dependencies: [{ kind: "directive", type: i2.MatTooltip, selector: "[matTooltip]", exportAs: ["matTooltip"] }] });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.2.5", ngImport: i0, type: EquipementStatusComponent, decorators: [{
             type: Component,
-            args: [{ selector: 'app-equipement-status', template: "<span [style]=\"css\" matTooltip=\"{{type}}\">\n    <img [src]=\"icon\" [style]=\"css\" class=\"equipement-status\">\n    {{ status }}\n</span>", styles: [""] }]
+            args: [{ selector: 'app-equipement-status', template: "<span [style]=\"css\" matTooltip=\"{{type}}\">\n    <img [src]=\"icon\" [style]=\"css\" class=\"equipement-status\">\n    {{ status }}\n</span>" }]
         }], ctorParameters: function () { return [{ type: i0.ChangeDetectorRef }, { type: TableService }, { type: TranslateService }]; }, propDecorators: { type: [{
                 type: Input
             }], size: [{
@@ -286,11 +286,11 @@ class EquipementTypeComponent {
         this.ngOnInit();
     }
 }
-EquipementTypeComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: EquipementTypeComponent, deps: [{ token: i0.ChangeDetectorRef }, { token: TableService }], target: i0.ɵɵFactoryTarget.Component });
-EquipementTypeComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "12.0.0", version: "13.3.11", type: EquipementTypeComponent, selector: "app-equipement-type", inputs: { name: "name", type: "type", size: "size" }, usesOnChanges: true, ngImport: i0, template: "<span [style]=\"css\" matTooltip=\"{{type}}\">\n    <img [src]=\"icon\" [style]=\"css\">\n</span>\n", styles: [""], directives: [{ type: i2$1.MatTooltip, selector: "[matTooltip]", exportAs: ["matTooltip"] }] });
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: EquipementTypeComponent, decorators: [{
+EquipementTypeComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.2.5", ngImport: i0, type: EquipementTypeComponent, deps: [{ token: i0.ChangeDetectorRef }, { token: TableService }], target: i0.ɵɵFactoryTarget.Component });
+EquipementTypeComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "14.2.5", type: EquipementTypeComponent, selector: "app-equipement-type", inputs: { name: "name", type: "type", size: "size" }, usesOnChanges: true, ngImport: i0, template: "<span [style]=\"css\" matTooltip=\"{{type}}\">\n    <img [src]=\"icon\" [style]=\"css\">\n</span>\n", styles: [""], dependencies: [{ kind: "directive", type: i2.MatTooltip, selector: "[matTooltip]", exportAs: ["matTooltip"] }] });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.2.5", ngImport: i0, type: EquipementTypeComponent, decorators: [{
             type: Component,
-            args: [{ selector: 'app-equipement-type', template: "<span [style]=\"css\" matTooltip=\"{{type}}\">\n    <img [src]=\"icon\" [style]=\"css\">\n</span>\n", styles: [""] }]
+            args: [{ selector: 'app-equipement-type', template: "<span [style]=\"css\" matTooltip=\"{{type}}\">\n    <img [src]=\"icon\" [style]=\"css\">\n</span>\n" }]
         }], ctorParameters: function () { return [{ type: i0.ChangeDetectorRef }, { type: TableService }]; }, propDecorators: { name: [{
                 type: Input
             }], type: [{
@@ -322,11 +322,11 @@ class GenderComponent {
         this.ngOnInit();
     }
 }
-GenderComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: GenderComponent, deps: [{ token: TableService }], target: i0.ɵɵFactoryTarget.Component });
-GenderComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "12.0.0", version: "13.3.11", type: GenderComponent, selector: "app-gender", inputs: { type: "type", size: "size" }, usesOnChanges: true, ngImport: i0, template: "<span [style]=\"css\" matTooltip=\"{{type}}\">\n    <img [src]=\"icon\" [style]=\"css\">\n</span>\n", styles: [""], directives: [{ type: i2$1.MatTooltip, selector: "[matTooltip]", exportAs: ["matTooltip"] }] });
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: GenderComponent, decorators: [{
+GenderComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.2.5", ngImport: i0, type: GenderComponent, deps: [{ token: TableService }], target: i0.ɵɵFactoryTarget.Component });
+GenderComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "14.2.5", type: GenderComponent, selector: "app-gender", inputs: { type: "type", size: "size" }, usesOnChanges: true, ngImport: i0, template: "<span [style]=\"css\" matTooltip=\"{{type}}\">\n    <img [src]=\"icon\" [style]=\"css\">\n</span>\n", styles: [""], dependencies: [{ kind: "directive", type: i2.MatTooltip, selector: "[matTooltip]", exportAs: ["matTooltip"] }] });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.2.5", ngImport: i0, type: GenderComponent, decorators: [{
             type: Component,
-            args: [{ selector: 'app-gender', template: "<span [style]=\"css\" matTooltip=\"{{type}}\">\n    <img [src]=\"icon\" [style]=\"css\">\n</span>\n", styles: [""] }]
+            args: [{ selector: 'app-gender', template: "<span [style]=\"css\" matTooltip=\"{{type}}\">\n    <img [src]=\"icon\" [style]=\"css\">\n</span>\n" }]
         }], ctorParameters: function () { return [{ type: TableService }]; }, propDecorators: { type: [{
                 type: Input
             }], size: [{
@@ -351,9 +351,9 @@ class IsMatIconComponent {
         }
     }
 }
-IsMatIconComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: IsMatIconComponent, deps: [], target: i0.ɵɵFactoryTarget.Component });
-IsMatIconComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "12.0.0", version: "13.3.11", type: IsMatIconComponent, selector: "app-is-mat-icon", inputs: { input: "input" }, usesOnChanges: true, ngImport: i0, template: "<ng-container *ngIf=\"!isIcon\">\n    <span >{{display}}</span>\n</ng-container>\n<ng-container  *ngIf=\"isIcon\">\n    <mat-icon>{{display}}</mat-icon>\n</ng-container>", styles: [":host{height:34px;display:flex;padding:auto}:host .mat-icon{display:block;fill:currentColor;text-align:center;width:24px;margin:auto;vertical-align:middle;background:no-repeat}:host i,:host mat-icon{font-size:24px;height:24px}\n"], components: [{ type: i2.MatIcon, selector: "mat-icon", inputs: ["color", "inline", "svgIcon", "fontSet", "fontIcon"], exportAs: ["matIcon"] }], directives: [{ type: i24.NgIf, selector: "[ngIf]", inputs: ["ngIf", "ngIfThen", "ngIfElse"] }] });
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: IsMatIconComponent, decorators: [{
+IsMatIconComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.2.5", ngImport: i0, type: IsMatIconComponent, deps: [], target: i0.ɵɵFactoryTarget.Component });
+IsMatIconComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "14.2.5", type: IsMatIconComponent, selector: "app-is-mat-icon", inputs: { input: "input" }, usesOnChanges: true, ngImport: i0, template: "<ng-container *ngIf=\"!isIcon\">\n    <span >{{display}}</span>\n</ng-container>\n<ng-container  *ngIf=\"isIcon\">\n    <mat-icon>{{display}}</mat-icon>\n</ng-container>", styles: [":host{height:34px;display:flex;padding:auto}:host .mat-icon{display:block;fill:currentColor;text-align:center;width:24px;margin:auto;vertical-align:middle;background:no-repeat}:host i,:host mat-icon{font-size:24px;height:24px}\n"], dependencies: [{ kind: "directive", type: i1.NgIf, selector: "[ngIf]", inputs: ["ngIf", "ngIfThen", "ngIfElse"] }, { kind: "component", type: i4.MatIcon, selector: "mat-icon", inputs: ["color", "inline", "svgIcon", "fontSet", "fontIcon"], exportAs: ["matIcon"] }] });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.2.5", ngImport: i0, type: IsMatIconComponent, decorators: [{
             type: Component,
             args: [{ selector: 'app-is-mat-icon', template: "<ng-container *ngIf=\"!isIcon\">\n    <span >{{display}}</span>\n</ng-container>\n<ng-container  *ngIf=\"isIcon\">\n    <mat-icon>{{display}}</mat-icon>\n</ng-container>", styles: [":host{height:34px;display:flex;padding:auto}:host .mat-icon{display:block;fill:currentColor;text-align:center;width:24px;margin:auto;vertical-align:middle;background:no-repeat}:host i,:host mat-icon{font-size:24px;height:24px}\n"] }]
         }], ctorParameters: function () { return []; }, propDecorators: { input: [{
@@ -413,9 +413,9 @@ class NameAvatarComponent {
     getRatio() {
     }
 }
-NameAvatarComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: NameAvatarComponent, deps: [{ token: TableService }], target: i0.ɵɵFactoryTarget.Component });
-NameAvatarComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "12.0.0", version: "13.3.11", type: NameAvatarComponent, selector: "name-avatar", inputs: { src: "src", fontSize: "fontSize", textSize: "textSize" }, viewQueries: [{ propertyName: "icon", first: true, predicate: ["avatar"], descendants: true, static: true }], ngImport: i0, template: "<div [ngStyle]=\"src && src.includes('assets') && {'display': 'none'}\" #avatar>\n    {{letter}}\n</div>\n\n<img [src]=\"src\" [ngStyle]=\"{'width': fontSize || '44px', 'height': fontSize || '44px',  'vertical-align': 'middle', 'border-radius': _borderRadius}\" *ngIf=\"src && src.includes('assets')\" />", styles: ["div{align-items:center;justify-content:center;padding:0!important}\n"], directives: [{ type: i24.NgStyle, selector: "[ngStyle]", inputs: ["ngStyle"] }, { type: i24.NgIf, selector: "[ngIf]", inputs: ["ngIf", "ngIfThen", "ngIfElse"] }] });
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: NameAvatarComponent, decorators: [{
+NameAvatarComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.2.5", ngImport: i0, type: NameAvatarComponent, deps: [{ token: TableService }], target: i0.ɵɵFactoryTarget.Component });
+NameAvatarComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "14.2.5", type: NameAvatarComponent, selector: "name-avatar", inputs: { src: "src", fontSize: "fontSize", textSize: "textSize" }, viewQueries: [{ propertyName: "icon", first: true, predicate: ["avatar"], descendants: true, static: true }], ngImport: i0, template: "<div [ngStyle]=\"src && src.includes('assets') && {'display': 'none'}\" #avatar>\n    {{letter}}\n</div>\n\n<img [src]=\"src\" [ngStyle]=\"{'width': fontSize || '44px', 'height': fontSize || '44px',  'vertical-align': 'middle', 'border-radius': _borderRadius}\" *ngIf=\"src && src.includes('assets')\" />", styles: ["div{align-items:center;justify-content:center;padding:0!important}\n"], dependencies: [{ kind: "directive", type: i1.NgIf, selector: "[ngIf]", inputs: ["ngIf", "ngIfThen", "ngIfElse"] }, { kind: "directive", type: i1.NgStyle, selector: "[ngStyle]", inputs: ["ngStyle"] }] });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.2.5", ngImport: i0, type: NameAvatarComponent, decorators: [{
             type: Component,
             args: [{ selector: 'name-avatar', template: "<div [ngStyle]=\"src && src.includes('assets') && {'display': 'none'}\" #avatar>\n    {{letter}}\n</div>\n\n<img [src]=\"src\" [ngStyle]=\"{'width': fontSize || '44px', 'height': fontSize || '44px',  'vertical-align': 'middle', 'border-radius': _borderRadius}\" *ngIf=\"src && src.includes('assets')\" />", styles: ["div{align-items:center;justify-content:center;padding:0!important}\n"] }]
         }], ctorParameters: function () { return [{ type: TableService }]; }, propDecorators: { src: [{
@@ -450,11 +450,11 @@ class PngIconComponent {
         }
     }
 }
-PngIconComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: PngIconComponent, deps: [], target: i0.ɵɵFactoryTarget.Component });
-PngIconComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "12.0.0", version: "13.3.11", type: PngIconComponent, selector: "png-icon", inputs: { src: "src", fontSize: "fontSize", color: "color" }, viewQueries: [{ propertyName: "icon", first: true, predicate: ["icon"], descendants: true, static: true }], ngImport: i0, template: "<span #icon></span>\n", styles: [""] });
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: PngIconComponent, decorators: [{
+PngIconComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.2.5", ngImport: i0, type: PngIconComponent, deps: [], target: i0.ɵɵFactoryTarget.Component });
+PngIconComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "14.2.5", type: PngIconComponent, selector: "png-icon", inputs: { src: "src", fontSize: "fontSize", color: "color" }, viewQueries: [{ propertyName: "icon", first: true, predicate: ["icon"], descendants: true, static: true }], ngImport: i0, template: "<span #icon></span>\n", styles: [""] });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.2.5", ngImport: i0, type: PngIconComponent, decorators: [{
             type: Component,
-            args: [{ selector: 'png-icon', template: "<span #icon></span>\n", styles: [""] }]
+            args: [{ selector: 'png-icon', template: "<span #icon></span>\n" }]
         }], ctorParameters: function () { return []; }, propDecorators: { src: [{
                 type: Input
             }], fontSize: [{
@@ -496,11 +496,11 @@ class OriginComponent {
         this.ngOnInit();
     }
 }
-OriginComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: OriginComponent, deps: [{ token: TableService }], target: i0.ɵɵFactoryTarget.Component });
-OriginComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "12.0.0", version: "13.3.11", type: OriginComponent, selector: "icon-origin", inputs: { icon: "icon" }, usesOnChanges: true, ngImport: i0, template: "<png-icon style=\"margin : auto; text-align: center\" matTooltip=\"{{this.icon}}\" [src]=\"this.iconSrc\"></png-icon>", styles: [""], components: [{ type: PngIconComponent, selector: "png-icon", inputs: ["src", "fontSize", "color"] }], directives: [{ type: i2$1.MatTooltip, selector: "[matTooltip]", exportAs: ["matTooltip"] }] });
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: OriginComponent, decorators: [{
+OriginComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.2.5", ngImport: i0, type: OriginComponent, deps: [{ token: TableService }], target: i0.ɵɵFactoryTarget.Component });
+OriginComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "14.2.5", type: OriginComponent, selector: "icon-origin", inputs: { icon: "icon" }, usesOnChanges: true, ngImport: i0, template: "<png-icon style=\"margin : auto; text-align: center\" matTooltip=\"{{this.icon}}\" [src]=\"this.iconSrc\"></png-icon>", styles: [""], dependencies: [{ kind: "component", type: PngIconComponent, selector: "png-icon", inputs: ["src", "fontSize", "color"] }, { kind: "directive", type: i2.MatTooltip, selector: "[matTooltip]", exportAs: ["matTooltip"] }] });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.2.5", ngImport: i0, type: OriginComponent, decorators: [{
             type: Component,
-            args: [{ selector: 'icon-origin', template: "<png-icon style=\"margin : auto; text-align: center\" matTooltip=\"{{this.icon}}\" [src]=\"this.iconSrc\"></png-icon>", styles: [""] }]
+            args: [{ selector: 'icon-origin', template: "<png-icon style=\"margin : auto; text-align: center\" matTooltip=\"{{this.icon}}\" [src]=\"this.iconSrc\"></png-icon>" }]
         }], ctorParameters: function () { return [{ type: TableService }]; }, propDecorators: { icon: [{
                 type: Input
             }] } });
@@ -1344,24 +1344,11 @@ class NgxFlagsComponent {
         return this.database[code.toLowerCase()];
     }
 }
-NgxFlagsComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: NgxFlagsComponent, deps: [], target: i0.ɵɵFactoryTarget.Component });
-NgxFlagsComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "12.0.0", version: "13.3.11", type: NgxFlagsComponent, selector: "flag", inputs: { country: "country", format: "format", size: "size", class: "class" }, usesOnChanges: true, ngImport: i0, template: `<div *ngIf="this.country" [style]="this.style" [ngClass]="['ngx-flag', this.class]"></div>`, isInline: true, styles: [".ngx-flag{display:inline-block;background-repeat:no-repeat;background-position:center;background-size:cover}\n"], directives: [{ type: i24.NgIf, selector: "[ngIf]", inputs: ["ngIf", "ngIfThen", "ngIfElse"] }, { type: i24.NgClass, selector: "[ngClass]", inputs: ["class", "ngClass"] }] });
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: NgxFlagsComponent, decorators: [{
+NgxFlagsComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.2.5", ngImport: i0, type: NgxFlagsComponent, deps: [], target: i0.ɵɵFactoryTarget.Component });
+NgxFlagsComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "14.2.5", type: NgxFlagsComponent, selector: "flag", inputs: { country: "country", format: "format", size: "size", class: "class" }, usesOnChanges: true, ngImport: i0, template: `<div *ngIf="this.country" [style]="this.style" [ngClass]="['ngx-flag', this.class]"></div>`, isInline: true, styles: [".ngx-flag{display:inline-block;background-repeat:no-repeat;background-position:center;background-size:cover}\n"], dependencies: [{ kind: "directive", type: i1.NgClass, selector: "[ngClass]", inputs: ["class", "ngClass"] }, { kind: "directive", type: i1.NgIf, selector: "[ngIf]", inputs: ["ngIf", "ngIfThen", "ngIfElse"] }] });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.2.5", ngImport: i0, type: NgxFlagsComponent, decorators: [{
             type: Component,
-            args: [{
-                    selector: 'flag',
-                    template: `<div *ngIf="this.country" [style]="this.style" [ngClass]="['ngx-flag', this.class]"></div>`,
-                    styles: [
-                        `
-      .ngx-flag {
-        display: inline-block;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-      }
-    `,
-                    ],
-                }]
+            args: [{ selector: 'flag', template: `<div *ngIf="this.country" [style]="this.style" [ngClass]="['ngx-flag', this.class]"></div>`, styles: [".ngx-flag{display:inline-block;background-repeat:no-repeat;background-position:center;background-size:cover}\n"] }]
         }], ctorParameters: function () { return []; }, propDecorators: { country: [{
                 type: Input
             }], format: [{
@@ -1454,23 +1441,21 @@ class PhoneDisplayComponent {
         return null;
     }
 }
-PhoneDisplayComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: PhoneDisplayComponent, deps: [{ token: i1.FormBuilder }], target: i0.ɵɵFactoryTarget.Component });
-PhoneDisplayComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "12.0.0", version: "13.3.11", type: PhoneDisplayComponent, selector: "app-phone-display", inputs: { number: "number" }, usesOnChanges: true, ngImport: i0, template: "<flag [country]=\"flag\"></flag> <div>{{display || '-'}}</div>\n", styles: [""], components: [{ type: NgxFlagsComponent, selector: "flag", inputs: ["country", "format", "size", "class"] }] });
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: PhoneDisplayComponent, decorators: [{
+PhoneDisplayComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.2.5", ngImport: i0, type: PhoneDisplayComponent, deps: [{ token: i1$1.UntypedFormBuilder }], target: i0.ɵɵFactoryTarget.Component });
+PhoneDisplayComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "14.2.5", type: PhoneDisplayComponent, selector: "app-phone-display", inputs: { number: "number" }, usesOnChanges: true, ngImport: i0, template: "<flag [country]=\"flag\"></flag> <div>{{display || '-'}}</div>\n", styles: [""], dependencies: [{ kind: "component", type: NgxFlagsComponent, selector: "flag", inputs: ["country", "format", "size", "class"] }] });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.2.5", ngImport: i0, type: PhoneDisplayComponent, decorators: [{
             type: Component,
-            args: [{ selector: 'app-phone-display', template: "<flag [country]=\"flag\"></flag> <div>{{display || '-'}}</div>\n", styles: [""] }]
-        }], ctorParameters: function () { return [{ type: i1.FormBuilder }]; }, propDecorators: { number: [{
+            args: [{ selector: 'app-phone-display', template: "<flag [country]=\"flag\"></flag> <div>{{display || '-'}}</div>\n" }]
+        }], ctorParameters: function () { return [{ type: i1$1.UntypedFormBuilder }]; }, propDecorators: { number: [{
                 type: Input
             }] } });
 
 class PngIconModule {
 }
-PngIconModule.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: PngIconModule, deps: [], target: i0.ɵɵFactoryTarget.NgModule });
-PngIconModule.ɵmod = i0.ɵɵngDeclareNgModule({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: PngIconModule, declarations: [PngIconComponent], imports: [CommonModule], exports: [PngIconComponent] });
-PngIconModule.ɵinj = i0.ɵɵngDeclareInjector({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: PngIconModule, imports: [[
-            CommonModule
-        ]] });
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: PngIconModule, decorators: [{
+PngIconModule.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.2.5", ngImport: i0, type: PngIconModule, deps: [], target: i0.ɵɵFactoryTarget.NgModule });
+PngIconModule.ɵmod = i0.ɵɵngDeclareNgModule({ minVersion: "14.0.0", version: "14.2.5", ngImport: i0, type: PngIconModule, declarations: [PngIconComponent], imports: [CommonModule], exports: [PngIconComponent] });
+PngIconModule.ɵinj = i0.ɵɵngDeclareInjector({ minVersion: "12.0.0", version: "14.2.5", ngImport: i0, type: PngIconModule, imports: [CommonModule] });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.2.5", ngImport: i0, type: PngIconModule, decorators: [{
             type: NgModule,
             args: [{
                     declarations: [PngIconComponent],
@@ -1549,11 +1534,11 @@ class PriorityComponent {
         this.ngOnInit();
     }
 }
-PriorityComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: PriorityComponent, deps: [{ token: TableService }], target: i0.ɵɵFactoryTarget.Component });
-PriorityComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "12.0.0", version: "13.3.11", type: PriorityComponent, selector: "icon-priority", inputs: { icon: "icon", iconLabel: "iconLabel" }, usesOnChanges: true, ngImport: i0, template: "<!--<png-icon matTooltip=\"{{this.iconLabel}}\" [src]=\"this.iconSrc\"></png-icon>-->\n<!--<png-icon [src]=\"this.iconSrc\"></png-icon>-->\n<span matTooltip=\"{{this.label}}\" class=\"{{this.iconSrc}}\">\n    {{this.label}}\n</span>", styles: [".now-low{background-color:#00fcbe;border-radius:1000px;border:none!important;text-align:left;color:#fff;font-style:normal;font-weight:600;font-size:16px;line-height:125%;letter-spacing:0px;padding:8px 19px;overflow:hidden;white-space:nowrap;max-width:80px!important;text-overflow:ellipsis;display:inline-block;text-align:center}.now-normal{background-color:#8e62ef;border-radius:1000px;border:none!important;text-align:left;font-style:normal;font-weight:600;font-size:16px;line-height:125%;letter-spacing:0px;color:#fff;padding:8px 19px;overflow:hidden;white-space:nowrap;max-width:80px!important;text-overflow:ellipsis;display:inline-block;text-align:center}.now-urgent{background-color:#f6d04c;border-radius:1000px;border:none!important;text-align:left;font-style:normal;font-weight:600;font-size:16px;line-height:125%;letter-spacing:0px;color:#fff;padding:8px 19px;overflow:hidden;white-space:nowrap;max-width:80px!important;text-overflow:ellipsis;display:inline-block;text-align:center}.now-critic{background:#F6544C!important;border-radius:1000px;border:none!important;text-align:left;font-style:normal;font-weight:600;font-size:16px;line-height:125%;letter-spacing:0px;color:#fff;padding:8px 19px;overflow:hidden;white-space:nowrap;max-width:80px!important;text-overflow:ellipsis;display:inline-block;text-align:center}.now-vip{background:#FFFFFF4D!important;border-radius:1000px;border:none!important;text-align:left;font-style:normal;font-weight:600;font-size:16px;line-height:125%;letter-spacing:0px;color:#fff;padding:8px 19px;overflow:hidden;white-space:nowrap;max-width:80px!important;text-overflow:ellipsis;display:inline-block;text-align:center}\n"], directives: [{ type: i2$1.MatTooltip, selector: "[matTooltip]", exportAs: ["matTooltip"] }] });
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: PriorityComponent, decorators: [{
+PriorityComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.2.5", ngImport: i0, type: PriorityComponent, deps: [{ token: TableService }], target: i0.ɵɵFactoryTarget.Component });
+PriorityComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "14.2.5", type: PriorityComponent, selector: "icon-priority", inputs: { icon: "icon", iconLabel: "iconLabel" }, usesOnChanges: true, ngImport: i0, template: "<!--<png-icon matTooltip=\"{{this.iconLabel}}\" [src]=\"this.iconSrc\"></png-icon>-->\n<!--<png-icon [src]=\"this.iconSrc\"></png-icon>-->\n<span matTooltip=\"{{this.label}}\" class=\"{{this.iconSrc}}\">\n    {{this.label}}\n</span>", styles: [".now-low{background-color:#00fcbe;border-radius:1000px;border:none!important;text-align:left;color:#fff;font-style:normal;font-weight:600;font-size:16px;line-height:125%;letter-spacing:0px;padding:8px 19px;overflow:hidden;white-space:nowrap;max-width:80px!important;text-overflow:ellipsis;display:inline-block;text-align:center}.now-normal{background-color:#8e62ef;border-radius:1000px;border:none!important;text-align:left;font-style:normal;font-weight:600;font-size:16px;line-height:125%;letter-spacing:0px;color:#fff;padding:8px 19px;overflow:hidden;white-space:nowrap;max-width:80px!important;text-overflow:ellipsis;display:inline-block;text-align:center}.now-urgent{background-color:#f6d04c;border-radius:1000px;border:none!important;text-align:left;font-style:normal;font-weight:600;font-size:16px;line-height:125%;letter-spacing:0px;color:#fff;padding:8px 19px;overflow:hidden;white-space:nowrap;max-width:80px!important;text-overflow:ellipsis;display:inline-block;text-align:center}.now-critic{background:#F6544C!important;border-radius:1000px;border:none!important;text-align:left;font-style:normal;font-weight:600;font-size:16px;line-height:125%;letter-spacing:0px;color:#fff;padding:8px 19px;overflow:hidden;white-space:nowrap;max-width:80px!important;text-overflow:ellipsis;display:inline-block;text-align:center}.now-vip{background:rgba(255,255,255,.3019607843)!important;border-radius:1000px;border:none!important;text-align:left;font-style:normal;font-weight:600;font-size:16px;line-height:125%;letter-spacing:0px;color:#fff;padding:8px 19px;overflow:hidden;white-space:nowrap;max-width:80px!important;text-overflow:ellipsis;display:inline-block;text-align:center}\n"], dependencies: [{ kind: "directive", type: i2.MatTooltip, selector: "[matTooltip]", exportAs: ["matTooltip"] }] });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.2.5", ngImport: i0, type: PriorityComponent, decorators: [{
             type: Component,
-            args: [{ selector: 'icon-priority', template: "<!--<png-icon matTooltip=\"{{this.iconLabel}}\" [src]=\"this.iconSrc\"></png-icon>-->\n<!--<png-icon [src]=\"this.iconSrc\"></png-icon>-->\n<span matTooltip=\"{{this.label}}\" class=\"{{this.iconSrc}}\">\n    {{this.label}}\n</span>", styles: [".now-low{background-color:#00fcbe;border-radius:1000px;border:none!important;text-align:left;color:#fff;font-style:normal;font-weight:600;font-size:16px;line-height:125%;letter-spacing:0px;padding:8px 19px;overflow:hidden;white-space:nowrap;max-width:80px!important;text-overflow:ellipsis;display:inline-block;text-align:center}.now-normal{background-color:#8e62ef;border-radius:1000px;border:none!important;text-align:left;font-style:normal;font-weight:600;font-size:16px;line-height:125%;letter-spacing:0px;color:#fff;padding:8px 19px;overflow:hidden;white-space:nowrap;max-width:80px!important;text-overflow:ellipsis;display:inline-block;text-align:center}.now-urgent{background-color:#f6d04c;border-radius:1000px;border:none!important;text-align:left;font-style:normal;font-weight:600;font-size:16px;line-height:125%;letter-spacing:0px;color:#fff;padding:8px 19px;overflow:hidden;white-space:nowrap;max-width:80px!important;text-overflow:ellipsis;display:inline-block;text-align:center}.now-critic{background:#F6544C!important;border-radius:1000px;border:none!important;text-align:left;font-style:normal;font-weight:600;font-size:16px;line-height:125%;letter-spacing:0px;color:#fff;padding:8px 19px;overflow:hidden;white-space:nowrap;max-width:80px!important;text-overflow:ellipsis;display:inline-block;text-align:center}.now-vip{background:#FFFFFF4D!important;border-radius:1000px;border:none!important;text-align:left;font-style:normal;font-weight:600;font-size:16px;line-height:125%;letter-spacing:0px;color:#fff;padding:8px 19px;overflow:hidden;white-space:nowrap;max-width:80px!important;text-overflow:ellipsis;display:inline-block;text-align:center}\n"] }]
+            args: [{ selector: 'icon-priority', template: "<!--<png-icon matTooltip=\"{{this.iconLabel}}\" [src]=\"this.iconSrc\"></png-icon>-->\n<!--<png-icon [src]=\"this.iconSrc\"></png-icon>-->\n<span matTooltip=\"{{this.label}}\" class=\"{{this.iconSrc}}\">\n    {{this.label}}\n</span>", styles: [".now-low{background-color:#00fcbe;border-radius:1000px;border:none!important;text-align:left;color:#fff;font-style:normal;font-weight:600;font-size:16px;line-height:125%;letter-spacing:0px;padding:8px 19px;overflow:hidden;white-space:nowrap;max-width:80px!important;text-overflow:ellipsis;display:inline-block;text-align:center}.now-normal{background-color:#8e62ef;border-radius:1000px;border:none!important;text-align:left;font-style:normal;font-weight:600;font-size:16px;line-height:125%;letter-spacing:0px;color:#fff;padding:8px 19px;overflow:hidden;white-space:nowrap;max-width:80px!important;text-overflow:ellipsis;display:inline-block;text-align:center}.now-urgent{background-color:#f6d04c;border-radius:1000px;border:none!important;text-align:left;font-style:normal;font-weight:600;font-size:16px;line-height:125%;letter-spacing:0px;color:#fff;padding:8px 19px;overflow:hidden;white-space:nowrap;max-width:80px!important;text-overflow:ellipsis;display:inline-block;text-align:center}.now-critic{background:#F6544C!important;border-radius:1000px;border:none!important;text-align:left;font-style:normal;font-weight:600;font-size:16px;line-height:125%;letter-spacing:0px;color:#fff;padding:8px 19px;overflow:hidden;white-space:nowrap;max-width:80px!important;text-overflow:ellipsis;display:inline-block;text-align:center}.now-vip{background:rgba(255,255,255,.3019607843)!important;border-radius:1000px;border:none!important;text-align:left;font-style:normal;font-weight:600;font-size:16px;line-height:125%;letter-spacing:0px;color:#fff;padding:8px 19px;overflow:hidden;white-space:nowrap;max-width:80px!important;text-overflow:ellipsis;display:inline-block;text-align:center}\n"] }]
         }], ctorParameters: function () { return [{ type: TableService }]; }, propDecorators: { icon: [{
                 type: Input
             }], iconLabel: [{
@@ -1585,11 +1570,11 @@ class YesNoComponent {
         this.ngOnInit();
     }
 }
-YesNoComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: YesNoComponent, deps: [{ token: TableService }], target: i0.ɵɵFactoryTarget.Component });
-YesNoComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "12.0.0", version: "13.3.11", type: YesNoComponent, selector: "app-yes-nox", inputs: { valid: "valid", displayNo: "displayNo", displayYes: "displayYes", size: "size" }, usesOnChanges: true, ngImport: i0, template: "<span [style]=\"css\" >\n    <img [src]=\"icon\" [style]=\"css\">\n</span>\n", styles: [""] });
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: YesNoComponent, decorators: [{
+YesNoComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.2.5", ngImport: i0, type: YesNoComponent, deps: [{ token: TableService }], target: i0.ɵɵFactoryTarget.Component });
+YesNoComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "14.2.5", type: YesNoComponent, selector: "app-yes-nox", inputs: { valid: "valid", displayNo: "displayNo", displayYes: "displayYes", size: "size" }, usesOnChanges: true, ngImport: i0, template: "<span [style]=\"css\" >\n    <img [src]=\"icon\" [style]=\"css\">\n</span>\n", styles: [""] });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.2.5", ngImport: i0, type: YesNoComponent, decorators: [{
             type: Component,
-            args: [{ selector: 'app-yes-nox', template: "<span [style]=\"css\" >\n    <img [src]=\"icon\" [style]=\"css\">\n</span>\n", styles: [""] }]
+            args: [{ selector: 'app-yes-nox', template: "<span [style]=\"css\" >\n    <img [src]=\"icon\" [style]=\"css\">\n</span>\n" }]
         }], ctorParameters: function () { return [{ type: TableService }]; }, propDecorators: { valid: [{
                 type: Input
             }], displayNo: [{
@@ -1632,7 +1617,6 @@ class CoreMatTable extends DataSource {
         }))))));
     }
     filterDateRange(data, range) {
-        console.log(data, 'filter date range');
         if (!range || (!range.valueStart && !range.valueEnd)) {
             return data;
         }
@@ -1666,24 +1650,12 @@ class CoreMatTable extends DataSource {
         return pond;
     }
     filterData(data, filter) {
-        console.log('filterdata', this.pageNumber.getValue());
-        console.log('filter in filterdata', Object.keys(filter));
-        // if (this.pageNumber.getValue() > 0) {
-        //     console.log('next 0 in filterdata');
-        //     this.pageNumber.next(0);
-        //     this.number = 0;
-        //     console.log('filterData log');
-        // }
-        /*if (data.length === 0 && this.data) {
-          data = this.data;
-        }*/
-        const result = [];
         let inputSearch;
         if (typeof filter === "object") {
             if (filter.inputSearch) {
                 inputSearch = filter.inputSearch;
                 delete filter.inputSearch;
-                this.filterDataObject(this._search(inputSearch, data), filter);
+                return this.filterDataObject(this._search(inputSearch, data), filter);
             }
             else {
                 return this.filterDataObject(data, filter);
@@ -1691,7 +1663,6 @@ class CoreMatTable extends DataSource {
         }
         else {
             this.dataAfterSearch = data;
-            console.log(this.dataAfterSearch, 'data');
             return data;
         }
     }
@@ -1720,7 +1691,6 @@ class CoreMatTable extends DataSource {
                 }
             }
             this.dataAfterSearch = result.filter((e => e.pond)).sort((a, b) => a > b ? 1 : (a < b ? -1 : 0));
-            console.log(this.dataAfterSearch, 'data');
             return result.filter((e => e.pond)).sort((a, b) => a > b ? 1 : (a < b ? -1 : 0));
         }
         else {
@@ -1728,15 +1698,6 @@ class CoreMatTable extends DataSource {
         }
     }
     filterDataObject(data, filter) {
-        console.log('filterdataobject', this.pageNumber.getValue());
-        console.log('filter in filterdataobject', Object.keys(filter));
-        // if (this.pageNumber.getValue() > 0) {
-        //     console.log('next 0 in filterdataobject');
-        //     this.pageNumber.next(0);
-        //     this.number = 0;
-        //     console.log('filterDataObject log')
-        // }
-        console.log('ngx filter data object', data);
         if ((data && data.length === 0 && this.data) || Object.keys(filter).length == 0) {
             //data = this.data;
             return data;
@@ -1765,12 +1726,9 @@ class CoreMatTable extends DataSource {
                     result.push(e);
                 }
             }
-            console.log(result, 'data object');
             return result;
-            //return result.filter((e => e.pond)).sort((a, b) => a > b ? 1 : (a < b ? -1 : 0));
         }
         else {
-            console.log(data, 'data object');
             return data;
         }
     }
@@ -1800,16 +1758,12 @@ class CoreMatTable extends DataSource {
         return (((Array.isArray(a) ? a.length : a) > ((Array.isArray(b) ? b.length : b)) ? -1 : ((Array.isArray(b) ? b.length : b)) > ((Array.isArray(a) ? a.length : a)) ? 1 : 0) * (isAsc ? -1 : 1));
     }
     fetch(page) {
-        console.log(page, 'page fetch');
         this.pageNumber.next(page);
     }
     sortIt(sortidea) {
         this.pageSort.next(sortidea);
     }
     filter(myFilter) {
-        // if (!myFilter && this.data || !myFilter?.trim() && this.data) {
-        //     this._totalElements.next(this.data.length);
-        // }
         if (myFilter != undefined) {
             this.pageFilter.next(myFilter);
         }
@@ -1861,43 +1815,6 @@ var CellsComponentList;
     CellsComponentList["CustomButton"] = "custom-button";
 })(CellsComponentList || (CellsComponentList = {}));
 
-class StatusComponent {
-    constructor() { }
-    ngOnInit() {
-    }
-}
-StatusComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: StatusComponent, deps: [], target: i0.ɵɵFactoryTarget.Component });
-StatusComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "12.0.0", version: "13.3.11", type: StatusComponent, selector: "status", inputs: { label: "label" }, ngImport: i0, template: "<span matTooltip=\"{{ label }}\" class=\"status status-{{label?.toLowerCase()}}\">\n    {{ label }}\n</span>", styles: [".status{background:#F6544C;border-radius:1000px;font-style:normal;font-weight:600;font-size:16px;line-height:125%;padding:8px 19px}\n"], directives: [{ type: i2$1.MatTooltip, selector: "[matTooltip]", exportAs: ["matTooltip"] }] });
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: StatusComponent, decorators: [{
-            type: Component,
-            args: [{ selector: 'status', template: "<span matTooltip=\"{{ label }}\" class=\"status status-{{label?.toLowerCase()}}\">\n    {{ label }}\n</span>", styles: [".status{background:#F6544C;border-radius:1000px;font-style:normal;font-weight:600;font-size:16px;line-height:125%;padding:8px 19px}\n"] }]
-        }], ctorParameters: function () { return []; }, propDecorators: { label: [{
-                type: Input
-            }] } });
-
-class StatusIconComponent {
-    constructor() { }
-    ngOnInit() {
-        switch (this.label.toLocaleLowerCase()) {
-            case 'closed':
-            case 'cloturé':
-                this.src = '/assets/icons/status/green-dot.svg';
-                break;
-            default:
-                this.src = '/assets/icons/status/yellow-dot.svg';
-                break;
-        }
-    }
-}
-StatusIconComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: StatusIconComponent, deps: [], target: i0.ɵɵFactoryTarget.Component });
-StatusIconComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "12.0.0", version: "13.3.11", type: StatusIconComponent, selector: "status-icon", inputs: { label: "label" }, ngImport: i0, template: "<span matTooltip=\"{{ label }}\" class=\"status status-{{label?.toLowerCase()}}\">\n    <img src=\"{{ src }}\">\n    {{ label }}\n</span>", styles: [""], directives: [{ type: i2$1.MatTooltip, selector: "[matTooltip]", exportAs: ["matTooltip"] }] });
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: StatusIconComponent, decorators: [{
-            type: Component,
-            args: [{ selector: 'status-icon', template: "<span matTooltip=\"{{ label }}\" class=\"status status-{{label?.toLowerCase()}}\">\n    <img src=\"{{ src }}\">\n    {{ label }}\n</span>", styles: [""] }]
-        }], ctorParameters: function () { return []; }, propDecorators: { label: [{
-                type: Input
-            }] } });
-
 class MenuComponent {
     constructor() {
         this.menuSettings = [];
@@ -1925,11 +1842,11 @@ class MenuComponent {
         this.callHandler.emit(menu);
     }
 }
-MenuComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: MenuComponent, deps: [], target: i0.ɵɵFactoryTarget.Component });
-MenuComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "12.0.0", version: "13.3.11", type: MenuComponent, selector: "menu", inputs: { menuSettings: "menuSettings", element: "element" }, outputs: { callHandler: "callHandler" }, ngImport: i0, template: "<nb-icon class=\"menu-show\" [matMenuTriggerFor]=\"menu\" [icon]=\"'menu_kebab'\" [size]=\"1.5\"></nb-icon>\n\n<mat-menu #menu=\"matMenu\">\n    <ng-container *ngFor=\"let menu of menuSettings\">\n        <button [ngClass]=\"menu.Class\" (click)=\"action(menu)\" mat-menu-item>\n            <nb-icon [primary]=\"menu.IconColor\" [icon]=\"menu.Icon\" *ngIf=\"menu.Icon\" [size]=\"1.5\"></nb-icon>\n            {{ menu.Label }}\n        </button>    \n    </ng-container>\n    <!--<button mat-menu-item>\n        <nb-icon [icon]=\"'information_circle'\" [size]=\"1.5\"></nb-icon>\n        <span>D\u00E9tail</span>\n    </button>\n    <button mat-menu-item>\n        <nb-icon [icon]=\"'edit_1'\" [size]=\"1.5\"></nb-icon>\n        <span>Modifier</span>\n    </button>\n    <button mat-menu-item>\n        <nb-icon [icon]=\"'display_1'\" [size]=\"1.5\"></nb-icon>\n        <span>Assigner un \u00E9quipement</span>\n    </button>\n    <button class=\"menu-red\" mat-menu-item>\n        <nb-icon [primary]=\"'#F6544C'\" [icon]=\"'delete_1'\" [size]=\"1.5\"></nb-icon>\n        <span>Supprimer</span>\n    </button>-->\n</mat-menu>", styles: [""], components: [{ type: i1$1.NowboardIconComponent, selector: "nb-icon", inputs: ["size", "primary", "disabled_color", "disabled", "icon"] }, { type: i2$2.MatMenu, selector: "mat-menu", exportAs: ["matMenu"] }, { type: i2$2.MatMenuItem, selector: "[mat-menu-item]", inputs: ["disabled", "disableRipple", "role"], exportAs: ["matMenuItem"] }], directives: [{ type: i2$2.MatMenuTrigger, selector: "[mat-menu-trigger-for], [matMenuTriggerFor]", exportAs: ["matMenuTrigger"] }, { type: i24.NgForOf, selector: "[ngFor][ngForOf]", inputs: ["ngForOf", "ngForTrackBy", "ngForTemplate"] }, { type: i24.NgClass, selector: "[ngClass]", inputs: ["class", "ngClass"] }, { type: i24.NgIf, selector: "[ngIf]", inputs: ["ngIf", "ngIfThen", "ngIfElse"] }] });
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: MenuComponent, decorators: [{
+MenuComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.2.5", ngImport: i0, type: MenuComponent, deps: [], target: i0.ɵɵFactoryTarget.Component });
+MenuComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "14.2.5", type: MenuComponent, selector: "menu", inputs: { menuSettings: "menuSettings", element: "element" }, outputs: { callHandler: "callHandler" }, ngImport: i0, template: "<nb-icon class=\"menu-show\" [matMenuTriggerFor]=\"menu\" [icon]=\"'menu_kebab'\" [size]=\"1.5\"></nb-icon>\n\n<mat-menu #menu=\"matMenu\">\n    <ng-container *ngFor=\"let menu of menuSettings\">\n        <button [ngClass]=\"menu.Class\" (click)=\"action(menu)\" mat-menu-item>\n            <nb-icon [primary]=\"menu.IconColor\" [icon]=\"menu.Icon\" *ngIf=\"menu.Icon\" [size]=\"1.5\"></nb-icon>\n            {{ menu.Label }}\n        </button>    \n    </ng-container>\n    <!--<button mat-menu-item>\n        <nb-icon [icon]=\"'information_circle'\" [size]=\"1.5\"></nb-icon>\n        <span>D\u00E9tail</span>\n    </button>\n    <button mat-menu-item>\n        <nb-icon [icon]=\"'edit_1'\" [size]=\"1.5\"></nb-icon>\n        <span>Modifier</span>\n    </button>\n    <button mat-menu-item>\n        <nb-icon [icon]=\"'display_1'\" [size]=\"1.5\"></nb-icon>\n        <span>Assigner un \u00E9quipement</span>\n    </button>\n    <button class=\"menu-red\" mat-menu-item>\n        <nb-icon [primary]=\"'#F6544C'\" [icon]=\"'delete_1'\" [size]=\"1.5\"></nb-icon>\n        <span>Supprimer</span>\n    </button>-->\n</mat-menu>", styles: [""], dependencies: [{ kind: "directive", type: i1.NgClass, selector: "[ngClass]", inputs: ["class", "ngClass"] }, { kind: "directive", type: i1.NgForOf, selector: "[ngFor][ngForOf]", inputs: ["ngForOf", "ngForTrackBy", "ngForTemplate"] }, { kind: "directive", type: i1.NgIf, selector: "[ngIf]", inputs: ["ngIf", "ngIfThen", "ngIfElse"] }, { kind: "component", type: i2$1.MatMenu, selector: "mat-menu", exportAs: ["matMenu"] }, { kind: "component", type: i2$1.MatMenuItem, selector: "[mat-menu-item]", inputs: ["disabled", "disableRipple", "role"], exportAs: ["matMenuItem"] }, { kind: "directive", type: i2$1.MatMenuTrigger, selector: "[mat-menu-trigger-for], [matMenuTriggerFor]", exportAs: ["matMenuTrigger"] }, { kind: "component", type: i3.NowboardIconComponent, selector: "nb-icon", inputs: ["size", "primary", "disabled_color", "disabled", "icon"] }] });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.2.5", ngImport: i0, type: MenuComponent, decorators: [{
             type: Component,
-            args: [{ selector: 'menu', template: "<nb-icon class=\"menu-show\" [matMenuTriggerFor]=\"menu\" [icon]=\"'menu_kebab'\" [size]=\"1.5\"></nb-icon>\n\n<mat-menu #menu=\"matMenu\">\n    <ng-container *ngFor=\"let menu of menuSettings\">\n        <button [ngClass]=\"menu.Class\" (click)=\"action(menu)\" mat-menu-item>\n            <nb-icon [primary]=\"menu.IconColor\" [icon]=\"menu.Icon\" *ngIf=\"menu.Icon\" [size]=\"1.5\"></nb-icon>\n            {{ menu.Label }}\n        </button>    \n    </ng-container>\n    <!--<button mat-menu-item>\n        <nb-icon [icon]=\"'information_circle'\" [size]=\"1.5\"></nb-icon>\n        <span>D\u00E9tail</span>\n    </button>\n    <button mat-menu-item>\n        <nb-icon [icon]=\"'edit_1'\" [size]=\"1.5\"></nb-icon>\n        <span>Modifier</span>\n    </button>\n    <button mat-menu-item>\n        <nb-icon [icon]=\"'display_1'\" [size]=\"1.5\"></nb-icon>\n        <span>Assigner un \u00E9quipement</span>\n    </button>\n    <button class=\"menu-red\" mat-menu-item>\n        <nb-icon [primary]=\"'#F6544C'\" [icon]=\"'delete_1'\" [size]=\"1.5\"></nb-icon>\n        <span>Supprimer</span>\n    </button>-->\n</mat-menu>", styles: [""] }]
+            args: [{ selector: 'menu', template: "<nb-icon class=\"menu-show\" [matMenuTriggerFor]=\"menu\" [icon]=\"'menu_kebab'\" [size]=\"1.5\"></nb-icon>\n\n<mat-menu #menu=\"matMenu\">\n    <ng-container *ngFor=\"let menu of menuSettings\">\n        <button [ngClass]=\"menu.Class\" (click)=\"action(menu)\" mat-menu-item>\n            <nb-icon [primary]=\"menu.IconColor\" [icon]=\"menu.Icon\" *ngIf=\"menu.Icon\" [size]=\"1.5\"></nb-icon>\n            {{ menu.Label }}\n        </button>    \n    </ng-container>\n    <!--<button mat-menu-item>\n        <nb-icon [icon]=\"'information_circle'\" [size]=\"1.5\"></nb-icon>\n        <span>D\u00E9tail</span>\n    </button>\n    <button mat-menu-item>\n        <nb-icon [icon]=\"'edit_1'\" [size]=\"1.5\"></nb-icon>\n        <span>Modifier</span>\n    </button>\n    <button mat-menu-item>\n        <nb-icon [icon]=\"'display_1'\" [size]=\"1.5\"></nb-icon>\n        <span>Assigner un \u00E9quipement</span>\n    </button>\n    <button class=\"menu-red\" mat-menu-item>\n        <nb-icon [primary]=\"'#F6544C'\" [icon]=\"'delete_1'\" [size]=\"1.5\"></nb-icon>\n        <span>Supprimer</span>\n    </button>-->\n</mat-menu>" }]
         }], ctorParameters: function () { return []; }, propDecorators: { menuSettings: [{
                 type: Input
             }], element: [{
@@ -1938,27 +1855,60 @@ i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "13.3.11", ngImpo
                 type: Output
             }] } });
 
-class CustomButtonComponent {
+class StatusComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+}
+StatusComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.2.5", ngImport: i0, type: StatusComponent, deps: [], target: i0.ɵɵFactoryTarget.Component });
+StatusComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "14.2.5", type: StatusComponent, selector: "status", inputs: { label: "label" }, ngImport: i0, template: "<span matTooltip=\"{{ label }}\" class=\"status status-{{label?.toLowerCase()}}\">\n    {{ label }}\n</span>", styles: [".status{background:#F6544C;border-radius:1000px;font-style:normal;font-weight:600;font-size:16px;line-height:125%;padding:8px 19px}\n"], dependencies: [{ kind: "directive", type: i2.MatTooltip, selector: "[matTooltip]", exportAs: ["matTooltip"] }] });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.2.5", ngImport: i0, type: StatusComponent, decorators: [{
+            type: Component,
+            args: [{ selector: 'status', template: "<span matTooltip=\"{{ label }}\" class=\"status status-{{label?.toLowerCase()}}\">\n    {{ label }}\n</span>", styles: [".status{background:#F6544C;border-radius:1000px;font-style:normal;font-weight:600;font-size:16px;line-height:125%;padding:8px 19px}\n"] }]
+        }], ctorParameters: function () { return []; }, propDecorators: { label: [{
+                type: Input
+            }] } });
+
+class StatusIconComponent {
+    constructor() { }
+    ngOnInit() {
+        switch (this.label.toLocaleLowerCase()) {
+            case 'closed':
+            case 'cloturé':
+                this.src = '/assets/icons/status/green-dot.svg';
+                break;
+            default:
+                this.src = '/assets/icons/status/yellow-dot.svg';
+                break;
+        }
+    }
+}
+StatusIconComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.2.5", ngImport: i0, type: StatusIconComponent, deps: [], target: i0.ɵɵFactoryTarget.Component });
+StatusIconComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "14.2.5", type: StatusIconComponent, selector: "status-icon", inputs: { label: "label" }, ngImport: i0, template: "<span matTooltip=\"{{ label }}\" class=\"status status-{{label?.toLowerCase()}}\">\n    <img src=\"{{ src }}\">\n    {{ label }}\n</span>", styles: [""], dependencies: [{ kind: "directive", type: i2.MatTooltip, selector: "[matTooltip]", exportAs: ["matTooltip"] }] });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.2.5", ngImport: i0, type: StatusIconComponent, decorators: [{
+            type: Component,
+            args: [{ selector: 'status-icon', template: "<span matTooltip=\"{{ label }}\" class=\"status status-{{label?.toLowerCase()}}\">\n    <img src=\"{{ src }}\">\n    {{ label }}\n</span>" }]
+        }], ctorParameters: function () { return []; }, propDecorators: { label: [{
+                type: Input
+            }] } });
+
+class DoubleLineComponent {
     constructor() {
-        this.callHandler = new EventEmitter();
+        this.line1 = '';
+        this.line2 = '';
     }
     ngOnInit() {
     }
-    action() {
-        this.callHandler.emit(this.element);
-    }
 }
-CustomButtonComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: CustomButtonComponent, deps: [], target: i0.ɵɵFactoryTarget.Component });
-CustomButtonComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "12.0.0", version: "13.3.11", type: CustomButtonComponent, selector: "custom-button", inputs: { config: "config", element: "element" }, outputs: { callHandler: "callHandler" }, ngImport: i0, template: "<button (click)=\"action()\" [matTooltip]=\"config?.matTooltip\" [ngClass]=\"config?.class\">\n    <nb-icon [icon]=\"config?.icon?.icon\" [size]=\"config?.icon?.size\"></nb-icon>\n</button>", styles: [""], components: [{ type: i1$1.NowboardIconComponent, selector: "nb-icon", inputs: ["size", "primary", "disabled_color", "disabled", "icon"] }], directives: [{ type: i2$1.MatTooltip, selector: "[matTooltip]", exportAs: ["matTooltip"] }, { type: i24.NgClass, selector: "[ngClass]", inputs: ["class", "ngClass"] }] });
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: CustomButtonComponent, decorators: [{
+DoubleLineComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.2.5", ngImport: i0, type: DoubleLineComponent, deps: [], target: i0.ɵɵFactoryTarget.Component });
+DoubleLineComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "14.2.5", type: DoubleLineComponent, selector: "double-line", inputs: { line1: "line1", line2: "line2" }, ngImport: i0, template: "<div class=\"line-1\">\n    {{ line1 }}\n</div>\n\n<div class=\"line-2\">\n    {{ line2 }}\n</div>", styles: [""] });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.2.5", ngImport: i0, type: DoubleLineComponent, decorators: [{
             type: Component,
-            args: [{ selector: 'custom-button', template: "<button (click)=\"action()\" [matTooltip]=\"config?.matTooltip\" [ngClass]=\"config?.class\">\n    <nb-icon [icon]=\"config?.icon?.icon\" [size]=\"config?.icon?.size\"></nb-icon>\n</button>", styles: [""] }]
-        }], ctorParameters: function () { return []; }, propDecorators: { config: [{
+            args: [{ selector: 'double-line', template: "<div class=\"line-1\">\n    {{ line1 }}\n</div>\n\n<div class=\"line-2\">\n    {{ line2 }}\n</div>" }]
+        }], ctorParameters: function () { return []; }, propDecorators: { line1: [{
                 type: Input
-            }], element: [{
+            }], line2: [{
                 type: Input
-            }], callHandler: [{
-                type: Output
             }] } });
 
 class DateFormatConstants {
@@ -1989,9 +1939,9 @@ class AppDatePipe extends DatePipe {
         }
     }
 }
-AppDatePipe.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: AppDatePipe, deps: null, target: i0.ɵɵFactoryTarget.Pipe });
-AppDatePipe.ɵpipe = i0.ɵɵngDeclarePipe({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: AppDatePipe, name: "appDate" });
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: AppDatePipe, decorators: [{
+AppDatePipe.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.2.5", ngImport: i0, type: AppDatePipe, deps: null, target: i0.ɵɵFactoryTarget.Pipe });
+AppDatePipe.ɵpipe = i0.ɵɵngDeclarePipe({ minVersion: "14.0.0", version: "14.2.5", ngImport: i0, type: AppDatePipe, name: "appDate" });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.2.5", ngImport: i0, type: AppDatePipe, decorators: [{
             type: Pipe,
             args: [{
                     name: 'appDate'
@@ -2005,11 +1955,11 @@ class CustomCellComponent {
     ngOnInit() {
     }
 }
-CustomCellComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: CustomCellComponent, deps: [], target: i0.ɵɵFactoryTarget.Component });
-CustomCellComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "12.0.0", version: "13.3.11", type: CustomCellComponent, selector: "lib-custom-cell", inputs: { title: "title", subTitle: "subTitle", class: "class", subTitleFormat: "subTitleFormat", lang: "lang" }, ngImport: i0, template: "<div class=\"custom-cell\" [class]=\"class\">\n    <span>{{title}}</span>\n    <span *ngIf=\"!!subTitle\">{{ subTitleFormat ==='date' ? (subTitle | appDate : lang) : subTitle}}</span>\n</div>", styles: [""], directives: [{ type: i24.NgIf, selector: "[ngIf]", inputs: ["ngIf", "ngIfThen", "ngIfElse"] }], pipes: { "appDate": AppDatePipe } });
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: CustomCellComponent, decorators: [{
+CustomCellComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.2.5", ngImport: i0, type: CustomCellComponent, deps: [], target: i0.ɵɵFactoryTarget.Component });
+CustomCellComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "14.2.5", type: CustomCellComponent, selector: "lib-custom-cell", inputs: { title: "title", subTitle: "subTitle", class: "class", subTitleFormat: "subTitleFormat", lang: "lang" }, ngImport: i0, template: "<div class=\"custom-cell\" [class]=\"class\">\n    <span>{{title}}</span>\n    <span *ngIf=\"!!subTitle\">{{ subTitleFormat ==='date' ? (subTitle | appDate : lang) : subTitle}}</span>\n</div>", styles: [""], dependencies: [{ kind: "directive", type: i1.NgIf, selector: "[ngIf]", inputs: ["ngIf", "ngIfThen", "ngIfElse"] }, { kind: "pipe", type: AppDatePipe, name: "appDate" }] });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.2.5", ngImport: i0, type: CustomCellComponent, decorators: [{
             type: Component,
-            args: [{ selector: 'lib-custom-cell', template: "<div class=\"custom-cell\" [class]=\"class\">\n    <span>{{title}}</span>\n    <span *ngIf=\"!!subTitle\">{{ subTitleFormat ==='date' ? (subTitle | appDate : lang) : subTitle}}</span>\n</div>", styles: [""] }]
+            args: [{ selector: 'lib-custom-cell', template: "<div class=\"custom-cell\" [class]=\"class\">\n    <span>{{title}}</span>\n    <span *ngIf=\"!!subTitle\">{{ subTitleFormat ==='date' ? (subTitle | appDate : lang) : subTitle}}</span>\n</div>" }]
         }], ctorParameters: function () { return []; }, propDecorators: { title: [{
                 type: Input
             }], subTitle: [{
@@ -2022,23 +1972,27 @@ i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "13.3.11", ngImpo
                 type: Input
             }] } });
 
-class DoubleLineComponent {
+class CustomButtonComponent {
     constructor() {
-        this.line1 = '';
-        this.line2 = '';
+        this.callHandler = new EventEmitter();
     }
     ngOnInit() {
     }
+    action() {
+        this.callHandler.emit(this.element);
+    }
 }
-DoubleLineComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: DoubleLineComponent, deps: [], target: i0.ɵɵFactoryTarget.Component });
-DoubleLineComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "12.0.0", version: "13.3.11", type: DoubleLineComponent, selector: "double-line", inputs: { line1: "line1", line2: "line2" }, ngImport: i0, template: "<div class=\"line-1\">\n    {{ line1 }}\n</div>\n\n<div class=\"line-2\">\n    {{ line2 }}\n</div>", styles: [""] });
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: DoubleLineComponent, decorators: [{
+CustomButtonComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.2.5", ngImport: i0, type: CustomButtonComponent, deps: [], target: i0.ɵɵFactoryTarget.Component });
+CustomButtonComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "14.2.5", type: CustomButtonComponent, selector: "custom-button", inputs: { config: "config", element: "element" }, outputs: { callHandler: "callHandler" }, ngImport: i0, template: "<button (click)=\"action()\" [matTooltip]=\"config?.matTooltip\" [ngClass]=\"config?.class\">\n    <nb-icon [icon]=\"config?.icon?.icon\" [size]=\"config?.icon?.size\"></nb-icon>\n</button>", styles: [""], dependencies: [{ kind: "directive", type: i2.MatTooltip, selector: "[matTooltip]", exportAs: ["matTooltip"] }, { kind: "directive", type: i1.NgClass, selector: "[ngClass]", inputs: ["class", "ngClass"] }, { kind: "component", type: i3.NowboardIconComponent, selector: "nb-icon", inputs: ["size", "primary", "disabled_color", "disabled", "icon"] }] });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.2.5", ngImport: i0, type: CustomButtonComponent, decorators: [{
             type: Component,
-            args: [{ selector: 'double-line', template: "<div class=\"line-1\">\n    {{ line1 }}\n</div>\n\n<div class=\"line-2\">\n    {{ line2 }}\n</div>", styles: [""] }]
-        }], ctorParameters: function () { return []; }, propDecorators: { line1: [{
+            args: [{ selector: 'custom-button', template: "<button (click)=\"action()\" [matTooltip]=\"config?.matTooltip\" [ngClass]=\"config?.class\">\n    <nb-icon [icon]=\"config?.icon?.icon\" [size]=\"config?.icon?.size\"></nb-icon>\n</button>" }]
+        }], ctorParameters: function () { return []; }, propDecorators: { config: [{
                 type: Input
-            }], line2: [{
+            }], element: [{
                 type: Input
+            }], callHandler: [{
+                type: Output
             }] } });
 
 class TableComponent {
@@ -2256,13 +2210,13 @@ class TableComponent {
         }
     }
 }
-TableComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: TableComponent, deps: [{ token: i1$2.Router }, { token: i1$2.ActivatedRoute }, { token: TableService }, { token: i0.ChangeDetectorRef }, { token: TranslateService }, { token: i0.ChangeDetectorRef }], target: i0.ɵɵFactoryTarget.Component });
-TableComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "12.0.0", version: "13.3.11", type: TableComponent, selector: "ngx-design-table", inputs: { columnDefinitions: "columnDefinitions", displayDetail: "displayDetail", displayComponent: "displayComponent", data: "data", rowMargin: "rowMargin", lang: "lang", btnOverride: "btnOverride", inputSearch: "inputSearch", EmptyRow: "EmptyRow", blockDetails: "blockDetails" }, outputs: { callFunction: "callFunction", onReady: "onReady", clicked: "clicked" }, viewQueries: [{ propertyName: "paginatorCurrent", first: true, predicate: ["MatPaginatorCurrent"], descendants: true, static: true }, { propertyName: "sortCurrent", first: true, predicate: ["table"], descendants: true, static: true }], usesOnChanges: true, ngImport: i0, template: "<div class=\"table-wrapper\">\n    <!-- Table -->\n    <table mat-table #table=\"matSort\" [dataSource]=\"data \" multiTemplateDataRows matSort\n        *ngIf=\"displayedColumns && data && data.totalElements\" (matSortChange)=\"data.sortIt($event)\" [style]=\"style\">\n        <tr mat-header-row *matHeaderRowDef=\"columnsToDisplay\"></tr>\n        <tr mat-row *matRowDef=\"let element; columns: columnsToDisplay;\" class=\"element-row\"></tr>\n\n        <ng-container [matColumnDef]=\"column.key\" *ngFor=\"let column of displayedColumns\">\n            <ng-container *ngIf=\"column.sort\">\n                <th mat-header-cell *matHeaderCellDef\n                    [class]=\"generateClass([column.class, column.align ? 'text-align-'+column.align : 'text-align-left'])\"\n                    mat-sort-header>\n                    <app-is-mat-icon [input]=\"column.value\"></app-is-mat-icon>\n                </th>\n            </ng-container>\n            <ng-container *ngIf=\"!column.sort\">\n                <!-- Ajouter fonction generate Class -->\n                <ng-container *ngIf=\"column.clickable\">\n                    <th mat-header-cell *matHeaderCellDef\n                        (click)=\"clicked.emit({key : column.key, statement : (column.statement = !column.statement)})\"\n                        [class]=\"generateClass([column.class, column.align ? 'text-align-'+column.align : 'text-align-left'])\"\n                        style=\"cursor: pointer;\">\n                        <app-is-mat-icon [input]=\"column.value\"></app-is-mat-icon>\n                        <app-is-mat-icon *ngIf=\"column.valueStatement && column.statement !== undefined\"\n                            [input]=\"column.valueStatement[column.statement ? 1 : 0]\">\n                        </app-is-mat-icon>\n                    </th>\n                </ng-container>\n                <ng-container *ngIf=\"!column.clickable\">\n                    <th mat-header-cell *matHeaderCellDef\n                        [class]=\"generateClass([column.class, column.align ? 'text-align-'+column.align : 'text-align-left'])\">\n                        <app-is-mat-icon [input]=\"column.value\"></app-is-mat-icon>\n                    </th>\n                </ng-container>\n                <th mat-header-cell *matHeaderCellDef\n                    [class]=\"generateClass([column.class, column.align ? 'text-align-'+column.align : 'text-align-left'])\">\n                    <app-is-mat-icon [input]=\"column.value\"></app-is-mat-icon>\n                </th>\n            </ng-container>\n\n            <td class=\"row-style\" mat-cell *matCellDef=\"let element\"\n                [class]=\"generateClass([column.class, column.align ? 'text-align-'+column.align : ''])\">\n                <ng-container *ngIf=\"element !== 'empty'\" [ngSwitch]=\"column.module\">\n                    <!-- Button click -->\n                    <ng-container *ngSwitchCase=\"'button-click'\">\n                        <a [matTooltip]=\"open\" class=\"btn-link-text\" (click)=\"callFunction.emit(element[column.key])\"\n                            [innerHTML]=\"details\"></a>\n                    </ng-container>\n                    <!-- Button link -->\n                    <ng-container *ngSwitchCase=\"'button-link'\">\n                        <!--                matBadge=\"*\" matBadgePosition=\"before\"\n                           matBadgeColor=\"accent\" -->\n                        <a *ngIf=\"element.new\" [matTooltip]=\"open\" class=\"mat-button btn-xs\"\n                            (click)=\"element.new = false\" [ngClass]=\"btnOverride == true ? 'link-btn': 'nowboard-btn'\"\n                            routerLink=\"{{column.override ? buildLink(column.override, element) : element[column.key]}}\">\n                            <ng-container *ngIf=\"column.display\">\n                                <app-is-mat-icon [input]=\"column.display\"></app-is-mat-icon>\n                            </ng-container>\n                            <ng-container *ngIf=\"!column.display\">\n                                <span [innerHTML]=\"element[column.key]\"></span>\n                            </ng-container>\n                        </a>\n                        <a *ngIf=\"!element.new\" [matTooltip]=\"open\" class=\"mat-button btn-xs\"\n                            [ngClass]=\"btnOverride == true ? 'link-btn': 'nowboard-btn'\"\n                            routerLink=\"{{column.override ? buildLink(column.override, element) : element[column.key]}}\">\n                            <ng-container *ngIf=\"column.display\">\n                                <app-is-mat-icon class=\"is-mat-icon-cell\" [input]=\"column.display\"></app-is-mat-icon>\n                            </ng-container>\n                            <ng-container *ngIf=\"!column.display\">\n                                <span [innerHTML]=\"element[column.key]\"></span>\n                            </ng-container>\n                        </a>\n                    </ng-container>\n                    <!-- Button link text -->\n                    <ng-container *ngSwitchCase=\"'button-link-text'\">\n                        <a [matTooltip]=\"open\" class=\"btn-link-text btn-xs\" (click)=\"element.new = false\"\n                            routerLink=\"{{column.override ? buildLink(column.override, element) : element[column.key]}}\">\n                            {{ column.value == 'Actions' ? details : column.key }}\n                        </a>\n                    </ng-container>\n                    <!-- icon custom-->\n                    <ng-container *ngSwitchCase=\"'custom-icon'\">\n                        <input type=\"hidden\" [value]=\"element[column.key]\">\n                        <img *ngIf=\"element[column.key] && column.valueOverride\"\n                            [src]=\"column.valueOverride[element[column.key]]\" style=\"width: 20px; height: 20px;\">\n                    </ng-container>\n                    <ng-container *ngSwitchCase=\"'it-category'\">\n                        <app-equipement-type [name]=\"element[column.key]\" [type]=\"element[column.override]\">\n                        </app-equipement-type>\n                    </ng-container>\n                    <!-- icon it status -->\n                    <ng-container *ngSwitchCase=\"'it-status'\">\n                        <app-equipement-status [lang]=\"lang\" [type]=\"element[column.key]\"></app-equipement-status>\n                    </ng-container>\n                    <!-- icon customer rank -->\n                    <ng-container *ngSwitchCase=\"'customer-rank'\">\n                        <app-customer-rank [type]=\"element[column.key]\"></app-customer-rank>\n                    </ng-container>\n                    <!-- icon priority-->\n                    <ng-container *ngSwitchCase=\"'priority'\">\n                        <icon-priority [icon]=\"element['Icon']\" [iconLabel]=\"element[column.key] || null\">\n                        </icon-priority>\n                    </ng-container>\n\n                    <!-- status -->\n                    <ng-container *ngSwitchCase=\"'status'\">\n                        <status [label]=\"element[column.key]\"></status>\n                    </ng-container>\n\n                    <!-- status -->\n                    <ng-container *ngSwitchCase=\"'status-icon'\">\n                        <status-icon [label]=\"element[column.key]\"></status-icon>\n                    </ng-container>\n\n                    <!-- icon gender avatar-->\n                    <ng-container *ngSwitchCase=\"'gender-avatar'\">\n                        <app-gender [type]=\"element[column.key]\"></app-gender>\n                    </ng-container>\n\n                    <!-- Png Icon -->\n                    <ng-container *ngSwitchCase=\"'png-icon'\">\n                        <png-icon [src]=\"element[column.key]\" [fontSize]=\"column.fontSize\" [color]=\"column.color\">\n                        </png-icon>\n                    </ng-container>\n\n\n                    <!-- menu -->\n                    <ng-container *ngSwitchCase=\"'menu'\">\n                        <menu (callHandler)=\"callFunction.emit($event)\" [element]=\"element\"\n                            [menuSettings]=\"column.config\"></menu>\n                    </ng-container>\n\n                    <!-- custom button -->\n                    <ng-container *ngSwitchCase=\"'custom-button'\">\n                        <custom-button (callHandler)=\"callFunction.emit($event)\" [element]=\"element\"\n                            [config]=\"column.config\"></custom-button>\n                    </ng-container>\n\n                    <!-- icon gender avatar-->\n                    <ng-container *ngSwitchCase=\"'phone-display'\">\n                        <app-phone-display [number]=\"element[column.key]\"></app-phone-display>\n                    </ng-container>\n                    <!-- custom cell-->\n                    <ng-container *ngSwitchCase=\"'custom-cell'\">\n                        <lib-custom-cell [title]=\"element[column.key]\" [subTitle]=\"element[column.subTitle]\"\n                            [subTitleFormat]=\"column.subTitleFormat\" [class]=\"element[column.addClass]\">\n                        </lib-custom-cell>\n                    </ng-container>\n\n                    <!-- icon gender avatar-->\n                    <ng-container *ngSwitchCase=\"'yes-no-display'\">\n                        <app-yes-nox\n                            *ngIf=\"column.config && (column.config.displayNo !== undefined && column.config.displayYes !== undefined)\"\n                            [valid]=\"element[column.key]\" [size]=\"column.config?.sizeIcon\"\n                            [displayNo]=\"column.config.displayYes\" [displayYes]=\"column.config.displayNo\">\n                        </app-yes-nox>\n                        <app-yes-nox\n                            *ngIf=\"(!column.config || (column.config && !(column.config.displayNo || column.config.displayYes)))\"\n                            [valid]=\"element[column.key]\" [size]=\"column.config?.sizeIcon\">\n                        </app-yes-nox>\n                    </ng-container>\n                    <!-- icon origin-->\n                    <ng-container *ngSwitchCase=\"'origin'\">\n                        <icon-origin [icon]=\"element[column.key]\"></icon-origin>\n                    </ng-container>\n                    <!-- icon name avatar-->\n                    <ng-container *ngSwitchCase=\"'name-avatar'\">\n                        <name-avatar matTooltip=\"{{Join(element, column.override)}}\" [src]=\"element[column.key]\"\n                            [fontSize]=\"column.fontSize\" [matTooltipClass]=\"'my-tooltip'\">\n                        </name-avatar>\n                    </ng-container>\n                    <!-- date format -->\n                    <ng-container *ngSwitchCase=\"'date-format'\">\n                        {{element[column.key] | appDate : lang}}\n                    </ng-container>\n                    <!-- count rows -->\n                    <ng-container *ngSwitchCase=\"'count-row'\">\n                        <span style=\"padding-left: 14px\">\n                            {{(element[column.key] && element[column.key].length ? element[column.key].length : '-')}}\n                        </span>\n                    </ng-container>\n                    <!-- double line -->\n                    <ng-container *ngSwitchCase=\"'double-line'\">\n                        <double-line [line1]=\"element[column.key]\" [line2]=\"element[column.override]\"></double-line>\n                    </ng-container>\n                    <ng-container *ngSwitchDefault>\n                        <span [innerHTML]=\"element[column.key]\"></span>\n                    </ng-container>\n                </ng-container>\n            </td>\n\n        </ng-container>\n    </table>\n    <ng-container *ngIf=\"data && data.totalElements === 0\">\n        <div class=\"row\" style=\"height: 84px;background: transparent!important;\">\n            <div class=\"\">\n                <div class=\"col-lg-12 search-container\" style=\"text-align: center\">\n                    {{ noResult }}\n                </div>\n            </div>\n        </div>\n    </ng-container>\n    <mat-paginator #MatPaginatorCurrent *ngIf=\"data && data.totalElements > 0\" [length]=\"data.totalElements\"\n        [pageSize]=\"data.size\" [pageIndex]=\"data.number\" [hidePageSize]=\"true\" (page)=\"data.fetch($event.pageIndex)\"\n        showFirstLastButtons></mat-paginator>\n</div>", styles: [".table-wrapper table{width:100%}.table-wrapper .mat-cell{padding-left:10px}.table-wrapper png-icon{padding-left:17px}.table-wrapper tr:nth-child(1){min-height:48px}.table-wrapper .detail-row{height:auto!important}.table-wrapper .text-align-right{text-align:right!important}.table-wrapper .text-align-left{text-align:left!important}.table-wrapper .text-align-center{text-align:center!important}.table-wrapper .element-detail{overflow:hidden;display:flex;padding-top:10px;padding-bottom:10px}@media screen and (min-width: 1441px){.table-wrapper .mat-cell{padding-top:15px;padding-bottom:10px;font-size:13px!important}}@media screen and (max-width: 1440px){.table-wrapper a.mat-button{padding-top:10px}.table-wrapper .mat-cell{padding-top:15px;padding-bottom:10px}}.table-wrapper .u-1{width:4%!important;max-width:4%!important;min-width:4%!important}.table-wrapper .u-2{width:5%!important;max-width:5%!important;min-width:5%!important}.table-wrapper .u-3{width:7%!important;max-width:7%!important;min-width:7%!important}@media screen and (max-width: 1440px){.table-wrapper .u-1{width:5%!important;max-width:5%!important;min-width:5%!important}.table-wrapper .u-2{width:6%!important;max-width:6%!important;min-width:6%!important}.table-wrapper .u-3{width:10%!important;max-width:10%!important;min-width:10%!important}}.table-wrapper .u-4{max-width:11%!important;width:11%!important;min-width:11%!important}.table-wrapper .u-5{max-width:10%!important;width:10%!important;min-width:10%!important}.table-wrapper .u-6{max-width:15%!important;width:15%!important;min-width:15%!important}.table-wrapper .u-7{width:20%!important;min-width:20%!important}.table-wrapper .u-8{width:25%!important;min-width:25%!important}.table-wrapper .u-9{width:30%!important;min-width:30%!important}.is-mat-icon-cell{width:auto;height:auto;display:auto}.is-mat-icon-cell .mat-icon{font-size:14px}.is-mat-icon-cell span{margin:auto}app-is-mat-icon span{margin:auto}.link-btn{color:#171f26;font-family:Nexa Text Bold;font-size:14px!important;letter-spacing:0px;text-align:center;text-decoration:underline}.expanded>.mat-cell>.link-btn{text-decoration:none;font-weight:400}.btn-link-text{background:#E5E8EE 0% 0% no-repeat padding-box;border-radius:4px;text-align:left;font: 700 12px/19px Nexa Text;letter-spacing:0px;color:#707070;cursor:pointer;padding:10px}.empty-row{background:none!important;height:10px!important}.empty-row td{background:none!important;height:0}.empty-row-none{display:none!important}\n"], components: [{ type: i4.MatTable, selector: "mat-table, table[mat-table]", exportAs: ["matTable"] }, { type: i4.MatHeaderRow, selector: "mat-header-row, tr[mat-header-row]", exportAs: ["matHeaderRow"] }, { type: i4.MatRow, selector: "mat-row, tr[mat-row]", exportAs: ["matRow"] }, { type: i5.MatSortHeader, selector: "[mat-sort-header]", inputs: ["disabled", "mat-sort-header", "arrowPosition", "start", "sortActionDescription", "disableClear"], exportAs: ["matSortHeader"] }, { type: IsMatIconComponent, selector: "app-is-mat-icon", inputs: ["input"] }, { type: EquipementTypeComponent, selector: "app-equipement-type", inputs: ["name", "type", "size"] }, { type: EquipementStatusComponent, selector: "app-equipement-status", inputs: ["type", "size", "lang"] }, { type: CustomerRankComponent, selector: "app-customer-rank", inputs: ["type"] }, { type: PriorityComponent, selector: "icon-priority", inputs: ["icon", "iconLabel"] }, { type: StatusComponent, selector: "status", inputs: ["label"] }, { type: StatusIconComponent, selector: "status-icon", inputs: ["label"] }, { type: GenderComponent, selector: "app-gender", inputs: ["type", "size"] }, { type: PngIconComponent, selector: "png-icon", inputs: ["src", "fontSize", "color"] }, { type: MenuComponent, selector: "menu", inputs: ["menuSettings", "element"], outputs: ["callHandler"] }, { type: CustomButtonComponent, selector: "custom-button", inputs: ["config", "element"], outputs: ["callHandler"] }, { type: PhoneDisplayComponent, selector: "app-phone-display", inputs: ["number"] }, { type: CustomCellComponent, selector: "lib-custom-cell", inputs: ["title", "subTitle", "class", "subTitleFormat", "lang"] }, { type: YesNoComponent, selector: "app-yes-nox", inputs: ["valid", "displayNo", "displayYes", "size"] }, { type: OriginComponent, selector: "icon-origin", inputs: ["icon"] }, { type: NameAvatarComponent, selector: "name-avatar", inputs: ["src", "fontSize", "textSize"] }, { type: DoubleLineComponent, selector: "double-line", inputs: ["line1", "line2"] }, { type: i23.MatPaginator, selector: "mat-paginator", inputs: ["disabled"], exportAs: ["matPaginator"] }], directives: [{ type: i24.NgIf, selector: "[ngIf]", inputs: ["ngIf", "ngIfThen", "ngIfElse"] }, { type: i5.MatSort, selector: "[matSort]", inputs: ["matSortDisabled", "matSortActive", "matSortStart", "matSortDirection", "matSortDisableClear"], outputs: ["matSortChange"], exportAs: ["matSort"] }, { type: i4.MatHeaderRowDef, selector: "[matHeaderRowDef]", inputs: ["matHeaderRowDef", "matHeaderRowDefSticky"] }, { type: i4.MatRowDef, selector: "[matRowDef]", inputs: ["matRowDefColumns", "matRowDefWhen"] }, { type: i24.NgForOf, selector: "[ngFor][ngForOf]", inputs: ["ngForOf", "ngForTrackBy", "ngForTemplate"] }, { type: i4.MatColumnDef, selector: "[matColumnDef]", inputs: ["sticky", "matColumnDef"] }, { type: i4.MatHeaderCellDef, selector: "[matHeaderCellDef]" }, { type: i4.MatHeaderCell, selector: "mat-header-cell, th[mat-header-cell]" }, { type: i4.MatCellDef, selector: "[matCellDef]" }, { type: i4.MatCell, selector: "mat-cell, td[mat-cell]" }, { type: i24.NgSwitch, selector: "[ngSwitch]", inputs: ["ngSwitch"] }, { type: i24.NgSwitchCase, selector: "[ngSwitchCase]", inputs: ["ngSwitchCase"] }, { type: i2$1.MatTooltip, selector: "[matTooltip]", exportAs: ["matTooltip"] }, { type: i1$2.RouterLinkWithHref, selector: "a[routerLink],area[routerLink]", inputs: ["target", "queryParams", "fragment", "queryParamsHandling", "preserveFragment", "skipLocationChange", "replaceUrl", "state", "relativeTo", "routerLink"] }, { type: i24.NgClass, selector: "[ngClass]", inputs: ["class", "ngClass"] }, { type: i24.NgSwitchDefault, selector: "[ngSwitchDefault]" }], pipes: { "appDate": AppDatePipe }, animations: [trigger('detailExpand', [
+TableComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.2.5", ngImport: i0, type: TableComponent, deps: [{ token: i1$2.Router }, { token: i1$2.ActivatedRoute }, { token: TableService }, { token: i0.ChangeDetectorRef }, { token: TranslateService }, { token: i0.ChangeDetectorRef }], target: i0.ɵɵFactoryTarget.Component });
+TableComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "14.2.5", type: TableComponent, selector: "ngx-design-table", inputs: { columnDefinitions: "columnDefinitions", displayDetail: "displayDetail", displayComponent: "displayComponent", data: "data", rowMargin: "rowMargin", lang: "lang", btnOverride: "btnOverride", inputSearch: "inputSearch", EmptyRow: "EmptyRow", blockDetails: "blockDetails" }, outputs: { callFunction: "callFunction", onReady: "onReady", clicked: "clicked" }, viewQueries: [{ propertyName: "paginatorCurrent", first: true, predicate: ["MatPaginatorCurrent"], descendants: true, static: true }, { propertyName: "sortCurrent", first: true, predicate: ["table"], descendants: true, static: true }], usesOnChanges: true, ngImport: i0, template: "<div class=\"table-wrapper\">\n    <!-- Table -->\n    <table mat-table #table=\"matSort\" [dataSource]=\"data \" multiTemplateDataRows matSort\n        *ngIf=\"displayedColumns && data && data.totalElements\" (matSortChange)=\"data.sortIt($event)\" [style]=\"style\">\n        <tr mat-header-row *matHeaderRowDef=\"columnsToDisplay\"></tr>\n        <tr mat-row *matRowDef=\"let element; columns: columnsToDisplay;\" class=\"element-row\"></tr>\n\n        <ng-container [matColumnDef]=\"column.key\" *ngFor=\"let column of displayedColumns\">\n            <ng-container *ngIf=\"column.sort\">\n                <th mat-header-cell *matHeaderCellDef\n                    [class]=\"generateClass([column.class, column.align ? 'text-align-'+column.align : 'text-align-left'])\"\n                    mat-sort-header>\n                    <app-is-mat-icon [input]=\"column.value\"></app-is-mat-icon>\n                </th>\n            </ng-container>\n            <ng-container *ngIf=\"!column.sort\">\n                <!-- Ajouter fonction generate Class -->\n                <ng-container *ngIf=\"column.clickable\">\n                    <th mat-header-cell *matHeaderCellDef\n                        (click)=\"clicked.emit({key : column.key, statement : (column.statement = !column.statement)})\"\n                        [class]=\"generateClass([column.class, column.align ? 'text-align-'+column.align : 'text-align-left'])\"\n                        style=\"cursor: pointer;\">\n                        <app-is-mat-icon [input]=\"column.value\"></app-is-mat-icon>\n                        <app-is-mat-icon *ngIf=\"column.valueStatement && column.statement !== undefined\"\n                            [input]=\"column.valueStatement[column.statement ? 1 : 0]\">\n                        </app-is-mat-icon>\n                    </th>\n                </ng-container>\n                <ng-container *ngIf=\"!column.clickable\">\n                    <th mat-header-cell *matHeaderCellDef\n                        [class]=\"generateClass([column.class, column.align ? 'text-align-'+column.align : 'text-align-left'])\">\n                        <app-is-mat-icon [input]=\"column.value\"></app-is-mat-icon>\n                    </th>\n                </ng-container>\n                <th mat-header-cell *matHeaderCellDef\n                    [class]=\"generateClass([column.class, column.align ? 'text-align-'+column.align : 'text-align-left'])\">\n                    <app-is-mat-icon [input]=\"column.value\"></app-is-mat-icon>\n                </th>\n            </ng-container>\n\n            <td class=\"row-style\" mat-cell *matCellDef=\"let element\"\n                [class]=\"generateClass([column.class, column.align ? 'text-align-'+column.align : ''])\">\n                <ng-container *ngIf=\"element !== 'empty'\" [ngSwitch]=\"column.module\">\n                    <!-- Button click -->\n                    <ng-container *ngSwitchCase=\"'button-click'\">\n                        <a [matTooltip]=\"open\" class=\"btn-link-text\" (click)=\"callFunction.emit(element[column.key])\"\n                            [innerHTML]=\"details\"></a>\n                    </ng-container>\n                    <!-- Button link -->\n                    <ng-container *ngSwitchCase=\"'button-link'\">\n                        <!--                matBadge=\"*\" matBadgePosition=\"before\"\n                           matBadgeColor=\"accent\" -->\n                        <a *ngIf=\"element.new\" [matTooltip]=\"open\" class=\"mat-button btn-xs\"\n                            (click)=\"element.new = false\" [ngClass]=\"btnOverride == true ? 'link-btn': 'nowboard-btn'\"\n                            routerLink=\"{{column.override ? buildLink(column.override, element) : element[column.key]}}\">\n                            <ng-container *ngIf=\"column.display\">\n                                <app-is-mat-icon [input]=\"column.display\"></app-is-mat-icon>\n                            </ng-container>\n                            <ng-container *ngIf=\"!column.display\">\n                                <span [innerHTML]=\"element[column.key]\"></span>\n                            </ng-container>\n                        </a>\n                        <a *ngIf=\"!element.new\" [matTooltip]=\"open\" class=\"mat-button btn-xs\"\n                            [ngClass]=\"btnOverride == true ? 'link-btn': 'nowboard-btn'\"\n                            routerLink=\"{{column.override ? buildLink(column.override, element) : element[column.key]}}\">\n                            <ng-container *ngIf=\"column.display\">\n                                <app-is-mat-icon class=\"is-mat-icon-cell\" [input]=\"column.display\"></app-is-mat-icon>\n                            </ng-container>\n                            <ng-container *ngIf=\"!column.display\">\n                                <span [innerHTML]=\"element[column.key]\"></span>\n                            </ng-container>\n                        </a>\n                    </ng-container>\n                    <!-- Button link text -->\n                    <ng-container *ngSwitchCase=\"'button-link-text'\">\n                        <a [matTooltip]=\"open\" class=\"btn-link-text btn-xs\" (click)=\"element.new = false\"\n                            routerLink=\"{{column.override ? buildLink(column.override, element) : element[column.key]}}\">\n                            {{ column.value == 'Actions' ? details : column.key }}\n                        </a>\n                    </ng-container>\n                    <!-- icon custom-->\n                    <ng-container *ngSwitchCase=\"'custom-icon'\">\n                        <input type=\"hidden\" [value]=\"element[column.key]\">\n                        <img *ngIf=\"element[column.key] && column.valueOverride\"\n                            [src]=\"column.valueOverride[element[column.key]]\" style=\"width: 20px; height: 20px;\">\n                    </ng-container>\n                    <ng-container *ngSwitchCase=\"'it-category'\">\n                        <app-equipement-type [name]=\"element[column.key]\" [type]=\"element[column.override]\">\n                        </app-equipement-type>\n                    </ng-container>\n                    <!-- icon it status -->\n                    <ng-container *ngSwitchCase=\"'it-status'\">\n                        <app-equipement-status [lang]=\"lang\" [type]=\"element[column.key]\"></app-equipement-status>\n                    </ng-container>\n                    <!-- icon customer rank -->\n                    <ng-container *ngSwitchCase=\"'customer-rank'\">\n                        <app-customer-rank [type]=\"element[column.key]\"></app-customer-rank>\n                    </ng-container>\n                    <!-- icon priority-->\n                    <ng-container *ngSwitchCase=\"'priority'\">\n                        <icon-priority [icon]=\"element['Icon']\" [iconLabel]=\"element[column.key] || null\">\n                        </icon-priority>\n                    </ng-container>\n\n                    <!-- status -->\n                    <ng-container *ngSwitchCase=\"'status'\">\n                        <status [label]=\"element[column.key]\"></status>\n                    </ng-container>\n\n                    <!-- status -->\n                    <ng-container *ngSwitchCase=\"'status-icon'\">\n                        <status-icon [label]=\"element[column.key]\"></status-icon>\n                    </ng-container>\n\n                    <!-- icon gender avatar-->\n                    <ng-container *ngSwitchCase=\"'gender-avatar'\">\n                        <app-gender [type]=\"element[column.key]\"></app-gender>\n                    </ng-container>\n\n                    <!-- Png Icon -->\n                    <ng-container *ngSwitchCase=\"'png-icon'\">\n                        <png-icon [src]=\"element[column.key]\" [fontSize]=\"column.fontSize\" [color]=\"column.color\">\n                        </png-icon>\n                    </ng-container>\n\n\n                    <!-- menu -->\n                    <ng-container *ngSwitchCase=\"'menu'\">\n                        <menu (callHandler)=\"callFunction.emit($event)\" [element]=\"element\"\n                            [menuSettings]=\"column.config\"></menu>\n                    </ng-container>\n\n                    <!-- custom button -->\n                    <ng-container *ngSwitchCase=\"'custom-button'\">\n                        <custom-button (callHandler)=\"callFunction.emit($event)\" [element]=\"element\"\n                            [config]=\"column.config\"></custom-button>\n                    </ng-container>\n\n                    <!-- icon gender avatar-->\n                    <ng-container *ngSwitchCase=\"'phone-display'\">\n                        <app-phone-display [number]=\"element[column.key]\"></app-phone-display>\n                    </ng-container>\n                    <!-- custom cell-->\n                    <ng-container *ngSwitchCase=\"'custom-cell'\">\n                        <lib-custom-cell [title]=\"element[column.key]\" [subTitle]=\"element[column.subTitle]\"\n                            [subTitleFormat]=\"column.subTitleFormat\" [class]=\"element[column.addClass]\">\n                        </lib-custom-cell>\n                    </ng-container>\n\n                    <!-- icon gender avatar-->\n                    <ng-container *ngSwitchCase=\"'yes-no-display'\">\n                        <app-yes-nox\n                            *ngIf=\"column.config && (column.config.displayNo !== undefined && column.config.displayYes !== undefined)\"\n                            [valid]=\"element[column.key]\" [size]=\"column.config?.sizeIcon\"\n                            [displayNo]=\"column.config.displayYes\" [displayYes]=\"column.config.displayNo\">\n                        </app-yes-nox>\n                        <app-yes-nox\n                            *ngIf=\"(!column.config || (column.config && !(column.config.displayNo || column.config.displayYes)))\"\n                            [valid]=\"element[column.key]\" [size]=\"column.config?.sizeIcon\">\n                        </app-yes-nox>\n                    </ng-container>\n                    <!-- icon origin-->\n                    <ng-container *ngSwitchCase=\"'origin'\">\n                        <icon-origin [icon]=\"element[column.key]\"></icon-origin>\n                    </ng-container>\n                    <!-- icon name avatar-->\n                    <ng-container *ngSwitchCase=\"'name-avatar'\">\n                        <name-avatar matTooltip=\"{{Join(element, column.override)}}\" [src]=\"element[column.key]\"\n                            [fontSize]=\"column.fontSize\" [matTooltipClass]=\"'my-tooltip'\">\n                        </name-avatar>\n                    </ng-container>\n                    <!-- date format -->\n                    <ng-container *ngSwitchCase=\"'date-format'\">\n                        {{element[column.key] | appDate : lang}}\n                    </ng-container>\n                    <!-- count rows -->\n                    <ng-container *ngSwitchCase=\"'count-row'\">\n                        <span style=\"padding-left: 14px\">\n                            {{(element[column.key] && element[column.key].length ? element[column.key].length : '-')}}\n                        </span>\n                    </ng-container>\n                    <!-- double line -->\n                    <ng-container *ngSwitchCase=\"'double-line'\">\n                        <double-line [line1]=\"element[column.key]\" [line2]=\"element[column.override]\"></double-line>\n                    </ng-container>\n                    <ng-container *ngSwitchDefault>\n                        <span [innerHTML]=\"element[column.key]\"></span>\n                    </ng-container>\n                </ng-container>\n            </td>\n\n        </ng-container>\n    </table>\n    <ng-container *ngIf=\"data && data.totalElements === 0\">\n        <div class=\"row\" style=\"height: 84px;background: transparent!important;\">\n            <div class=\"\">\n                <div class=\"col-lg-12 search-container\" style=\"text-align: center\">\n                    {{ noResult }}\n                </div>\n            </div>\n        </div>\n    </ng-container>\n    <mat-paginator #MatPaginatorCurrent *ngIf=\"data && data.totalElements > 0\" [length]=\"data.totalElements\"\n        [pageSize]=\"data.size\" [pageIndex]=\"data.number\" [hidePageSize]=\"true\" (page)=\"data.fetch($event.pageIndex)\"\n        showFirstLastButtons></mat-paginator>\n</div>", styles: [".table-wrapper table{width:100%}.table-wrapper .mat-cell{padding-left:10px}.table-wrapper png-icon{padding-left:17px}.table-wrapper tr:nth-child(1){min-height:48px}.table-wrapper .detail-row{height:auto!important}.table-wrapper .text-align-right{text-align:right!important}.table-wrapper .text-align-left{text-align:left!important}.table-wrapper .text-align-center{text-align:center!important}.table-wrapper .element-detail{overflow:hidden;display:flex;padding-top:10px;padding-bottom:10px}@media screen and (min-width: 1441px){.table-wrapper .mat-cell{padding-top:15px;padding-bottom:10px;font-size:13px!important}}@media screen and (max-width: 1440px){.table-wrapper a.mat-button{padding-top:10px}.table-wrapper .mat-cell{padding-top:15px;padding-bottom:10px}}.table-wrapper .u-1{width:4%!important;max-width:4%!important;min-width:4%!important}.table-wrapper .u-2{width:5%!important;max-width:5%!important;min-width:5%!important}.table-wrapper .u-3{width:7%!important;max-width:7%!important;min-width:7%!important}@media screen and (max-width: 1440px){.table-wrapper .u-1{width:5%!important;max-width:5%!important;min-width:5%!important}.table-wrapper .u-2{width:6%!important;max-width:6%!important;min-width:6%!important}.table-wrapper .u-3{width:10%!important;max-width:10%!important;min-width:10%!important}}.table-wrapper .u-4{max-width:11%!important;width:11%!important;min-width:11%!important}.table-wrapper .u-5{max-width:10%!important;width:10%!important;min-width:10%!important}.table-wrapper .u-6{max-width:15%!important;width:15%!important;min-width:15%!important}.table-wrapper .u-7{width:20%!important;min-width:20%!important}.table-wrapper .u-8{width:25%!important;min-width:25%!important}.table-wrapper .u-9{width:30%!important;min-width:30%!important}.is-mat-icon-cell{width:auto;height:auto;display:auto}.is-mat-icon-cell .mat-icon{font-size:14px}.is-mat-icon-cell span{margin:auto}app-is-mat-icon span{margin:auto}.link-btn{color:#171f26;font-family:Nexa Text Bold;font-size:14px!important;letter-spacing:0px;text-align:center;text-decoration:underline}.expanded>.mat-cell>.link-btn{text-decoration:none;font-weight:400}.btn-link-text{background:#E5E8EE 0% 0% no-repeat padding-box;border-radius:4px;text-align:left;font: 700 12px/19px Nexa Text;letter-spacing:0px;color:#707070;cursor:pointer;padding:10px}.empty-row{background:none!important;height:10px!important}.empty-row td{background:none!important;height:0}.empty-row-none{display:none!important}\n"], dependencies: [{ kind: "component", type: PngIconComponent, selector: "png-icon", inputs: ["src", "fontSize", "color"] }, { kind: "component", type: i5.MatPaginator, selector: "mat-paginator", inputs: ["disabled"], exportAs: ["matPaginator"] }, { kind: "component", type: i6.MatTable, selector: "mat-table, table[mat-table]", exportAs: ["matTable"] }, { kind: "directive", type: i6.MatHeaderCellDef, selector: "[matHeaderCellDef]" }, { kind: "directive", type: i6.MatHeaderRowDef, selector: "[matHeaderRowDef]", inputs: ["matHeaderRowDef", "matHeaderRowDefSticky"] }, { kind: "directive", type: i6.MatColumnDef, selector: "[matColumnDef]", inputs: ["sticky", "matColumnDef"] }, { kind: "directive", type: i6.MatCellDef, selector: "[matCellDef]" }, { kind: "directive", type: i6.MatRowDef, selector: "[matRowDef]", inputs: ["matRowDefColumns", "matRowDefWhen"] }, { kind: "directive", type: i6.MatHeaderCell, selector: "mat-header-cell, th[mat-header-cell]" }, { kind: "directive", type: i6.MatCell, selector: "mat-cell, td[mat-cell]" }, { kind: "component", type: i6.MatHeaderRow, selector: "mat-header-row, tr[mat-header-row]", exportAs: ["matHeaderRow"] }, { kind: "component", type: i6.MatRow, selector: "mat-row, tr[mat-row]", exportAs: ["matRow"] }, { kind: "directive", type: i7.MatSort, selector: "[matSort]", inputs: ["matSortDisabled", "matSortActive", "matSortStart", "matSortDirection", "matSortDisableClear"], outputs: ["matSortChange"], exportAs: ["matSort"] }, { kind: "component", type: i7.MatSortHeader, selector: "[mat-sort-header]", inputs: ["disabled", "mat-sort-header", "arrowPosition", "start", "sortActionDescription", "disableClear"], exportAs: ["matSortHeader"] }, { kind: "directive", type: i2.MatTooltip, selector: "[matTooltip]", exportAs: ["matTooltip"] }, { kind: "directive", type: i1.NgClass, selector: "[ngClass]", inputs: ["class", "ngClass"] }, { kind: "directive", type: i1.NgForOf, selector: "[ngFor][ngForOf]", inputs: ["ngForOf", "ngForTrackBy", "ngForTemplate"] }, { kind: "directive", type: i1.NgIf, selector: "[ngIf]", inputs: ["ngIf", "ngIfThen", "ngIfElse"] }, { kind: "directive", type: i1.NgSwitch, selector: "[ngSwitch]", inputs: ["ngSwitch"] }, { kind: "directive", type: i1.NgSwitchCase, selector: "[ngSwitchCase]", inputs: ["ngSwitchCase"] }, { kind: "directive", type: i1.NgSwitchDefault, selector: "[ngSwitchDefault]" }, { kind: "directive", type: i1$2.RouterLinkWithHref, selector: "a[routerLink],area[routerLink]", inputs: ["target", "queryParams", "fragment", "queryParamsHandling", "state", "relativeTo", "preserveFragment", "skipLocationChange", "replaceUrl", "routerLink"] }, { kind: "component", type: CustomerRankComponent, selector: "app-customer-rank", inputs: ["type"] }, { kind: "component", type: EquipementStatusComponent, selector: "app-equipement-status", inputs: ["type", "size", "lang"] }, { kind: "component", type: EquipementTypeComponent, selector: "app-equipement-type", inputs: ["name", "type", "size"] }, { kind: "component", type: GenderComponent, selector: "app-gender", inputs: ["type", "size"] }, { kind: "component", type: IsMatIconComponent, selector: "app-is-mat-icon", inputs: ["input"] }, { kind: "component", type: NameAvatarComponent, selector: "name-avatar", inputs: ["src", "fontSize", "textSize"] }, { kind: "component", type: OriginComponent, selector: "icon-origin", inputs: ["icon"] }, { kind: "component", type: PhoneDisplayComponent, selector: "app-phone-display", inputs: ["number"] }, { kind: "component", type: PriorityComponent, selector: "icon-priority", inputs: ["icon", "iconLabel"] }, { kind: "component", type: YesNoComponent, selector: "app-yes-nox", inputs: ["valid", "displayNo", "displayYes", "size"] }, { kind: "component", type: MenuComponent, selector: "menu", inputs: ["menuSettings", "element"], outputs: ["callHandler"] }, { kind: "component", type: StatusComponent, selector: "status", inputs: ["label"] }, { kind: "component", type: StatusIconComponent, selector: "status-icon", inputs: ["label"] }, { kind: "component", type: DoubleLineComponent, selector: "double-line", inputs: ["line1", "line2"] }, { kind: "component", type: CustomCellComponent, selector: "lib-custom-cell", inputs: ["title", "subTitle", "class", "subTitleFormat", "lang"] }, { kind: "component", type: CustomButtonComponent, selector: "custom-button", inputs: ["config", "element"], outputs: ["callHandler"] }, { kind: "pipe", type: AppDatePipe, name: "appDate" }], animations: [trigger('detailExpand', [
             state('collapsed', style({ height: '0px', minHeight: '0', display: 'none' })),
             state('expanded', style({ height: '*' })),
             transition('expanded <=> collapsed', animate('225ms cubic-bezier(0.4, 0.0, 0.2, 1)')),
         ])], encapsulation: i0.ViewEncapsulation.None });
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: TableComponent, decorators: [{
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.2.5", ngImport: i0, type: TableComponent, decorators: [{
             type: Component,
             args: [{ selector: 'ngx-design-table', animations: [trigger('detailExpand', [
                             state('collapsed', style({ height: '0px', minHeight: '0', display: 'none' })),
@@ -2330,8 +2284,8 @@ class TableModule {
         };
     }
 }
-TableModule.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: TableModule, deps: [{ token: TableModule, optional: true, skipSelf: true }], target: i0.ɵɵFactoryTarget.NgModule });
-TableModule.ɵmod = i0.ɵɵngDeclareNgModule({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: TableModule, declarations: [TableComponent,
+TableModule.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.2.5", ngImport: i0, type: TableModule, deps: [{ token: TableModule, optional: true, skipSelf: true }], target: i0.ɵɵFactoryTarget.NgModule });
+TableModule.ɵmod = i0.ɵɵngDeclareNgModule({ minVersion: "14.0.0", version: "14.2.5", ngImport: i0, type: TableModule, declarations: [TableComponent,
         CustomerRankComponent,
         DateFormatComponent,
         EquipementStatusComponent,
@@ -2359,7 +2313,7 @@ TableModule.ɵmod = i0.ɵɵngDeclareNgModule({ minVersion: "12.0.0", version: "1
         MatIconModule,
         RouterModule,
         MatBadgeModule,
-        MatMenuModule, i1$1.NowboardIconModule], exports: [TableComponent,
+        MatMenuModule, i3.NowboardIconModule], exports: [TableComponent,
         CustomerRankComponent,
         DateFormatComponent,
         EquipementStatusComponent,
@@ -2384,21 +2338,19 @@ TableModule.ɵmod = i0.ɵɵngDeclareNgModule({ minVersion: "12.0.0", version: "1
         MatMenuModule,
         NowboardIconModule,
         StatusComponent] });
-TableModule.ɵinj = i0.ɵɵngDeclareInjector({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: TableModule, providers: [
+TableModule.ɵinj = i0.ɵɵngDeclareInjector({ minVersion: "12.0.0", version: "14.2.5", ngImport: i0, type: TableModule, providers: [
         NowboardIconService
-    ], imports: [[
-            PngIconModule,
-            MatPaginatorModule,
-            MatTableModule,
-            MatSortModule,
-            MatTooltipModule,
-            CommonModule,
-            MatIconModule,
-            RouterModule,
-            MatBadgeModule,
-            MatMenuModule,
-            NowboardIconModule.forRoot(Settings.Icons_light)
-        ], PngIconModule,
+    ], imports: [PngIconModule,
+        MatPaginatorModule,
+        MatTableModule,
+        MatSortModule,
+        MatTooltipModule,
+        CommonModule,
+        MatIconModule,
+        RouterModule,
+        MatBadgeModule,
+        MatMenuModule,
+        NowboardIconModule.forRoot(Settings.Icons_light), PngIconModule,
         MatPaginatorModule,
         MatTableModule,
         MatSortModule,
@@ -2409,7 +2361,7 @@ TableModule.ɵinj = i0.ɵɵngDeclareInjector({ minVersion: "12.0.0", version: "1
         MatBadgeModule,
         MatMenuModule,
         NowboardIconModule] });
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: TableModule, decorators: [{
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.2.5", ngImport: i0, type: TableModule, decorators: [{
             type: NgModule,
             args: [{
                     declarations: [

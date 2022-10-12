@@ -15,5 +15,5 @@ export declare class CustomButtonComponent implements OnInit {
     ngOnInit(): void;
     action(): void;
     static ɵfac: i0.ɵɵFactoryDeclaration<CustomButtonComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDeclaration<CustomButtonComponent, "custom-button", never, { "config": "config"; "element": "element"; }, { "callHandler": "callHandler"; }, never, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<CustomButtonComponent, "custom-button", never, { "config": "config"; "element": "element"; }, { "callHandler": "callHandler"; }, never, never, false>;
 }

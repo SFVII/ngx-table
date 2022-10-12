@@ -16,5 +16,5 @@ export declare class EquipementStatusComponent implements OnInit, OnChanges {
     ngOnInit(): void;
     ngOnChanges(changes: SimpleChanges): void;
     static ɵfac: i0.ɵɵFactoryDeclaration<EquipementStatusComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDeclaration<EquipementStatusComponent, "app-equipement-status", never, { "type": "type"; "size": "size"; "lang": "lang"; }, {}, never, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<EquipementStatusComponent, "app-equipement-status", never, { "type": "type"; "size": "size"; "lang": "lang"; }, {}, never, never, false>;
 }

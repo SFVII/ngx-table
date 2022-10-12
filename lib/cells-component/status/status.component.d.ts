@@ -5,5 +5,5 @@ export declare class StatusComponent implements OnInit {
     constructor();
     ngOnInit(): void;
     static ɵfac: i0.ɵɵFactoryDeclaration<StatusComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDeclaration<StatusComponent, "status", never, { "label": "label"; }, {}, never, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<StatusComponent, "status", never, { "label": "label"; }, {}, never, never, false>;
 }

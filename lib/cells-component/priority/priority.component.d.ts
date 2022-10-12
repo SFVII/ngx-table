@@ -11,5 +11,5 @@ export declare class PriorityComponent implements OnInit, OnChanges {
     ngOnInit(): void;
     ngOnChanges(changes: SimpleChanges): void;
     static ɵfac: i0.ɵɵFactoryDeclaration<PriorityComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDeclaration<PriorityComponent, "icon-priority", never, { "icon": "icon"; "iconLabel": "iconLabel"; }, {}, never, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<PriorityComponent, "icon-priority", never, { "icon": "icon"; "iconLabel": "iconLabel"; }, {}, never, never, false>;
 }
