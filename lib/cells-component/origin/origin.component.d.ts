@@ -1,5 +1,5 @@
 import { OnChanges, OnInit, SimpleChanges } from '@angular/core';
-import { TableService } from "../../table.service";
+import { TableService } from '../../table.service';
 import * as i0 from "@angular/core";
 export declare class OriginComponent implements OnInit, OnChanges {
     service: TableService;

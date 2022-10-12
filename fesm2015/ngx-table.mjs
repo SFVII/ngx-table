@@ -474,26 +474,16 @@ class OriginComponent {
         this.service = service;
     }
     ngOnInit() {
-        const list = this.service.settingConfig.origin; /*[{
-            "label": "Web",
-            "data": "assets/icons/nowteam/Web.png"
-        }, {
-            "label": "PRTG",
-            "data": "assets/icons/nowteam/PRTG.png"
-        }, {
-            "label": "Mail",
-            "data": "assets/icons/nowteam/Mail.png"
-        }, {
-            "label": "Téléphone",
-            "data": "assets/icons/nowteam/Telephone.png"
-        }, {
-            "label": "Bot",
-            "data": "assets/icons/nowteam/Bot.png"
-        }];*/
-        const flter = list.filter((e) => {
-            return this.icon.includes(e.label);
-        });
-        this.iconSrc = flter && flter.length && flter[0].data ? flter[0].data : '';
+        const list = this.service.settingConfig.origin;
+        if (this.icon) {
+            const flter = list.filter((e) => {
+                if (e.label)
+                    return this.icon.includes(e.label);
+                else
+                    return false;
+            });
+            this.iconSrc = flter && flter.length && flter[0].data ? flter[0].data : '';
+        }
     }
     ngOnChanges(changes) {
         this.ngOnInit();
@@ -1739,11 +1729,8 @@ class CoreMatTable extends DataSource {
         this.data = [...data];
     }
     sortData(data, sortAction) {
-        if (sortAction.direction !== '') {
+        if (sortAction.direction !== '' && data && data.length) {
             return data.sort((a, b) => {
-                if (a === 'empty' || b === 'empty') {
-                    return 0;
-                }
                 return this.compare(a[sortAction.active], b[sortAction.active], sortAction.direction === 'asc');
             });
         }
