@@ -193,8 +193,8 @@ class EquipementStatusComponent {
         //this.params = this.service.settingConfig.equipmentStatus;
     }
     ngOnInit() {
-        this.css.maxWidth = String((this.size || 22)) + 'px';
-        this.css.maxHeight = String((this.size || 22)) + 'px';
+        // this.css.maxWidth = String((this.size || 22)) + 'px';
+        // this.css.maxHeight = String((this.size || 22)) + 'px';
         const params = this.service.settingConfig.equipmentStatus; /*{
           "actif": "/assets/icons/status/actif.png",
           "oui": "/assets/icons/status/actif.png",
