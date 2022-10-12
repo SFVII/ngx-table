@@ -2086,23 +2086,10 @@ class TableComponent {
     expandShow(template) {
     }
     ngOnChanges(changes) {
-        /*this.data.pageNumber.subscribe((newpage) => {
-            console.log(newpage);
-            if (newpage > 0 && this.previousPageNumber != newpage) {
-                this.previousPageNumber = newpage;
-                this.router.navigate(
-                    [],
-                    {
-                        relativeTo: this.route,
-                        queryParams: { page: newpage + 1 },
-                        queryParamsHandling: 'merge', // remove to replace all query params by provided
-                    });
-            }
-        })*/
         if (changes.data) {
             this.pageNumberSub();
         }
-        if (changes.data.firstChange) {
+        if (changes && changes.data && changes.data.firstChange) {
             this.init();
         }
         else {
@@ -2117,8 +2104,6 @@ class TableComponent {
                 }
             }
         }
-        //  this.ngOnDestroy();
-        //  this.ngOnInit();
     }
     init() {
         this.open = this.translate.translate(this.lang, 'OPEN');
