@@ -1644,14 +1644,14 @@ class CoreMatTable extends DataSource {
     }
     filterData(data, filter) {
         console.log('HUEUEUEUEUEU', filter, data === null || data === void 0 ? void 0 : data.length);
-        let inputSearch;
         if (typeof filter === "object" && Object.keys(filter).length) {
             console.log('HUEUEUEUE2d2s2d2sd2d2s2dsUEU', filter, data === null || data === void 0 ? void 0 : data.length);
             if (filter.inputSearch) {
                 console.log('GOT INPUT SEARCH', filter.inputSearch);
                 const { inputSearch } = filter;
                 delete filter.inputSearch;
-                return this.filterDataObject(this._search(inputSearch, data), filter);
+                const result = this._search(inputSearch, data);
+                return this.filterDataObject(result, filter);
             }
             else {
                 console.log('SDUCKCKCKKCKC', filter, data === null || data === void 0 ? void 0 : data.length);
@@ -1659,7 +1659,7 @@ class CoreMatTable extends DataSource {
             }
         }
         else {
-            console.log('TDDDDDDDDDDDDDDDDDDDDDDD', filter, data === null || data === void 0 ? void 0 : data.length);
+            console.log('TDDDDDDDDDDDDDDDDDDDDDDD', filter, data === null || data === void 0 ? void 0 : data.length, data);
             this.dataAfterSearch = data;
             return data;
         }
