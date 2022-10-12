@@ -17,6 +17,7 @@ export interface Page {
 export interface CoreMatTableInterface {
     page$: Observable<any>;
     totalElements: number;
+    search: BehaviorSubject<string>;
     paginator: MatPaginator;
     number: number;
     data: any[];
