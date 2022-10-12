@@ -1632,7 +1632,7 @@ class CoreMatTable extends DataSource {
         let stack = str.split(' ');
         let pond = 0;
         for (let s of stack) {
-            let search = s.replace(new RegExp(' ', 'g'), '');
+            let search = s;
             if (search && search.includes(searchKey)) {
                 pond++;
             }
@@ -1643,6 +1643,7 @@ class CoreMatTable extends DataSource {
         let inputSearch;
         if (typeof filter === "object") {
             if (filter.inputSearch) {
+                console.log('GOT INPUT SEARCH', filter.inputSearch);
                 inputSearch = filter.inputSearch;
                 delete filter.inputSearch;
                 return this.filterDataObject(this._search(inputSearch, data), filter);
@@ -1658,6 +1659,7 @@ class CoreMatTable extends DataSource {
     }
     _search(filter, data) {
         const result = [];
+        console.log(' SEARCH', filter.inputSearch);
         if (filter && filter.replace(/[^a-zA-Z ]/g, " ")) {
             for (let e of data) {
                 e.pond = 0;
@@ -1665,8 +1667,10 @@ class CoreMatTable extends DataSource {
                     .replace(/[^a-zA-Z0-9 ]/g, " ");
                 const stack = filter.toLowerCase().replace(/[^a-zA-Z0-9 ]/g, " ")
                     .split(' ');
+                console.log(' SEARCH', filter.inputSearch);
                 let combination = 0;
                 for (let k of stack) {
+                    console.log('-----includes ???', dataRaw.includes(k), dataRaw, k);
                     if (dataRaw.includes(k)) {
                         const pond = this.ponderation(dataRaw, k);
                         if (!e.pond) {
@@ -1682,6 +1686,7 @@ class CoreMatTable extends DataSource {
             }
             this.dataAfterSearch = result.filter((e => e.pond)).sort((a, b) => a > b ? 1 : (a < b ? -1 : 0));
             return result.filter((e => e.pond)).sort((a, b) => a > b ? 1 : (a < b ? -1 : 0));
+            console.log('MY RESULT');
         }
         else {
             return data;
