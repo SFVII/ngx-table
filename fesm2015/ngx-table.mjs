@@ -1643,54 +1643,42 @@ class CoreMatTable extends DataSource {
         return pond;
     }
     filterData(data, filter) {
-        console.log('HUEUEUEUEUEU', filter, data === null || data === void 0 ? void 0 : data.length);
-        if (typeof filter === "object" && Object.keys(filter).length) {
+        if (typeof filter === 'object' && Object.keys(filter).length) {
             console.log('HUEUEUEUE2d2s2d2sd2d2s2dsUEU', filter, data === null || data === void 0 ? void 0 : data.length);
             const { inputSearch } = filter;
             delete filter.inputSearch;
+            if (Object.keys(filter).length) {
+                data = this.filterDataObject(data, filter);
+            }
             if (inputSearch) {
-                console.log('GOT INPUT SEARCH', inputSearch);
-                const result = this._search(inputSearch, data);
-                return this.filterDataObject(result, filter);
-            }
-            else {
-                console.log('SDUCKCKCKKCKC', filter, data === null || data === void 0 ? void 0 : data.length);
-                return this.filterDataObject(data, filter);
+                data = this._search(inputSearch, data);
             }
         }
-        else {
-            console.log('TDDDDDDDDDDDDDDDDDDDDDDD', filter, data === null || data === void 0 ? void 0 : data.length, data);
-            this.dataAfterSearch = data;
-            return data;
-        }
+        console.log('TDDDDDDDDDDDDDDDDDDDDDDD', filter, data === null || data === void 0 ? void 0 : data.length, data);
+        this.dataAfterSearch = data;
+        return data;
     }
     _search(filter, data) {
         const result = [];
-        console.log(' SEARCH', filter);
-        if (filter && filter.replace(/[^a-zA-Z ]/g, " ")) {
+        if (filter && filter.replace(/[^a-zA-Z ]/g, ' ')) {
             for (let e of data) {
                 e.pond = 0;
                 const dataRaw = JSON.stringify(e).toLowerCase()
-                    .replace(/[^a-zA-Z0-9 ]/g, " ");
-                const stack = filter.toLowerCase().replace(/[^a-zA-Z0-9 ]/g, " ")
+                    .replace(/[^a-zA-Z0-9 ]/g, ' ');
+                const stack = filter.toLowerCase().replace(/[^a-zA-Z0-9 ]/g, ' ')
                     .split(' ').filter((e) => e && e !== '');
-                console.log(' SEARCH', filter);
                 let combination = 0;
                 for (let k of stack) {
                     if (dataRaw.includes(k)) {
-                        console.log('-----includes ??? state %s , k %s', dataRaw.includes(k), k, dataRaw);
                         e.pond += 1;
                         combination++;
                     }
                 }
                 if (e.pond >= 1 && combination === stack.length) {
-                    console.log('Stack', stack, combination, stack.length, e.pond);
                     result.push(e);
                 }
             }
-            this.dataAfterSearch = result.filter((e => e.pond > 0)).sort((a, b) => a > b ? 1 : (a < b ? -1 : 0));
-            console.log('MY RESULT', this.dataAfterSearch);
-            return this.dataAfterSearch;
+            return result.filter((e => e.pond > 0)).sort((a, b) => a > b ? 1 : (a < b ? -1 : 0));
         }
         else {
             return data;
