@@ -2008,7 +2008,6 @@ class TableComponent {
     }
     ngOnInit() {
         return __awaiter(this, void 0, void 0, function* () {
-            console.log(this.data);
         });
     }
     ngOnDestroy() {
@@ -2073,6 +2072,7 @@ class TableComponent {
     expandShow(template) {
     }
     ngOnChanges(changes) {
+        console.log(this.data);
         if (changes.data) {
             this.pageNumberSub();
         }
