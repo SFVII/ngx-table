@@ -2008,6 +2008,7 @@ class TableComponent {
     }
     ngOnInit() {
         return __awaiter(this, void 0, void 0, function* () {
+            console.log(this.data);
         });
     }
     ngOnDestroy() {

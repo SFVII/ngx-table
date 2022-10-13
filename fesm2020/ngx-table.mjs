@@ -2004,6 +2004,7 @@ class TableComponent {
         }
     }
     async ngOnInit() {
+        console.log(this.data);
     }
     ngOnDestroy() {
     }
