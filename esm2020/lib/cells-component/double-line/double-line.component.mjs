@@ -8,9 +8,9 @@ export class DoubleLineComponent {
     ngOnInit() {
     }
 }
-DoubleLineComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.2.5", ngImport: i0, type: DoubleLineComponent, deps: [], target: i0.ɵɵFactoryTarget.Component });
-DoubleLineComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "14.2.5", type: DoubleLineComponent, selector: "double-line", inputs: { line1: "line1", line2: "line2" }, ngImport: i0, template: "<div class=\"line-1\">\n    {{ line1 }}\n</div>\n\n<div class=\"line-2\">\n    {{ line2 }}\n</div>", styles: [""] });
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.2.5", ngImport: i0, type: DoubleLineComponent, decorators: [{
+DoubleLineComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.2.6", ngImport: i0, type: DoubleLineComponent, deps: [], target: i0.ɵɵFactoryTarget.Component });
+DoubleLineComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "14.2.6", type: DoubleLineComponent, selector: "double-line", inputs: { line1: "line1", line2: "line2" }, ngImport: i0, template: "<div class=\"line-1\">\n    {{ line1 }}\n</div>\n\n<div class=\"line-2\">\n    {{ line2 }}\n</div>", styles: [""] });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.2.6", ngImport: i0, type: DoubleLineComponent, decorators: [{
             type: Component,
             args: [{ selector: 'double-line', template: "<div class=\"line-1\">\n    {{ line1 }}\n</div>\n\n<div class=\"line-2\">\n    {{ line2 }}\n</div>" }]
         }], ctorParameters: function () { return []; }, propDecorators: { line1: [{

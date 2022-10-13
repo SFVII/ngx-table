@@ -69,9 +69,9 @@ export class PhoneDisplayComponent {
         return null;
     }
 }
-PhoneDisplayComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.2.5", ngImport: i0, type: PhoneDisplayComponent, deps: [{ token: i1.UntypedFormBuilder }], target: i0.ɵɵFactoryTarget.Component });
-PhoneDisplayComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "14.2.5", type: PhoneDisplayComponent, selector: "app-phone-display", inputs: { number: "number" }, usesOnChanges: true, ngImport: i0, template: "<flag [country]=\"flag\"></flag> <div>{{display || '-'}}</div>\n", styles: [""], dependencies: [{ kind: "component", type: i2.NgxFlagsComponent, selector: "flag", inputs: ["country", "format", "size", "class"] }] });
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.2.5", ngImport: i0, type: PhoneDisplayComponent, decorators: [{
+PhoneDisplayComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.2.6", ngImport: i0, type: PhoneDisplayComponent, deps: [{ token: i1.UntypedFormBuilder }], target: i0.ɵɵFactoryTarget.Component });
+PhoneDisplayComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "14.2.6", type: PhoneDisplayComponent, selector: "app-phone-display", inputs: { number: "number" }, usesOnChanges: true, ngImport: i0, template: "<flag [country]=\"flag\"></flag> <div>{{display || '-'}}</div>\n", styles: [""], dependencies: [{ kind: "component", type: i2.NgxFlagsComponent, selector: "flag", inputs: ["country", "format", "size", "class"] }] });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.2.6", ngImport: i0, type: PhoneDisplayComponent, decorators: [{
             type: Component,
             args: [{ selector: 'app-phone-display', template: "<flag [country]=\"flag\"></flag> <div>{{display || '-'}}</div>\n" }]
         }], ctorParameters: function () { return [{ type: i1.UntypedFormBuilder }]; }, propDecorators: { number: [{
