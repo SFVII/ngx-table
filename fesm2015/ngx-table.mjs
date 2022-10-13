@@ -2072,7 +2072,6 @@ class TableComponent {
     expandShow(template) {
     }
     ngOnChanges(changes) {
-        console.log(this.data);
         if (changes.data) {
             this.pageNumberSub();
         }
