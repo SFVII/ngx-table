@@ -24,4 +24,3 @@ export interface DesignTableInterface {
     languague?: string;
 }
 export {};
-//# sourceMappingURL=Config.interface.d.ts.map

@@ -20,4 +20,3 @@ export declare class AppDatePipe extends DatePipe implements PipeTransform {
     static ɵfac: i0.ɵɵFactoryDeclaration<AppDatePipe, never>;
     static ɵpipe: i0.ɵɵPipeDeclaration<AppDatePipe, "appDate", false>;
 }
-//# sourceMappingURL=app-date.pipe.d.ts.map

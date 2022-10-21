@@ -22,4 +22,3 @@ export declare class NameAvatarComponent implements OnInit, AfterViewInit {
     static ɵfac: i0.ɵɵFactoryDeclaration<NameAvatarComponent, never>;
     static ɵcmp: i0.ɵɵComponentDeclaration<NameAvatarComponent, "name-avatar", never, { "src": "src"; "fontSize": "fontSize"; "textSize": "textSize"; }, {}, never, never, false>;
 }
-//# sourceMappingURL=name-avatar.component.d.ts.map

@@ -823,4 +823,3 @@ export declare class NgxFlagsComponent implements OnChanges {
     static ɵfac: i0.ɵɵFactoryDeclaration<NgxFlagsComponent, never>;
     static ɵcmp: i0.ɵɵComponentDeclaration<NgxFlagsComponent, "flag", never, { "country": "country"; "format": "format"; "size": "size"; "class": "class"; }, {}, never, never, false>;
 }
-//# sourceMappingURL=ngx-flag.component.d.ts.map

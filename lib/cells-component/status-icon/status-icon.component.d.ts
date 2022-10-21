@@ -8,4 +8,3 @@ export declare class StatusIconComponent implements OnInit {
     static ɵfac: i0.ɵɵFactoryDeclaration<StatusIconComponent, never>;
     static ɵcmp: i0.ɵɵComponentDeclaration<StatusIconComponent, "status-icon", never, { "label": "label"; }, {}, never, never, false>;
 }
-//# sourceMappingURL=status-icon.component.d.ts.map

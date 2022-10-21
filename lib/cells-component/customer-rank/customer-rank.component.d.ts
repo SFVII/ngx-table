@@ -13,4 +13,3 @@ export declare class CustomerRankComponent implements OnInit, OnChanges {
     static ɵfac: i0.ɵɵFactoryDeclaration<CustomerRankComponent, never>;
     static ɵcmp: i0.ɵɵComponentDeclaration<CustomerRankComponent, "app-customer-rank", never, { "type": "type"; }, {}, never, never, false>;
 }
-//# sourceMappingURL=customer-rank.component.d.ts.map

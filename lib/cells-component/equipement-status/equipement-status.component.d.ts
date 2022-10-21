@@ -18,4 +18,3 @@ export declare class EquipementStatusComponent implements OnInit, OnChanges {
     static ɵfac: i0.ɵɵFactoryDeclaration<EquipementStatusComponent, never>;
     static ɵcmp: i0.ɵɵComponentDeclaration<EquipementStatusComponent, "app-equipement-status", never, { "type": "type"; "size": "size"; "lang": "lang"; }, {}, never, never, false>;
 }
-//# sourceMappingURL=equipement-status.component.d.ts.map

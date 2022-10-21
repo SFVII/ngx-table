@@ -22,4 +22,3 @@ export declare class MenuComponent implements OnInit {
     static ɵcmp: i0.ɵɵComponentDeclaration<MenuComponent, "menu", never, { "menuSettings": "menuSettings"; "element": "element"; }, { "callHandler": "callHandler"; }, never, never, false>;
 }
 export {};
-//# sourceMappingURL=menu.component.d.ts.map
