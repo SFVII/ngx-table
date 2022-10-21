@@ -11,3 +11,4 @@ export declare class CustomCellComponent implements OnInit {
     static ɵfac: i0.ɵɵFactoryDeclaration<CustomCellComponent, never>;
     static ɵcmp: i0.ɵɵComponentDeclaration<CustomCellComponent, "lib-custom-cell", never, { "title": "title"; "subTitle": "subTitle"; "class": "class"; "subTitleFormat": "subTitleFormat"; "lang": "lang"; }, {}, never, never, false>;
 }
+//# sourceMappingURL=custom-cell.component.d.ts.map

@@ -7,3 +7,4 @@ export declare class StatusComponent implements OnInit {
     static ɵfac: i0.ɵɵFactoryDeclaration<StatusComponent, never>;
     static ɵcmp: i0.ɵɵComponentDeclaration<StatusComponent, "status", never, { "label": "label"; }, {}, never, never, false>;
 }
+//# sourceMappingURL=status.component.d.ts.map

@@ -16,3 +16,4 @@ export * from './lib/table.service';
 export * from './lib/table.component';
 export * from './lib/table.module';
 export * from './lib/cells-component/status/status.component';
+//# sourceMappingURL=public-api.d.ts.map

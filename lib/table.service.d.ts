@@ -12,3 +12,4 @@ export declare class TableService {
     static ɵfac: i0.ɵɵFactoryDeclaration<TableService, never>;
     static ɵprov: i0.ɵɵInjectableDeclaration<TableService>;
 }
+//# sourceMappingURL=table.service.d.ts.map

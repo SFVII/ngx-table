@@ -8,3 +8,4 @@ export declare const Settings: {
         primary: string;
     };
 };
+//# sourceMappingURL=Settings.d.ts.map

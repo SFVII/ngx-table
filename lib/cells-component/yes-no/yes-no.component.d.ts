@@ -15,3 +15,4 @@ export declare class YesNoComponent implements OnInit, OnChanges {
     static ɵfac: i0.ɵɵFactoryDeclaration<YesNoComponent, never>;
     static ɵcmp: i0.ɵɵComponentDeclaration<YesNoComponent, "app-yes-nox", never, { "valid": "valid"; "displayNo": "displayNo"; "displayYes": "displayYes"; "size": "size"; }, {}, never, never, false>;
 }
+//# sourceMappingURL=yes-no.component.d.ts.map

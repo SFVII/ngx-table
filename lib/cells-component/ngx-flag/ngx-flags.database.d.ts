@@ -803,3 +803,4 @@ export declare const db: {
     'holy-see': string;
     'vatican-city': string;
 };
+//# sourceMappingURL=ngx-flags.database.d.ts.map

@@ -13,3 +13,4 @@ export declare class PhoneDisplayComponent implements OnInit, OnChanges {
     static ɵfac: i0.ɵɵFactoryDeclaration<PhoneDisplayComponent, never>;
     static ɵcmp: i0.ɵɵComponentDeclaration<PhoneDisplayComponent, "app-phone-display", never, { "number": "number"; }, {}, never, never, false>;
 }
+//# sourceMappingURL=phone-display.component.d.ts.map

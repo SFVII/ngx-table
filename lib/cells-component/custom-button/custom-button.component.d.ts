@@ -17,3 +17,4 @@ export declare class CustomButtonComponent implements OnInit {
     static ɵfac: i0.ɵɵFactoryDeclaration<CustomButtonComponent, never>;
     static ɵcmp: i0.ɵɵComponentDeclaration<CustomButtonComponent, "custom-button", never, { "config": "config"; "element": "element"; }, { "callHandler": "callHandler"; }, never, never, false>;
 }
+//# sourceMappingURL=custom-button.component.d.ts.map

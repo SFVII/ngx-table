@@ -13,3 +13,4 @@ export declare class GenderComponent implements OnInit, OnChanges {
     static ɵfac: i0.ɵɵFactoryDeclaration<GenderComponent, never>;
     static ɵcmp: i0.ɵɵComponentDeclaration<GenderComponent, "app-gender", never, { "type": "type"; "size": "size"; }, {}, never, never, false>;
 }
+//# sourceMappingURL=gender.component.d.ts.map

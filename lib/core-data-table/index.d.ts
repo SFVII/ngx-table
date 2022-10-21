@@ -76,3 +76,4 @@ export declare class CoreMatTable extends DataSource<Element> {
     disconnect(): void;
     slice(data: any[], start?: number, end?: number, detailRow?: boolean): any;
 }
+//# sourceMappingURL=index.d.ts.map

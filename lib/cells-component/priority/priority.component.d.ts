@@ -13,3 +13,4 @@ export declare class PriorityComponent implements OnInit, OnChanges {
     static ɵfac: i0.ɵɵFactoryDeclaration<PriorityComponent, never>;
     static ɵcmp: i0.ɵɵComponentDeclaration<PriorityComponent, "icon-priority", never, { "icon": "icon"; "iconLabel": "iconLabel"; }, {}, never, never, false>;
 }
+//# sourceMappingURL=priority.component.d.ts.map

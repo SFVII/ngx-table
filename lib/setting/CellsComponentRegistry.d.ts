@@ -28,3 +28,4 @@ export declare enum CellsComponentList {
     CustomCell = "custom-cell",
     CustomButton = "custom-button"
 }
+//# sourceMappingURL=CellsComponentRegistry.d.ts.map
