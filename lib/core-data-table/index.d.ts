@@ -1,7 +1,7 @@
 import { BehaviorSubject, Observable } from 'rxjs';
+import { DataSource } from '@angular/cdk/collections';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
-import { DataSource } from '@angular/cdk/collections';
 export interface Sort {
     active: string;
     direction: 'asc' | 'desc';
@@ -33,6 +33,8 @@ export interface CoreMatTableInterface {
     setData: (data: Array<any>) => void;
     pageNumber: BehaviorSubject<number>;
     startWith: number;
+    pageFilter: BehaviorSubject<any>;
+    pageFilterDate: BehaviorSubject<FilterDateInterface>;
 }
 export interface FilterDateInterface {
     active: string;
@@ -50,8 +52,8 @@ export declare class CoreMatTable extends DataSource<Element> {
     pageNumber: BehaviorSubject<number>;
     startWith: number;
     private pageSort;
-    private pageFilter;
-    private pageFilterDate;
+    pageFilter: BehaviorSubject<any>;
+    pageFilterDate: BehaviorSubject<FilterDateInterface>;
     private _totalElements;
     search: BehaviorSubject<string>;
     private backUpData;
@@ -64,6 +66,7 @@ export declare class CoreMatTable extends DataSource<Element> {
     ponderation(str: string, searchKey: string): number;
     filterData(data: any, filter: any): any;
     private _search;
+    formatCharacters(text: any): string;
     filterDataObject(data: any, filter: any): any;
     setData(data: any[]): void;
     sortData(data: any, sortAction: any): any;

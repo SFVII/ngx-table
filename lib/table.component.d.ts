@@ -51,6 +51,7 @@ declare class TableComponent implements OnInit, OnChanges, OnDestroy {
     rowMargin: string;
     lang: string;
     btnOverride: boolean;
+    loading: boolean;
     callFunction: EventEmitter<any>;
     onReady: EventEmitter<boolean>;
     inputSearch: string;
@@ -71,9 +72,13 @@ declare class TableComponent implements OnInit, OnChanges, OnDestroy {
     noResult: string;
     details: string;
     showTable: boolean;
+    isViewInit: boolean;
     style: any;
     private PrivateColumnDefinitions;
     private previousPageNumber;
+    private previousSearch;
+    private previousFilter;
+    private previousFilterDate;
     constructor(router: Router, route: ActivatedRoute, service: TableService, detector: ChangeDetectorRef, translate: TranslateService, changeDetectorRef: ChangeDetectorRef);
     expand(element: any): void;
     ngOnInit(): Promise<void>;
@@ -90,6 +95,6 @@ declare class TableComponent implements OnInit, OnChanges, OnDestroy {
     init(): void;
     pageNumberSub(): void;
     static ɵfac: i0.ɵɵFactoryDeclaration<TableComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDeclaration<TableComponent, "ngx-design-table", never, { "columnDefinitions": "columnDefinitions"; "displayDetail": "displayDetail"; "displayComponent": "displayComponent"; "data": "data"; "rowMargin": "rowMargin"; "lang": "lang"; "btnOverride": "btnOverride"; "inputSearch": "inputSearch"; "EmptyRow": "EmptyRow"; "blockDetails": "blockDetails"; }, { "callFunction": "callFunction"; "onReady": "onReady"; "clicked": "clicked"; }, never, never, false>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<TableComponent, "ngx-design-table", never, { "columnDefinitions": "columnDefinitions"; "displayDetail": "displayDetail"; "displayComponent": "displayComponent"; "data": "data"; "rowMargin": "rowMargin"; "lang": "lang"; "btnOverride": "btnOverride"; "loading": "loading"; "inputSearch": "inputSearch"; "EmptyRow": "EmptyRow"; "blockDetails": "blockDetails"; }, { "callFunction": "callFunction"; "onReady": "onReady"; "clicked": "clicked"; }, never, ["*"], false>;
 }
 export { CoreMatTable, FilterDateInterface, CoreMatTableInterface, Page, PageRequest, Sort, displayedColumnsInterface, CellsComponentList, TableComponent };
